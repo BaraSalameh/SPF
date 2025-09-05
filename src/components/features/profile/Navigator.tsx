@@ -2,13 +2,19 @@
 
 import { NavButton } from "@/components/ui"
 import { Award, Briefcase, Folder, GraduationCap, Languages, StarIcon } from "lucide-react"
+import { useNavigator } from "./hooks/useNavigator"
 
-export const Navigator = () => 
-    <div className="flex gap-5">
-        <NavButton navigateTo="education" icon={GraduationCap} label="Education" />
-        <NavButton navigateTo="experience" icon={Briefcase} label="Experience" />
-        <NavButton navigateTo="project" icon={Folder} label="Projects" />
-        <NavButton navigateTo="skill" icon={StarIcon} label="Skills" />
-        <NavButton navigateTo="language" icon={Languages} label="Languages" />
-        <NavButton navigateTo="certificate" icon={Award} label="Certificates" />
-    </div>
+export const Navigator = () => {
+    const navigator = useNavigator();
+
+    return (
+        <div className="flex gap-5">
+            <NavButton navigateTo="education" icon={GraduationCap} label={navigator.education} />
+            <NavButton navigateTo="experience" icon={Briefcase} label={navigator.experience} />
+            <NavButton navigateTo="project" icon={Folder} label={navigator.project} />
+            <NavButton navigateTo="skill" icon={StarIcon} label={navigator.skills} />
+            <NavButton navigateTo="language" icon={Languages} label={navigator.languages} />
+            <NavButton navigateTo="certificate" icon={Award} label={navigator.certificates} />
+        </div>
+    )
+}

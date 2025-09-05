@@ -1,6 +1,9 @@
-import { Text } from "@/components/ui";
+'use client';
 
-export const FullName = () =>
+import { Text } from "@/components/ui";
+import { useFullName } from "./hooks/useFullName";
+
+export const FullName = () => 
     <Text size='huge'>
-        Albaraa I. A. Salama
+        {useFullName()}
     </Text>
