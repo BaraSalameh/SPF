@@ -18,3 +18,9 @@ export interface ResponsiveIconProps {
     className?: string;
     onClick?: () => void;
 }
+
+export interface NavButtonProps {
+    navigateTo: string;
+    label?: string;
+    icon?: LucideIcon;
+}

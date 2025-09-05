@@ -21,9 +21,9 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`bg-light-background dark:bg-dark-background ${geistSans.variable} ${geistMono.variable} flex flex-col min-h-screen`}>
+      <body className={`bg-light-background dark:bg-dark-background ${geistSans.variable} ${geistMono.variable}`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <main className="flex-grow">{children}</main>
+          <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>

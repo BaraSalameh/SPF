@@ -16,10 +16,11 @@ export const text = cva(
             },
             size: {
                 xs: 'text-xs',
-                sm: 'text-xs sm:text-xs md:text-sm',
-                md: 'text-xs sm:text-md md:text-md',
-                lg: 'text-sm sm:text-md md:text-lg',
-                xl: 'text-md sm:text-lg md:text-xl'
+                sm: 'text-xs sm:text-sm md:text-base',
+                md: 'text-sm sm:text-base md:text-lg',
+                lg: 'text-base sm:text-lg md:text-xl',
+                xl: 'text-lg sm:text-xl md:text-2xl',
+                huge: 'text-9xl'
             },
             text: {
                 standard: null,
