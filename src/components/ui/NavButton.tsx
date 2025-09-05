@@ -16,18 +16,15 @@ export const NavButton = ({ navigateTo, label, icon}: NavButtonProps) => {
             className={`
                 flex items-center gap-2
                 bg-light-component dark:bg-dark-component
+                hover:bg-light-bg-hover dark:hover:bg-dark-bg-hover
                 rounded-full px-4 py-2
                 transition-all duration-1000 ease-in-out
                 overflow-hidden
-                ${hovered ? "max-w-[20rem]" : "max-w-[3.5rem]"}
+                ${hovered ? "sm:max-w-[20rem]" : "sm:max-w-[3.5rem]"}
             `}
         >
             <Text className="flex-shrink-0">{<ResponsiveIcon icon={icon} />}</Text>
-            <Text
-                className={`whitespace-nowrap transition-opacity duration-200 ${
-                hovered ? "opacity-100" : "opacity-0"
-                }`}
-            >
+            <Text className={`whitespace-nowrap transition-opacity duration-200 ${hovered ? "sm:opacity-100" : "sm:opacity-0"}`}>
                 {label}
             </Text>
         </a>

@@ -8,7 +8,7 @@ export const Navigator = () => {
     const navigator = useNavigator();
 
     return (
-        <div className="flex gap-5">
+        <div className="flex flex-wrap gap-5">
             <NavButton navigateTo="education" icon={GraduationCap} label={navigator.education} />
             <NavButton navigateTo="experience" icon={Briefcase} label={navigator.experience} />
             <NavButton navigateTo="project" icon={Folder} label={navigator.project} />
