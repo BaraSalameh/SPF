@@ -13,9 +13,7 @@ const Portfolio = () =>
                     <LangToggle />
                 </div>
                 <FullName />
-                <div className="px-5">
-                    <Bio />
-                </div>
+                <Bio />
                 <Navigator />
                 <Utility />
             </div>

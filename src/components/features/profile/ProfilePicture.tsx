@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 export const ProfilePicture = () =>
-    <div className="min-h-[50vh] h-full w-full backdrop-blur-sm">
+    <div className="min-h-[65vh] h-full w-full backdrop-blur-sm">
         <Image
             src='/profile-picture.jpg'
             alt="Profile picture"
