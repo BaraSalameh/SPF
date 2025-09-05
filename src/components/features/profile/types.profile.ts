@@ -6,3 +6,9 @@ export type NavigatorAtts = {
     languages: string;
     certificates: string;
 }
+
+export type UtilityAtts = {
+    cv: string;
+    examples: string;
+    goTo: string;
+}

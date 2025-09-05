@@ -1,4 +1,4 @@
-import { NavigatorAtts } from "./types.profile";
+import { NavigatorAtts, UtilityAtts } from "./types.profile";
 
 export const enFullName = 'Albaraa I. A. Salameh';
 export const arFullName = 'البراء سلامة';
@@ -35,19 +35,19 @@ export const trNavigator: NavigatorAtts = {
     certificates: 'Sertifikalar'
 }
 
-export const enUtility = {
+export const enUtility: UtilityAtts = {
     cv: 'CV',
     examples: 'Examples',
     goTo: 'Go to nextjs.org →'
 }
 
-export const arUtility = {
+export const arUtility: UtilityAtts = {
     cv: 'السيرة الذاتية',
     examples: 'امثلة',
-    goTo: 'اذهب الى'
+    goTo: 'اذهب الى nextjs.org'
 }
 
-export const trUtility = {
+export const trUtility: UtilityAtts = {
     cv: 'Özgeçmiş',
     examples: 'Örnekler',
     goTo: 'nextjs.org a git'
