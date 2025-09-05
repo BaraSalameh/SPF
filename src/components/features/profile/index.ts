@@ -1,4 +1,4 @@
-export { ProfilePicture } from './ProfilePicture';
+export { Profile } from './Profile';
 export { FullName } from './FullName';
 export { Bio } from './Bio';
 export { Navigator } from './Navigator';
@@ -11,9 +11,6 @@ export {
     enBio,
     arBio,
     trBio,
-    enNavigator,
-    arNavigator,
-    trNavigator,
     enUtility,
     arUtility,
     trUtility

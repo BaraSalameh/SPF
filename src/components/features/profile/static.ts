@@ -8,33 +8,6 @@ export const enBio = "I’m a software developer with experience in backend, fro
 export const arBio = "عملت على مشاريع التجارة الإلكترونية، وأنظمة الـERP، وغيرها عبر شركات مختلفة.\n\nأستمتع ببناء هيكلة التطبيقات وتنظيمها، والتأكد من أن كل شيء مُصمَّم بالطريقة الصحيحة منذ البداية. أحب التفكير في أفضل الطرق لتنظيم الكود وضمان أن يكون التطبيق قابلاً للتوسع وسهل الصيانة على المدى الطويل.\n\nأنا دائمًا أبحث عن طرق للنمو والتطور في هذا المجال. أحب متابعة أحدث التقنيات، وأنا متحمس للاستمرار في التعلّم وخوض تحديات جديدة للارتقاء بمهاراتي.";
 export const trBio = "Ben, backend, frontend ve masaüstü uygulamaları konusunda deneyime sahip bir yazılım geliştiricisiyim. Farklı şirketlerde e-ticaret projeleri, ERP sistemleri ve daha birçok projede çalıştım.\n\nUygulamaları yapılandırmayı ve mimarisini tasarlamayı seviyorum; her şeyin en baştan doğru şekilde inşa edildiğinden emin olmayı önemsiyorum. Kodu en iyi şekilde nasıl organize edeceğimi düşünmekten ve uygulamanın uzun vadede ölçeklenebilir ve sürdürülebilir olmasını sağlamaktan keyif alıyorum.\n\nHer zaman sektörde kendimi geliştirmek ve ilerlemek için yollar arıyorum. Yeni teknolojileri takip etmeyi seviyorum ve becerilerimi bir üst seviyeye taşımak için öğrenmeye ve yeni zorluklarla karşılaşmaya heyecan duyuyorum.";
 
-export const enNavigator: NavigatorAtts = {
-    education: 'Education',
-    experience: 'Experience',
-    project: 'Project',
-    skills: 'Skills',
-    languages: 'Languages',
-    certificates: 'Certificates'
-}
-
-export const arNavigator: NavigatorAtts = {
-    education: 'التعليم',
-    experience: 'الخبرات',
-    project: 'المشاريع',
-    skills: 'المهارات',
-    languages: 'اللغات',
-    certificates: 'الشهادات'
-}
-
-export const trNavigator: NavigatorAtts = {
-    education: 'Eğitim',
-    experience: 'Işler',
-    project: 'Projeler',
-    skills: 'Yetenekler',
-    languages: 'Diller',
-    certificates: 'Sertifikalar'
-}
-
 export const enUtility: UtilityAtts = {
     cv: 'CV',
     examples: 'Examples',

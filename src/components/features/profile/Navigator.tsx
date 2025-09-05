@@ -2,7 +2,7 @@
 
 import { NavButton } from "@/components/ui"
 import { Award, Briefcase, Folder, GraduationCap, Languages, StarIcon } from "lucide-react"
-import { useNavigator } from "./hooks/useNavigator"
+import { useNavigator } from "../hooks/useNavigator";
 
 export const Navigator = () => {
     const navigator = useNavigator();

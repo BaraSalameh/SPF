@@ -1,6 +1,8 @@
 import { LucideIcon } from "lucide-react";
 import { TextVariantProps } from "@/styles";
 
+export type ImageExtension = 'jpg' | 'png';
+
 export interface TextProps extends TextVariantProps {
     children: React.ReactNode;
     className?: string;

@@ -22,8 +22,8 @@ export const metadata: Metadata = {
 
 const supportedLangs = ['en', 'ar', 'tr'];
 
-const PortfolioLayout = ({children, params}: Readonly<{children: React.ReactNode; params: {lang: Language};}>) => {
-    const { lang } = params;
+const PortfolioLayout = async ({children, params}: Readonly<{children: React.ReactNode; params: {lang: Language};}>) => {
+    const { lang } = await params;
     
     if (!supportedLangs.includes(lang)) {
         notFound();

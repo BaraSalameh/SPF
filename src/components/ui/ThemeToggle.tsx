@@ -17,7 +17,6 @@ export const ThemeToggle = ({
     const [ mounted, setMounted ] = useState(false);
 
     useEffect(() => {
-        console.log("I am here!");
         setMounted(true);
     }, []);
 
@@ -25,7 +24,6 @@ export const ThemeToggle = ({
 
     const isDark = theme === 'dark';
 
-    console.log(`isDark: ${isDark}`);
     const text: string | null =
         title
         ?   themeNameIncluded
@@ -35,7 +33,6 @@ export const ThemeToggle = ({
             ?   `${theme}`
             :   null
         
-
     return (
         <Text onClick={() => setTheme(isDark ? 'light' : 'dark')} className={className}>
             <ResponsiveIcon icon={isDark ? Sun : Moon} />
