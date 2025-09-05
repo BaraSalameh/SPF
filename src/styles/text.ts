@@ -20,7 +20,7 @@ export const text = cva(
                 md: 'text-sm sm:text-base md:text-lg',
                 lg: 'text-base sm:text-lg md:text-xl',
                 xl: 'text-lg sm:text-xl md:text-2xl',
-                huge: 'text-9xl'
+                huge: 'text-5xl sm:text-6xl md:text-7xl lg:text-8xl'
             },
             text: {
                 standard: null,

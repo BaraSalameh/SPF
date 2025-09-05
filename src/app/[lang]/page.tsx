@@ -3,7 +3,7 @@ import { LangToggle, ThemeToggle } from "@/components/ui";
 
 const Portfolio = () => 
     <div>
-        <main className="grid grid-cols-1 lg:grid-cols-6 h-screen">
+        <main className="grid grid-cols-1 lg:grid-cols-6 h-screen space-y-5 sm:space-y-0">
             <div className="lg:col-span-2">
                 <ProfilePicture />
             </div>
