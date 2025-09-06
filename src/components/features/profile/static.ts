@@ -1,4 +1,4 @@
-import { NavigatorAtts, UtilityAtts } from "./types.profile";
+import { UtilityAtts } from "./types.profile";
 
 export const enFullName = 'Albaraa I. A. Salameh';
 export const arFullName = 'البراء سلامة';

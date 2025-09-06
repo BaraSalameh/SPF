@@ -1,4 +1,6 @@
-export const enUniversity = {
+import { UniversitiesAtts } from "./types.education"
+
+export const enUniversity: UniversitiesAtts = {
     aaup: {
         name: 'Arab American University',
         location: 'Jenin, Palestine',
@@ -12,7 +14,7 @@ export const enUniversity = {
     visit: 'Visit Website →'
 }
 
-export const arUniversity = {
+export const arUniversity: UniversitiesAtts = {
     aaup: {
         name: 'الجامعة العربية الامريكية',
         location: 'جـنـيـن، فـلـسـطـيـن',
@@ -26,7 +28,7 @@ export const arUniversity = {
     visit: 'زيارة الموقع'
 }
 
-export const trUniversity = {
+export const trUniversity: UniversitiesAtts = {
     aaup: {
         name: 'Arab American Üniversitesi',
         location: 'Jenin, Filistin',

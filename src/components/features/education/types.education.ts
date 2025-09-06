@@ -7,3 +7,15 @@ export interface UniversityProps {
     endDate?: string;
     website?: string;
 };
+
+type universityAtts = {
+    name: string;
+    location: string;
+    major: string;
+}
+
+export interface UniversitiesAtts {
+    aaup: universityAtts;
+    uu: universityAtts;
+    visit: string;
+}

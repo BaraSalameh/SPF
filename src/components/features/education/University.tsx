@@ -5,6 +5,27 @@ import { Text } from '@/components/ui';
 import { Calendar } from "lucide-react";
 import Image from "next/image";
 
+export const University = () => {
+    const universities = useUniversity();
+
+    return(
+        <div className="flex flex-wrap sm:flex-nowrap gap-5">
+            <Card
+                title={universities.aaup.name}
+                subTitle={universities.aaup.location}
+                logoUrl="/AAUP.png"
+                children={<AAUP />}
+            />
+            <Card
+                title={universities.uu.name}
+                subTitle={universities.uu.location}
+                logoUrl="/UU.jpg"
+                children={<UU />}
+            />
+        </div>
+    )
+}
+
 const AAUP = () => {
     const universities = useUniversity();
 
@@ -64,27 +85,5 @@ const UU = () => {
                 {universities.visit}
             </a>
         </React.Fragment>
-    )
-}
-    
-
-export const University = () => {
-    const universities = useUniversity();
-
-    return(
-        <div className="flex flex-wrap sm:flex-nowrap gap-5">
-            <Card
-                title={universities.aaup.name}
-                subTitle={universities.aaup.location}
-                logoUrl="/AAUP.png"
-                children={<AAUP />}
-            />
-            <Card
-                title={universities.uu.name}
-                subTitle={universities.uu.location}
-                logoUrl="/UU.jpg"
-                children={<UU />}
-            />
-        </div>
     )
 }
