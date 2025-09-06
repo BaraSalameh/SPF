@@ -1,6 +1,6 @@
-import { Education } from "@/components/features/education";
-import { Experience } from "@/components/features/experience";
-import {Profile } from "@/components/features/profile";
+import { Education } from "@/features/education";
+import { Experience } from "@/features/experience";
+import {Profile } from "@/features/profile";
 
 const Portfolio = () => 
     <div className="space-y-10">

@@ -1,13 +1,15 @@
 'use client';
 
-import { CoverImage, NavigateHome } from "@/components/ui";
-import { Title, University } from ".";
-import { container, narrowSection, wideSection } from "@/styles/container";
+import { CoverImage } from "@/components/ui";
+import { Title, NavigateHome } from '@/components/shared';
+import { container, narrowSection, wideSection } from "@/styles";
+import { University } from ".";
+import { useTitle } from "./hooks";
 
 export const Education = () =>
     <main id="education" className={container()}>
         <div className={wideSection()}>
-            <Title />
+            <Title title={useTitle} />
             <University />
             <NavigateHome />
         </div>

@@ -3,7 +3,7 @@ import { useUniversity } from "./hooks/useUniversity"
 import React from "react";
 import { Text } from '@/components/ui';
 import { Calendar } from "lucide-react";
-import Image from "next/image";
+import { Link } from '@/components/ui';
 
 export const University = () => {
     const universities = useUniversity();
@@ -38,21 +38,7 @@ const AAUP = () => {
                 <ResponsiveIcon icon={Calendar} />
                 10/2016 - 02/2021
             </Text>
-            <a
-                className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                href="https://www.aaup.edu"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-            <Image
-                aria-hidden
-                src="/globe.svg"
-                alt={`${universities.aaup.name} logo`}
-                width={16}
-                height={16}
-            />
-                {universities.visit}
-            </a>
+            <Link label={universities.visit} to="https://www.aaup.edu" icon="/globe.svg"/>
         </React.Fragment>
     )
 }
@@ -69,21 +55,7 @@ const UU = () => {
                 <ResponsiveIcon icon={Calendar} />
                 10/2021 - 10/2023
             </Text>
-            <a
-                className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                href="https://uskudar.edu.tr/en"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-            <Image
-                aria-hidden
-                src="/globe.svg"
-                alt={`${universities.uu.name} logo`}
-                width={16}
-                height={16}
-            />
-                {universities.visit}
-            </a>
+            <Link label={universities.visit} to="https://uskudar.edu.tr/en" icon="/globe.svg"/>
         </React.Fragment>
     )
 }

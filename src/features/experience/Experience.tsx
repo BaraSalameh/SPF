@@ -1,8 +1,10 @@
 'use client';
 
-import { CoverImage, NavigateHome } from "@/components/ui";
-import { Title, Company } from ".";
+import { CoverImage } from "@/components/ui";
+import { Company } from ".";
 import { container, narrowSection, wideSection } from "@/styles/container";
+import { Title, NavigateHome } from "@/components/shared";
+import { useTitle } from "./hooks";
 
 export const Experience = () =>
     <main id="experience" className={container()}>
@@ -10,7 +12,7 @@ export const Experience = () =>
             <CoverImage name="experience" alt="Education" />
         </div>
         <div className={wideSection()}>
-            <Title />
+            <Title title={useTitle} />
             <Company />
             <NavigateHome />
         </div>

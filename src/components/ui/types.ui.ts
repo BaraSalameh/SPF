@@ -1,5 +1,6 @@
 import { LucideIcon } from "lucide-react";
 import { TextVariantProps } from "@/styles";
+import { Size } from "../types";
 
 export type ImageExtension = 'jpg' | 'png';
 
@@ -15,10 +16,13 @@ export interface ThemeToggleProps {
     className?: string;
 }
 
+type IconType = 'Lucide' | 'Image';
 export interface ResponsiveIconProps {
-    icon?: LucideIcon;
+    icon?: LucideIcon | string;
     className?: string;
     onClick?: () => void;
+    size?: Size;
+    iconType?: IconType;
 }
 
 export interface NavButtonProps {
