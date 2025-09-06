@@ -26,3 +26,10 @@ export interface NavButtonProps {
     label?: string;
     icon?: LucideIcon;
 }
+
+export interface CardProps {
+    title: string;
+    subTitle?: string;
+    logoUrl?: string;
+    children?: React.ReactNode;
+};

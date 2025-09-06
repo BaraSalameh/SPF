@@ -1,6 +1,6 @@
 export { Education } from './Education';
-export { Navigator } from './Navigator';
 export { University } from './University';
+export { Title } from './Title';
 
 export {
     enUniversity,

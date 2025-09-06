@@ -1,70 +1,90 @@
-import Image from "next/image";
-import { ResponsiveIcon, Text } from '@/components/ui';
+import { Card, ResponsiveIcon } from "@/components/ui";
+import { useUniversity } from "./hooks/useUniversity"
+import React from "react";
+import { Text } from '@/components/ui';
 import { Calendar } from "lucide-react";
-import { useUniversity } from "./hooks/useUniversity";
-import { UniversityProps } from "./types.education";
+import Image from "next/image";
 
-export const University = ({
-    name,
-    logoUrl,
-    location,
-    major,
-    startDate,
-    endDate = 'Present',
-    website,
-}: UniversityProps) => {
-    const visitLabel = useUniversity();
+const AAUP = () => {
+    const universities = useUniversity();
 
     return (
-        <div className="max-w-sm w-full rounded-2xl shadow-md bg-light-component dark:bg-dark-component p-4 flex flex-col gap-4 transition hover:shadow-xl">
-        {/* Logo + Name */}
-            <div className="flex items-center gap-3">
-                <div className="relative w-20 h-20">
-                    <Image
-                        src={logoUrl}
-                        alt={`${name} logo`}
-                        fill
-                        className="object-contain rounded-full border"
-                    />
-                </div>
-                <div>
-                    <Text>
-                        {name}
-                    </Text>
-                    <Text size='sm' intent='secondary'>
-                        {location}
-                    </Text>
-                </div>
-            </div>
-
-            {/* Field of study */}
+        <React.Fragment>
             <Text size='sm'>
-                {major}
+                {universities.aaup.major}
             </Text>
-
-            {/* Dates */}
             <Text size='xs'>
                 <ResponsiveIcon icon={Calendar} />
-                {startDate} - {endDate}
+                10/2016 - 02/2021
             </Text>
-            
-
-            {/* Website link */}
             <a
                 className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                href={website}
+                href="https://www.aaup.edu"
                 target="_blank"
                 rel="noopener noreferrer"
             >
             <Image
                 aria-hidden
                 src="/globe.svg"
-                alt={`${name} logo`}
+                alt={`${universities.aaup.name} logo`}
                 width={16}
                 height={16}
             />
-                {visitLabel.visit}
+                {universities.visit}
             </a>
+        </React.Fragment>
+    )
+}
+
+const UU = () => {
+    const universities = useUniversity();
+
+    return (
+        <React.Fragment>
+            <Text size='sm'>
+                {universities.uu.major}
+            </Text>
+            <Text size='xs'>
+                <ResponsiveIcon icon={Calendar} />
+                10/2021 - 10/2023
+            </Text>
+            <a
+                className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                href="https://uskudar.edu.tr/en"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+            <Image
+                aria-hidden
+                src="/globe.svg"
+                alt={`${universities.uu.name} logo`}
+                width={16}
+                height={16}
+            />
+                {universities.visit}
+            </a>
+        </React.Fragment>
+    )
+}
+    
+
+export const University = () => {
+    const universities = useUniversity();
+
+    return(
+        <div className="flex flex-wrap sm:flex-nowrap gap-5">
+            <Card
+                title={universities.aaup.name}
+                subTitle={universities.aaup.location}
+                logoUrl="/AAUP.png"
+                children={<AAUP />}
+            />
+            <Card
+                title={universities.uu.name}
+                subTitle={universities.uu.location}
+                logoUrl="/UU.jpg"
+                children={<UU />}
+            />
         </div>
-    );
+    )
 }

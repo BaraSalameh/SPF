@@ -1,14 +1,13 @@
 'use client';
 
 import { CoverImage, NavigateHome } from "@/components/ui";
-import { Title, University } from ".";
+import { Title } from "./Title";
 import { container, narrowSection, wideSection } from "@/styles/container";
 
-export const Education = () =>
-    <main id="education" className={container()}>
+export const Experience = () =>
+    <main id="experience" className={container()}>
         <div className={wideSection()}>
             <Title />
-            <University />
             <NavigateHome />
         </div>
         <div className={narrowSection()}>
