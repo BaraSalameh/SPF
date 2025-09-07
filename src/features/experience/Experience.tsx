@@ -1,6 +1,5 @@
 'use client';
 
-import { CoverImage } from "@/components/ui";
 import { Company } from ".";
 import { container, narrowSection, wideSection } from "@/styles/container";
 import { Title, NavigateHome } from "@/components/shared";

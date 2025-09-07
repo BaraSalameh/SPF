@@ -14,7 +14,7 @@ export const  Company = () => {
     const commonAtts = commonCompanyAtts;
 
     return(
-        <div className="flex flex-wrap sm:flex-nowrap gap-5">
+        <div className="flex flex-wrap justify-center gap-5">
             <Card
                 title={compamies.aaup.name}
                 subTitle={compamies.aaup.location}
