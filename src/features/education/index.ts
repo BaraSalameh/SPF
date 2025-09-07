@@ -8,5 +8,8 @@ export {
     trUniversity,
     enVisitUniversity,
     arVisitUniversity,
-    trVisitUniversity
+    trVisitUniversity,
+    enChartTitle,
+    arChartTitle,
+    trChartTitle
 } from './static';

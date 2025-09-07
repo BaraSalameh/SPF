@@ -4,12 +4,12 @@ import { CoverImage } from "@/components/ui";
 import { Company } from ".";
 import { container, narrowSection, wideSection } from "@/styles/container";
 import { Title, NavigateHome } from "@/components/shared";
-import { useTitle } from "./hooks";
+import { useChart, useTitle } from "./hooks";
 
 export const Experience = () =>
     <main id="experience" className={container()}>
         <div className={narrowSection()}>
-            <CoverImage name="experience" alt="Education" />
+            {useChart()}
         </div>
         <div className={wideSection()}>
             <Title title={useTitle} />

@@ -4,5 +4,8 @@ export { Company } from './Company';
 export {
     enCompany,
     arCompany,
-    trCompany
+    trCompany,
+    enChartTitle,
+    arChartTitle,
+    trChartTitle
 } from './static';

@@ -4,9 +4,14 @@ import { Text } from '@/components/ui';
 import { Calendar } from "lucide-react";
 import { useCompany } from "./hooks/useCompany";
 import { Link } from '@/components/ui';
+import { useVisit } from "./hooks";
+import { commonCompanyAtts } from "./static";
+import { CompanyProps } from "./types.experience";
 
 export const  Company = () => {
     const compamies = useCompany();
+    const visit = useVisit();
+    const commonAtts = commonCompanyAtts;
 
     return(
         <div className="flex flex-wrap sm:flex-nowrap gap-5">
@@ -14,94 +19,70 @@ export const  Company = () => {
                 title={compamies.aaup.name}
                 subTitle={compamies.aaup.location}
                 logoUrl="/AAUP.png"
-                children={<AAUP />}
+                children={
+                    <Cpy
+                        position={compamies.aaup.position}
+                        startDate={commonAtts.aaup.startDate}
+                        endDate={commonAtts.aaup.endDate}
+                        linkLabel={visit}
+                        linkUrl={commonAtts.aaup.website}
+                    />
+                }
             />
             <Card
                 title={compamies.erpEasy.name}
                 subTitle={compamies.erpEasy.location}
                 logoUrl="/spinnel.png"
-                children={<ERP />}
+                children={
+                    <Cpy
+                        position={compamies.erpEasy.position}
+                        startDate={commonAtts.erpEasy.startDate}
+                        endDate={commonAtts.erpEasy.endDate}
+                        linkLabel={visit}
+                        linkUrl={commonAtts.erpEasy.website}
+                    />
+                }
             />
             <Card
                 title={compamies.jawwal.name}
                 subTitle={compamies.jawwal.location}
                 logoUrl="/jawwal.jpg"
-                children={<Jawwal />}
+                children={
+                    <Cpy
+                        position={compamies.jawwal.position}
+                        startDate={commonAtts.jawwal.startDate}
+                        endDate={commonAtts.jawwal.endDate}
+                        linkLabel={visit}
+                        linkUrl={commonAtts.jawwal.website}
+                    />
+                }
             />
             <Card
                 title={compamies.ulitimitats.name}
                 subTitle={compamies.ulitimitats.location}
                 logoUrl="/uats.png"
-                children={<UATS />}
+                children={
+                    <Cpy
+                        position={compamies.ulitimitats.position}
+                        startDate={commonAtts.ulitimitats.startDate}
+                        endDate={commonAtts.ulitimitats.endDate}
+                        linkLabel={visit}
+                        linkUrl={commonAtts.ulitimitats.website}
+                    />
+                }
             />
         </div>
     )
 }
 
-const AAUP = () => {
-    const compamies = useCompany();
-
-    return (
-        <React.Fragment>
-            <Text size='sm'>
-                {compamies.aaup.position}
-            </Text>
-            <Text size='xs'>
-                <ResponsiveIcon icon={Calendar} />
-                10/2024 - 02/2025
-            </Text>
-            <Link label={compamies.visit} to="https://www.aaup.edu" icon="/globe.svg"/>
-        </React.Fragment>
-    )
-}
-
-const ERP = () => {
-    const compamies = useCompany();
-
-    return (
-        <React.Fragment>
-            <Text size='sm'>
-                {compamies.erpEasy.position}
-            </Text>
-            <Text size='xs'>
-                <ResponsiveIcon icon={Calendar} />
-                02/2024 - 05/2024
-            </Text>
-            <Link label={compamies.visit} to="https://spineltechnology.com/" icon="/globe.svg"/>
-        </React.Fragment>
-    )
-}
-
-const Jawwal = () => {
-    const compamies = useCompany();
-
-    return (
-        <React.Fragment>
-            <Text size='sm'>
-                {compamies.jawwal.position}
-            </Text>
-            <Text size='xs'>
-                <ResponsiveIcon icon={Calendar} />
-                10/2023 - 02/2024
-            </Text>
-            <Link label={compamies.visit} to="https://www.jawwal.ps/" icon="/globe.svg"/>
-        </React.Fragment>
-    )
-}
-
-const UATS = () => {
-    const compamies = useCompany();
-
-    return (
-        <React.Fragment>
-            <Text size='sm'>
-                {compamies.ulitimitats.position}
-            </Text>
-            <Text size='xs'>
-                <ResponsiveIcon icon={Calendar} />
-                05/2022 - 08/2022
-            </Text>
-            <Link label={compamies.visit} to="https://www.ultimitats.com/" icon="/globe.svg"/>
-        </React.Fragment>
-    )
-}
+const Cpy = ({ position, startDate, endDate, linkLabel, linkUrl }: CompanyProps) =>
+    <React.Fragment>
+        <Text size='sm'>
+            {position}
+        </Text>
+        <Text size='xs'>
+            <ResponsiveIcon icon={Calendar} />
+            {startDate} - {endDate}
+        </Text>
+        <Link label={linkLabel} to={linkUrl} icon="/globe.svg"/>
+    </React.Fragment>

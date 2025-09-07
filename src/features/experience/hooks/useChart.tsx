@@ -1,18 +1,18 @@
 import { CahrtEntry } from "@/components/charts/types.charts";
-import { useUniversity } from "./useUniversity"
 import { BarChartWidget, PieChartWidget } from '@/components/charts';
-import { commonUniversityAtts } from "../static";
 import { getDuration } from "@/components/utils";
 import React from "react";
 import { Text } from '@/components/ui';
+import { useCompany } from "./useCompany";
 import { useChartTitle } from "./useChartTitle";
+import { commonCompanyAtts } from "../static";
 
 export const useChart = () => {
-    const universities = useUniversity();
+    const compamies = useCompany();
     const chartTitle = useChartTitle();
-    const commonAtts = commonUniversityAtts;
+    const commonAtts = commonCompanyAtts;
 
-    const customData: CahrtEntry[] = Object.entries(universities)
+    const customData: CahrtEntry[] = Object.entries(compamies)
         .map(([key, value]) => {
             const commonAtt = commonAtts[key as keyof typeof commonAtts];
             const start = commonAtt.startDate;
@@ -30,7 +30,7 @@ export const useChart = () => {
             <Text position='center'>
                 {chartTitle}
             </Text>
-            <PieChartWidget
+            <BarChartWidget
                 data={customData}
             />
         </React.Fragment>

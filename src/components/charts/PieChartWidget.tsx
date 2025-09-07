@@ -23,12 +23,13 @@ export const PieChartWidget = ({
                     cy="50%"
                     outerRadius="75%"
                     label
-                    legendType="diamond"
+                    legendType="star"
                 >
                     {data.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={internalColorMap[entry.name]} />
                     ))}
                 </Pie>
+                <Legend />
                 <Tooltip content={CustomTooltip} />
             </PieChart>
         </ResponsiveContainer>
