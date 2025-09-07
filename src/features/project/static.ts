@@ -34,47 +34,47 @@ export const commonProjectsAtts: CommonProjectsAtts = {
 export const enProjects: ProjectsAtts = {
     staticPortfolio: {
         name: 'Static Portfolio',
-        desciption: "In the world of software development, testing often plays a crucial role in ensuring that applications function as expected under different conditions. Developers and testers frequently need placeholder text that is long enough to simulate real-world input. Such text can help verify layout behavior, database storage, user interface rendering, and performance under load. For example, when building a web application, you may need to check whether your components can handle long strings of text without breaking their alignment, overflowing their containers, or causing unexpected scrollbars. Similarly, in backend development, you may want to test how your API handles large payloads or whether certain fields can store values that exceed the typical length of a short string.\n\nHistorically, developers used Lorem Ipsum as placeholder text. While it is still popular today, some teams prefer more natural and meaningful paragraphs, because natural language can reveal bugs or issues that artificial text cannot. For instance, long sentences with varying structures may cause word wrapping inconsistencies in certain browsers, while repetitive characters might expose inefficiencies in text compression or search algorithms. In databases, testing with lengthy paragraphs ensures that schema constraints are respected and that truncation errors do not occur silently.\n\n When designing multilingual systems, using long placeholder text also provides insights into localization challenges. For example, English text may expand by 20–30% when translated into German or French, while right-to-left languages like Arabic introduce additional layout considerations. By using long text during the design phase, teams can anticipate these issues early and avoid costly redesigns later in production.\n\nFinally, from a user experience perspective, placeholder text is more than a filler—it is a way to simulate how real people might interact with your system. Users rarely enter short, neat, perfectly formatted strings; instead, they may paste long paragraphs, insert special characters, or include line breaks in unexpected places. Robust testing with long text ensures that your application gracefully handles these scenarios, providing reliability, stability, and a polished experience."
+        desciption: "A clean and lightweight static portfolio website built to display skills, experiences, and projects in a simple and elegant way."
     },
     portfolio: {
         name: 'Portfolio',
-        desciption: "In the world of software development, testing often plays a crucial role in ensuring that applications function as expected under different conditions. Developers and testers frequently need placeholder text that is long enough to simulate real-world input. Such text can help verify layout behavior, database storage, user interface rendering, and performance under load. For example, when building a web application, you may need to check whether your components can handle long strings of text without breaking their alignment, overflowing their containers, or causing unexpected scrollbars. Similarly, in backend development, you may want to test how your API handles large payloads or whether certain fields can store values that exceed the typical length of a short string.\n\nHistorically, developers used Lorem Ipsum as placeholder text. While it is still popular today, some teams prefer more natural and meaningful paragraphs, because natural language can reveal bugs or issues that artificial text cannot. For instance, long sentences with varying structures may cause word wrapping inconsistencies in certain browsers, while repetitive characters might expose inefficiencies in text compression or search algorithms. In databases, testing with lengthy paragraphs ensures that schema constraints are respected and that truncation errors do not occur silently.\n\n When designing multilingual systems, using long placeholder text also provides insights into localization challenges. For example, English text may expand by 20–30% when translated into German or French, while right-to-left languages like Arabic introduce additional layout considerations. By using long text during the design phase, teams can anticipate these issues early and avoid costly redesigns later in production.\n\nFinally, from a user experience perspective, placeholder text is more than a filler—it is a way to simulate how real people might interact with your system. Users rarely enter short, neat, perfectly formatted strings; instead, they may paste long paragraphs, insert special characters, or include line breaks in unexpected places. Robust testing with long text ensures that your application gracefully handles these scenarios, providing reliability, stability, and a polished experience."
+        desciption: "A dynamic and customizable portfolio platform that allows anyone to showcase their projects, experiences, and skills with interactive and modern features."
     },
     aluminum: {
         name: 'Aluminum',
-        desciption: ''
+        desciption: 'A complete web-based solution developed to manage aluminum business operations, including inventory, orders, and workflow, ensuring efficiency and smooth management.'
     }
 }
 
 export const arProjects: ProjectsAtts = {
     staticPortfolio: {
         name: 'الصفحة الشخصية الثابتة',
-        desciption: '',
+        desciption: 'موقع بورتفوليو ثابت وخفيف، مصمم لعرض المهارات والخبرات والمشاريع بطريقة بسيطة وأنيقة.',
         
     },
     portfolio: {
         name: 'الصفحة الشخصية',
-        desciption: '',
+        desciption: 'بورتفوليو ديناميكي وقابل للتخصيص، يتيح لأي شخص عرض مشاريعه وخبراته ومهاراته بميزات حديثة وتفاعلية.',
         
     },
     aluminum: {
         name: 'المنيوم',
-        desciption: ''
+        desciption: 'حل ويب متكامل مصمم لإدارة أعمال الألمنيوم، بما يشمل المخزون والطلبات وسير العمل، مما يضمن الكفاءة والإدارة السلسة.'
     }
 }
 
 export const trProjects: ProjectsAtts = {
     staticPortfolio: {
         name: 'statik portföy',
-        desciption: ''
+        desciption: 'Becerileri, deneyimleri ve projeleri sade ve şık bir şekilde sergilemek için hazırlanmış temiz ve hafif bir statik portföy sitesi.'
     },
     portfolio: {
         name: 'portföy',
-        desciption: ''
+        desciption: 'Herkesin projelerini, deneyimlerini ve becerilerini modern ve etkileşimli özelliklerle sergilemesine imkân tanıyan dinamik ve özelleştirilebilir bir portföy platformu.'
     },
     aluminum: {
         name: 'Alüminyum',
-        desciption: ''
+        desciption: 'Stok, sipariş ve iş akışlarını kapsayan alüminyum iş süreçlerini yönetmek için geliştirilmiş, verimliliği ve kolay yönetimi sağlayan kapsamlı bir web çözümü.'
     }
 }
 
@@ -90,6 +90,6 @@ export const enVisitSourceProject = 'Source code →';
 export const arVisitSourceProject = 'الكود';
 export const trVisitSourceProject = 'Koda gir →';
 
-export const enChartTitle = 'Duration (Month)';
-export const arChartTitle = 'المدة الزمنية (شهر)';
-export const trChartTitle = 'Süre (Ay)';
+export const enChartTitle = 'Project skills';
+export const arChartTitle = 'مهارات المشاريع';
+export const trChartTitle = 'Projenin yetenekleri';
