@@ -1,4 +1,17 @@
-import { UniversitiesAtts } from "./types.education"
+import { CommonUniversitiesAtts, UniversitiesAtts } from "./types.education"
+
+export const commonUniversityAtts: CommonUniversitiesAtts = {
+    aaup: {
+        startDate: '10/2016',
+        endDate: '02/2021',
+        website: "https://www.aaup.edu"
+    },
+    uu: {
+        startDate: '10/2021',
+        endDate: '10/2023',
+        website: "https://uskudar.edu.tr/en"
+    }
+}
 
 export const enUniversity: UniversitiesAtts = {
     aaup: {
@@ -10,8 +23,7 @@ export const enUniversity: UniversitiesAtts = {
         name: 'Uskudar University',
         location: 'Istanbul, Turkey',
         major: 'Cyber Security',
-    },
-    visit: 'Visit Website →'
+    }
 }
 
 export const arUniversity: UniversitiesAtts = {
@@ -24,8 +36,7 @@ export const arUniversity: UniversitiesAtts = {
         name: 'جامعة اسكودار',
         location: 'اسطنبول، تركيا',
         major: 'الامن السيبراني',
-    },
-    visit: 'زيارة الموقع'
+    }
 }
 
 export const trUniversity: UniversitiesAtts = {
@@ -38,6 +49,13 @@ export const trUniversity: UniversitiesAtts = {
         name: 'Üsküdar Üniversitesi',
         location: 'İstanbul, Türkiye',
         major: 'Siber Güvenlik',
-    },
-    visit: 'website gir →'
+    }
 }
+
+export const enVisitUniversity = 'Visit Website →';
+export const arVisitUniversity = 'زيارة الموقع';
+export const trVisitUniversity = 'website gir →';
+
+export const enChartTitle = 'Duration (Month)';
+export const arChartTitle = 'المدة الزمنية (شهر)';
+export const trChartTitle = 'Süre (Ay)';

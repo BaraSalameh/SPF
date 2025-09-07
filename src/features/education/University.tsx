@@ -4,6 +4,8 @@ import React from "react";
 import { Text } from '@/components/ui';
 import { Calendar } from "lucide-react";
 import { Link } from '@/components/ui';
+import { useVisit } from "./hooks";
+import { commonUniversityAtts } from "./static";
 
 export const University = () => {
     const universities = useUniversity();
@@ -28,6 +30,8 @@ export const University = () => {
 
 const AAUP = () => {
     const universities = useUniversity();
+    const visitLabel = useVisit();
+    const commonAtts = commonUniversityAtts;
 
     return (
         <React.Fragment>
@@ -36,15 +40,17 @@ const AAUP = () => {
             </Text>
             <Text size='xs'>
                 <ResponsiveIcon icon={Calendar} />
-                10/2016 - 02/2021
+                {commonAtts.aaup.startDate} - {commonAtts.aaup.endDate}
             </Text>
-            <Link label={universities.visit} to="https://www.aaup.edu" icon="/globe.svg"/>
+            <Link label={visitLabel} to={commonAtts.aaup.website} icon="/globe.svg"/>
         </React.Fragment>
     )
 }
 
 const UU = () => {
     const universities = useUniversity();
+    const visitLabel = useVisit();
+    const commonAtts = commonUniversityAtts;
 
     return (
         <React.Fragment>
@@ -53,9 +59,9 @@ const UU = () => {
             </Text>
             <Text size='xs'>
                 <ResponsiveIcon icon={Calendar} />
-                10/2021 - 10/2023
+                {commonAtts.uu.startDate} - {commonAtts.uu.endDate}
             </Text>
-            <Link label={universities.visit} to="https://uskudar.edu.tr/en" icon="/globe.svg"/>
+            <Link label={visitLabel} to={commonAtts.uu.website} icon="/globe.svg"/>
         </React.Fragment>
     )
 }

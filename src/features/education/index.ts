@@ -2,7 +2,11 @@ export { Education } from './Education';
 export { University } from './University';
 
 export {
+    commonUniversityAtts,
     enUniversity,
     arUniversity,
-    trUniversity
+    trUniversity,
+    enVisitUniversity,
+    arVisitUniversity,
+    trVisitUniversity
 } from './static';
