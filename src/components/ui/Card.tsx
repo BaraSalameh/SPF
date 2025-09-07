@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Text } from '@/components/ui';
 import { CardProps } from "./types.ui";
+import { card } from "@/styles";
 
 export const Card = ({
     title,
@@ -8,7 +9,7 @@ export const Card = ({
     logoUrl,
     children,
 }: CardProps) => 
-    <div className="max-w-sm w-full rounded-2xl shadow-md bg-light-component dark:bg-dark-component p-4 flex flex-col gap-4 transition hover:shadow-xl">
+    <div className={card()}>
         <div className="flex items-center gap-3">
             {logoUrl &&
                 <div className="relative w-20 h-20">

@@ -6,3 +6,4 @@ export { NavButton } from './NavButton';
 export { CoverImage } from './CoverImage';
 export { Card } from './Card';
 export { Link } from './Link';
+export { Modal } from './Modal';
