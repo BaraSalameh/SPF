@@ -1,6 +1,6 @@
 import { CahrtEntry } from "@/components/charts/types.charts";
 import { useUniversity } from "./useUniversity"
-import { BarChartWidget, PieChartWidget } from '@/components/charts';
+import { PieChartWidget } from '@/components/charts';
 import { commonUniversityAtts } from "../static";
 import { getDuration } from "@/components/utils";
 import React from "react";

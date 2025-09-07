@@ -1,5 +1,5 @@
 import { CahrtEntry } from "@/components/charts/types.charts";
-import { BarChartWidget, PieChartWidget } from '@/components/charts';
+import { BarChartWidget } from '@/components/charts';
 import { getDuration } from "@/components/utils";
 import React from "react";
 import { Text } from '@/components/ui';
