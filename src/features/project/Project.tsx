@@ -6,6 +6,7 @@ import { useDescription, useProject, useVisitLive, useVisitSource } from "./hook
 import { commonProjectsAtts } from "./static";
 import { ProjectProps } from "./types.project";
 import { File, Star } from "lucide-react";
+import { mapSkillsToWidget } from "../utils/mapSkillsToWidget";
 
 export const Project = () => {
     const projects = useProject();
@@ -14,64 +15,66 @@ export const Project = () => {
     const visitSourceLabel = useVisitSource();
     const description = useDescription();
 
+    const projectSkills = mapSkillsToWidget("Projects");
+
     return(
         <div className="flex flex-wrap sm:flex-nowrap gap-5">
             <Card
-                title={projects.staticPortfolio.name}
+                title={projects["Static Portfolio"].name}
                 logoUrl="/spf.png"
-                children={
+                content={
                     <Pjt
                         description={
                             <Modal
                                 title={description}
                                 icon={File}
-                                content={projects.staticPortfolio.desciption}
+                                content={projects["Static Portfolio"].desciption}
                             />
                         }
-                        skills={commonAtts.staticPortfolio.skills}
-                        website={commonAtts.staticPortfolio.website}
+                        skills={projectSkills["Static Portfolio"]}
+                        website={commonAtts["Static Portfolio"].website}
                         liveLabel={visitLiveLabel}
-                        source={commonAtts.staticPortfolio.source}
+                        source={commonAtts["Static Portfolio"].source}
                         sourceLabel={visitSourceLabel}
                     />
                 }
             />
             <Card
-                title={projects.portfolio.name}
+                title={projects.Portfolio.name}
                 logoUrl="/portfolio.png"
-                children={
+                content={
                     <Pjt
                         description={
                             <Modal
                                 title={description}
                                 icon={File}
-                                content={projects.portfolio.desciption}
+                                content={projects.Portfolio.desciption}
                             />
                         }
-                        skills={commonAtts.portfolio.skills}
-                        website={commonAtts.portfolio.website}
+                        skills={projectSkills.Portfolio}
+                        website={commonAtts.Portfolio.website}
                         liveLabel={visitLiveLabel}
-                        source={commonAtts.portfolio.source}
+                        source={commonAtts.Portfolio.source}
                         sourceLabel={visitSourceLabel}
                     />
                 }
             />
             <Card
-                title={projects.aluminum.name}
+                title={projects.Aluminum.name}
                 logoUrl="/aluminum.png"
-                children={
+                content={
                     <Pjt
                         description={
                             <Modal
                                 title={description}
                                 icon={File}
-                                content={projects.aluminum.desciption}
+                                content={projects.Aluminum.desciption}
                             />
                         }
-                        skills={commonAtts.aluminum.skills}
-                        website={commonAtts.aluminum.website}
+                        skills={projectSkills.Aluminum}
+                        website={commonAtts.Aluminum.website}
                         liveLabel={visitLiveLabel}
-                        source={commonAtts.aluminum.source}
+                        source={commonAtts.Aluminum.source}
                         sourceLabel={visitSourceLabel}
                     />
                 }
@@ -85,8 +88,10 @@ const Pjt = ({ description, website, liveLabel, source, sourceLabel, skills }: P
         {description}
         <Text size='xs'>
             <ResponsiveIcon icon={Star} />
-            {skills.map((item: string, idx: number) => idx < skills.length - 1 ? `${item} | ` : item)}
+            {skills?.map((item: string, idx: number) => idx < skills.length - 1 ? `${item} | ` : item)}
         </Text>
-        <Link label={liveLabel} to={website} icon="/globe.svg"/>
-        <Link label={sourceLabel} to={source} icon="/globe.svg"/>
+        <div className="flex flex-wrap justify-center gap-5">
+            <Link label={liveLabel} to={website} icon="/globe.svg"/>
+            <Link label={sourceLabel} to={source} icon="/globe.svg"/>
+        </div>
     </React.Fragment>

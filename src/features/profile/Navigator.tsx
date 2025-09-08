@@ -9,12 +9,12 @@ export const Navigator = () => {
 
     return (
         <div className="flex flex-wrap justify-center gap-5">
-            <NavButton navigateTo="education" icon={GraduationCap} label={navigator.education} />
-            <NavButton navigateTo="experience" icon={Briefcase} label={navigator.experience} />
-            <NavButton navigateTo="project" icon={Folder} label={navigator.project} />
-            <NavButton navigateTo="skill" icon={StarIcon} label={navigator.skills} />
-            <NavButton navigateTo="language" icon={Languages} label={navigator.languages} />
-            <NavButton navigateTo="certificate" icon={Award} label={navigator.certificates} />
+            <NavButton navigateTo="education" icon={GraduationCap} label={navigator.Education} />
+            <NavButton navigateTo="experience" icon={Briefcase} label={navigator.Experience} />
+            <NavButton navigateTo="project" icon={Folder} label={navigator.Projects} />
+            <NavButton navigateTo="skill" icon={StarIcon} label={navigator.Skills} />
+            <NavButton navigateTo="language" icon={Languages} label={navigator.Languages} />
+            <NavButton navigateTo="certificate" icon={Award} label={navigator.Certificates} />
         </div>
     )
 }

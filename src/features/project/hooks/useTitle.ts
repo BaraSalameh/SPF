@@ -9,12 +9,12 @@ export const useTitle = () => {
 
     switch (lang) {
         case "en":
-            return enNavigator.project;
+            return enNavigator.Projects;
         case "ar":
-            return arNavigator.project;
+            return arNavigator.Projects;
         case "tr":
-            return trNavigator.project;
+            return trNavigator.Projects;
         default:
-            return enNavigator.project;
+            return enNavigator.Projects;
     }
 }

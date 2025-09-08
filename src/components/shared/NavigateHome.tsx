@@ -5,4 +5,4 @@ import { Home } from "lucide-react"
 import { useNavigator } from "../../features/hooks/useNavigator"
 
 export const NavigateHome = () =>
-    <NavButton navigateTo="home" icon={Home} label={useNavigator().home} />
+    <NavButton navigateTo="home" icon={Home} label={useNavigator().Home} />

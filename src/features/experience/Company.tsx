@@ -19,7 +19,7 @@ export const  Company = () => {
                 title={compamies.aaup.name}
                 subTitle={compamies.aaup.location}
                 logoUrl="/AAUP.png"
-                children={
+                content={
                     <Cpy
                         position={compamies.aaup.position}
                         startDate={commonAtts.aaup.startDate}
@@ -33,7 +33,7 @@ export const  Company = () => {
                 title={compamies.erpEasy.name}
                 subTitle={compamies.erpEasy.location}
                 logoUrl="/spinnel.png"
-                children={
+                content={
                     <Cpy
                         position={compamies.erpEasy.position}
                         startDate={commonAtts.erpEasy.startDate}
@@ -47,7 +47,7 @@ export const  Company = () => {
                 title={compamies.jawwal.name}
                 subTitle={compamies.jawwal.location}
                 logoUrl="/jawwal.jpg"
-                children={
+                content={
                     <Cpy
                         position={compamies.jawwal.position}
                         startDate={commonAtts.jawwal.startDate}
@@ -61,7 +61,7 @@ export const  Company = () => {
                 title={compamies.ulitimitats.name}
                 subTitle={compamies.ulitimitats.location}
                 logoUrl="/uats.png"
-                children={
+                content={
                     <Cpy
                         position={compamies.ulitimitats.position}
                         startDate={commonAtts.ulitimitats.startDate}

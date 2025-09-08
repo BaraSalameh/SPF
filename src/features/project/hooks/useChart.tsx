@@ -2,19 +2,18 @@ import { CahrtEntry } from "@/components/charts/types.charts";
 import { RadarChartWidget } from '@/components/charts';
 import React from "react";
 import { Text } from '@/components/ui';
-import { commonProjectsAtts } from "../static";
 import { useChartTitle } from "./useChartTitle";
+import { skillsGroup } from "@/features/static";
+import { SkillNames } from "@/features/types.features";
 
 export const useChart = () => {
     const chartTitle = useChartTitle();
-    const commonAtts = commonProjectsAtts;
 
-    const skillCounts: Record<string, number> = {};
+    const skills = skillsGroup;
+    const skillCounts: Record<SkillNames, number> = {} as Record<SkillNames, number>;
 
-    Object.values(commonAtts).forEach(att => {
-        att.skills.forEach((skill: string) => {
-            skillCounts[skill] = (skillCounts[skill] || 0) + 1;
-        });
+    Object.entries(skills).forEach(([key, value]) => {
+        skillCounts[key as SkillNames] = value.projects?.length ?? 0
     });
 
     const customData: CahrtEntry[] = Object.entries(skillCounts).map(

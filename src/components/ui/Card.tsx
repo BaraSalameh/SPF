@@ -7,7 +7,7 @@ export const Card = ({
     title,
     subTitle,
     logoUrl,
-    children,
+    content,
 }: CardProps) => 
     <div className={card()}>
         <div className="flex items-center gap-3">
@@ -32,5 +32,5 @@ export const Card = ({
                 }
             </div>
         </div>
-        {children}
+        {content}
     </div>

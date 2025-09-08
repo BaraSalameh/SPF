@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import { ThemeProvider } from 'next-themes';
 import { notFound } from "next/navigation";
 import { Language } from "@/components/types";
+import { ReactNode } from "react";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -22,8 +23,8 @@ export const metadata: Metadata = {
 
 const supportedLangs = ['en', 'ar', 'tr'];
 
-const PortfolioLayout = async ({children, params}: Readonly<{children: React.ReactNode; params: {lang: Language};}>) => {
-    const { lang } = await params;
+const PortfolioLayout = ({children, params}: {children: ReactNode; params: Record<string, string | string[]>;}) => {
+    const lang = params.lang as Language;
     
     if (!supportedLangs.includes(lang)) {
         notFound();

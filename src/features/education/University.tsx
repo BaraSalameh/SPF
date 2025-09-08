@@ -19,7 +19,7 @@ export const University = () => {
                 title={universities.uu.name}
                 subTitle={universities.uu.location}
                 logoUrl="/UU.jpg"
-                children={
+                content={
                     <Usy
                         major={universities.uu.major}
                         startDate={commonAtts.uu.startDate}
@@ -33,7 +33,7 @@ export const University = () => {
                 title={universities.aaup.name}
                 subTitle={universities.aaup.location}
                 logoUrl="/AAUP.png"
-                children={
+                content={
                     <Usy
                         major={universities.aaup.major}
                         startDate={commonAtts.aaup.startDate}
