@@ -6,6 +6,7 @@ import { getDuration } from "@/components/utils";
 import React from "react";
 import { Text } from '@/components/ui';
 import { useChartTitle } from "./useChartTitle";
+import { UniversityNames } from "@/features/types.features";
 
 export const useChart = () => {
     const universities = useUniversity();
@@ -14,7 +15,7 @@ export const useChart = () => {
 
     const customData: CahrtEntry[] = Object.entries(universities)
         .map(([key, value]) => {
-            const commonAtt = commonAtts[key as keyof typeof commonAtts];
+            const commonAtt = commonAtts[key as UniversityNames];
             const start = commonAtt.startDate;
             const end = commonAtt.endDate;
 

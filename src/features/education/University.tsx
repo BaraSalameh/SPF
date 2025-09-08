@@ -16,30 +16,30 @@ export const University = () => {
     return(
         <div className="flex flex-wrap sm:flex-nowrap gap-5">
             <Card
-                title={universities.uu.name}
-                subTitle={universities.uu.location}
+                title={universities.UU.name}
+                subTitle={universities.UU.location}
                 logoUrl="/UU.jpg"
                 content={
                     <Usy
-                        major={universities.uu.major}
-                        startDate={commonAtts.uu.startDate}
-                        endDate={commonAtts.uu.endDate}
+                        major={universities.UU.major}
+                        startDate={commonAtts.UU.startDate}
+                        endDate={commonAtts.UU.endDate}
                         linkLabel={visitLabel}
-                        linkUrl={commonAtts.uu.website}
+                        linkUrl={commonAtts.UU.website}
                     />
                 }
             />
             <Card
-                title={universities.aaup.name}
-                subTitle={universities.aaup.location}
+                title={universities.AAUP.name}
+                subTitle={universities.AAUP.location}
                 logoUrl="/AAUP.png"
                 content={
                     <Usy
-                        major={universities.aaup.major}
-                        startDate={commonAtts.aaup.startDate}
-                        endDate={commonAtts.aaup.endDate}
+                        major={universities.AAUP.major}
+                        startDate={commonAtts.AAUP.startDate}
+                        endDate={commonAtts.AAUP.endDate}
                         linkLabel={visitLabel}
-                        linkUrl={commonAtts.aaup.website}
+                        linkUrl={commonAtts.AAUP.website}
                     />
                 }
             />
