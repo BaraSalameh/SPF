@@ -7,6 +7,7 @@ import { Link } from '@/components/ui';
 import { useVisit } from "./hooks";
 import { commonCompanyAtts } from "./static";
 import { CompanyProps } from "./types.experience";
+import { widget } from "@/styles";
 
 export const  Company = () => {
     const compamies = useCompany();
@@ -14,7 +15,7 @@ export const  Company = () => {
     const commonAtts = commonCompanyAtts;
 
     return(
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className={widget()}>
             <Card
                 title={compamies.AAUP.name}
                 subTitle={compamies.AAUP.location}

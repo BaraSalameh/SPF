@@ -1,60 +1,94 @@
-// import { Card, ResponsiveIcon } from "@/components/ui";
-// import { useUniversity } from "./hooks/useUniversity"
-// import React from "react";
-// import { Text } from '@/components/ui';
-// import { Calendar } from "lucide-react";
-// import { Link } from '@/components/ui';
-// import { useVisit } from "./hooks";
-// import { commonUniversityAtts } from "./static";
-// import { UniversityProps } from "./types.education";
+'use client'
+
+import { Card, ResponsiveIcon } from "@/components/ui";
+import React from "react";
+import { Text } from '@/components/ui';
+import { Briefcase, Folder, GraduationCap, Star } from "lucide-react";
+import { skillsGroup } from "../static";
+import { SkillProps } from "./types.skill";
+import { widget } from "@/styles";
+import { useProject } from "../project/hooks";
+import { useUniversity } from "../education/hooks";
+import { useCompany } from "../experience/hooks";
+import { useCertificate } from "../certificate/hooks";
 
 export const Skill = () => {
-    // const universities = useUniversity();
-    // const commonAtts = commonUniversityAtts;
-    // const visitLabel = useVisit();
+    const skills = skillsGroup;
+    const educationLanguage = useUniversity();
+    const experienceLanguage = useCompany();
+    const projectLanguage = useProject();
+    const certificateLanguage = useCertificate();
 
-    // return(
-    //     <div className="flex flex-wrap sm:flex-nowrap gap-5">
-    //         <Card
-    //             title={universities.uu.name}
-    //             subTitle={universities.uu.location}
-    //             logoUrl="/UU.jpg"
-    //             children={
-    //                 <Usy
-    //                     major={universities.uu.major}
-    //                     startDate={commonAtts.uu.startDate}
-    //                     endDate={commonAtts.uu.endDate}
-    //                     linkLabel={visitLabel}
-    //                     linkUrl={commonAtts.uu.website}
-    //                 />
-    //             }
-    //         />
-    //         <Card
-    //             title={universities.aaup.name}
-    //             subTitle={universities.aaup.location}
-    //             logoUrl="/AAUP.png"
-    //             children={
-    //                 <Usy
-    //                     major={universities.aaup.major}
-    //                     startDate={commonAtts.aaup.startDate}
-    //                     endDate={commonAtts.aaup.endDate}
-    //                     linkLabel={visitLabel}
-    //                     linkUrl={commonAtts.aaup.website}
-    //                 />
-    //             }
-    //         />
-    //     </div>
-    // )
+    return(
+        <div className={widget()}>
+            {
+                Object.entries(skills).map(([key, value]) => 
+                    <Card
+                        key={key}
+                        title={value.name}
+                        logoUrl={value.logo}
+                        content={
+                            <Skl
+                                educations={value.educations}
+                                experiences={value.experiences}
+                                projects={value.projects}
+                                certificates={value.certificates}
+                                languageMap={{
+                                    educations: educationLanguage,
+                                    experiences: experienceLanguage,
+                                    projects: projectLanguage,
+                                    certificates: certificateLanguage
+                                }}
+                            />
+                        }
+                    />
+                )
+            }
+        </div>
+    )
 }
 
-// const Usy = ({ major, startDate, endDate, linkLabel, linkUrl }: UniversityProps) =>
-//     <React.Fragment>
-//         <Text size='sm'>
-//             {major}
-//         </Text>
-//         <Text size='xs'>
-//             <ResponsiveIcon icon={Calendar} />
-//             {startDate} - {endDate}
-//         </Text>
-//         <Link label={linkLabel} to={linkUrl} icon="/globe.svg"/>
-//     </React.Fragment>
+const Skl = ({ educations, experiences, projects, certificates, languageMap }: SkillProps) => {
+    
+    
+    return (
+        <React.Fragment>
+            {educations &&
+                <Text size='xs'>
+                    <ResponsiveIcon icon={GraduationCap} />
+                    {educations?.map((item, idx) => idx < educations.length - 1
+                        ? `${languageMap.educations[item].name} | `
+                        : languageMap.educations[item].name)
+                    }
+                </Text>
+            }
+            {experiences &&
+                <Text size='xs'>
+                    <ResponsiveIcon icon={Briefcase} />
+                    {experiences?.map((item, idx) => idx < experiences.length - 1
+                        ? `${languageMap.experiences[item].name} | `
+                        : languageMap.experiences[item].name)
+                    }
+                </Text>
+            }
+            {projects &&
+                <Text size='xs'>
+                    <ResponsiveIcon icon={Folder} />
+                    {projects?.map((item, idx) => idx < projects.length - 1
+                        ? `${languageMap.projects[item].name} | `
+                        : languageMap.projects[item].name)
+                    }
+                </Text>
+            }
+            {certificates &&
+                <Text size='xs'>
+                    <ResponsiveIcon icon={Star} />
+                    {certificates?.map((item, idx) => idx < certificates.length - 1
+                        ? `${languageMap.certificates[item].name} | `
+                        : item)
+                    }
+                </Text>
+            }
+        </React.Fragment>
+    )
+}

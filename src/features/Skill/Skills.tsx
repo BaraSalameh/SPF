@@ -2,6 +2,7 @@ import { NavigateHome, Title } from "@/components/shared";
 import { CoverImage } from "@/components/ui";
 import { container, narrowSection, wideSection } from "@/styles";
 import { useTitle } from "./hooks";
+import { Skill } from "./Skill";
 
 export const Skills = () =>
     <main id="skill" className={container()}>
@@ -10,6 +11,7 @@ export const Skills = () =>
         </div>
         <div className={wideSection()}>
             <Title title={useTitle} />
+            <Skill />
             <NavigateHome />
         </div>
     </main>

@@ -7,6 +7,7 @@ import { Link } from '@/components/ui';
 import { useVisit } from "./hooks";
 import { commonUniversityAtts } from "./static";
 import { UniversityProps } from "./types.education";
+import { widget } from "@/styles";
 
 export const University = () => {
     const universities = useUniversity();
@@ -14,7 +15,7 @@ export const University = () => {
     const visitLabel = useVisit();
 
     return(
-        <div className="flex flex-wrap sm:flex-nowrap gap-5">
+        <div className={widget()}>
             <Card
                 title={universities.UU.name}
                 subTitle={universities.UU.location}

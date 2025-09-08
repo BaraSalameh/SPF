@@ -7,6 +7,7 @@ import { commonProjectsAtts } from "./static";
 import { ProjectProps } from "./types.project";
 import { File, Star } from "lucide-react";
 import { mapSkillsToWidget } from "../utils/mapSkillsToWidget";
+import { widget } from "@/styles";
 
 export const Project = () => {
     const projects = useProject();
@@ -18,7 +19,7 @@ export const Project = () => {
     const projectSkills = mapSkillsToWidget("Projects");
 
     return(
-        <div className="flex flex-wrap sm:flex-nowrap gap-5">
+        <div className={widget()}>
             <Card
                 title={projects["Static Portfolio"].name}
                 logoUrl="/spf.png"

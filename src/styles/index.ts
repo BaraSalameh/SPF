@@ -13,5 +13,8 @@ export type { BlurBackgroundVariantProps } from './blurBackground';
 export { card } from './card';
 export type { CardVariantProps } from './card';
 
+export { widget } from './widget';
+export type { WidgetVariantProps } from './widget';
+
 export { container, narrowSection, wideSection } from './container';
 export type { ContainerVariantProps, NarrowSectionVariantProps, WideSectionVariantProps } from './container';
