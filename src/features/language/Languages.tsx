@@ -1,7 +1,8 @@
+'use client'
+
 import { NavigateHome, Title } from "@/components/shared";
-import { CoverImage } from "@/components/ui";
 import { container, narrowSection, wideSection } from "@/styles";
-import { useTitle } from "./hooks";
+import { useChart, useTitle } from "./hooks";
 import { Language } from "./Language";
 
 export const Languages = () =>
@@ -12,6 +13,6 @@ export const Languages = () =>
             <NavigateHome />
         </div>
         <div className={narrowSection()}>
-            <CoverImage name="education" alt="Education" />
+            {useChart()}
         </div>
     </main>
