@@ -1,9 +1,9 @@
-export type CahrtEntry = {
+export type ChartEntry = {
     name: string;
     value: number;
 }
 
 export type ChartWidgetProps = {
-    data: CahrtEntry[];
+    data: ChartEntry[];
     colorMap?: Record<string, string>;
 }

@@ -1,7 +1,7 @@
-import { UniversityNames } from "../types.features"
+import { UniversityName } from "../types.features"
 import { CommonUniversityAtts, universityAtts } from "./types.education"
 
-export const commonUniversityAtts: Record<UniversityNames, CommonUniversityAtts> = {
+export const commonUniversityAtts: Record<UniversityName, CommonUniversityAtts> = {
     UU: {
         startDate: '10/2021',
         endDate: '10/2023',
@@ -14,7 +14,7 @@ export const commonUniversityAtts: Record<UniversityNames, CommonUniversityAtts>
     }
 }
 
-export const enUniversity: Record<UniversityNames, universityAtts> = {
+export const enUniversity: Record<UniversityName, universityAtts> = {
     UU: {
         name: 'Uskudar University',
         location: 'Istanbul, Turkey',
@@ -27,7 +27,7 @@ export const enUniversity: Record<UniversityNames, universityAtts> = {
     }
 }
 
-export const arUniversity: Record<UniversityNames, universityAtts> = {
+export const arUniversity: Record<UniversityName, universityAtts> = {
     UU: {
         name: 'جامعة اسكودار',
         location: 'اسطنبول، تركيا',
@@ -40,7 +40,7 @@ export const arUniversity: Record<UniversityNames, universityAtts> = {
     }
 }
 
-export const trUniversity: Record<UniversityNames, universityAtts> = {
+export const trUniversity: Record<UniversityName, universityAtts> = {
     UU: {
         name: 'Üsküdar Üniversitesi',
         location: 'İstanbul, Türkiye',

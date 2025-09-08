@@ -1,14 +1,15 @@
-export type WidgetNames = 'Home' | 'Education' | 'Experience' | 'Projects' | 'Skills' | 'Languages' | 'Certificates';
-export type UniversityNames = 'AAUP' | 'UU';
-export type ExperienceNames = 'AAUP' | 'Jawwal' | 'UATS' | 'Spinnel';
-export type ProjectNames = 'Aluminum' | 'Portfolio' | 'Static Portfolio';
-export type SkillNames = 'React.js' | 'Next.js' | 'Typescript' | 'ASP.NET' | 'SQL Server' | 'Javascript';
+export type WidgetName = 'Home' | 'Education' | 'Experience' | 'Projects' | 'Skills' | 'Languages' | 'Certificates';
+export type UniversityName = 'AAUP' | 'UU';
+export type CompanyName = 'AAUP' | 'Jawwal' | 'UATS' | 'Spinnel';
+export type ProjectName = 'Aluminum' | 'Portfolio' | 'Static Portfolio';
+export type SkillName = 'React.js' | 'Next.js' | 'Typescript' | 'ASP.NET' | 'SQL Server' | 'Javascript';
+export type CertificateName = 'AXSOS Academy';
 
 export type Skill = {
-    name: SkillNames;
+    name: SkillName;
     logo: string;
-    educations?: UniversityNames[];
-    experiences?: ExperienceNames[];
-    projects?: ProjectNames[];
-    certificates?: ProjectNames[];
+    educations?: UniversityName[];
+    experiences?: CompanyName[];
+    projects?: ProjectName[];
+    certificates?: CertificateName[];
 }

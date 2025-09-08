@@ -1,7 +1,7 @@
-import { ProjectNames } from "../types.features";
+import { ProjectName } from "../types.features";
 import { CommonProjectAtts, ProjectAtts } from "./types.project";
 
-export const commonProjectsAtts: Record<ProjectNames, CommonProjectAtts> = {
+export const commonProjectsAtts: Record<ProjectName, CommonProjectAtts> = {
     "Static Portfolio": {
         website: 'http://localhost:3000/',
         source: 'https://github.com/BaraSalameh/SPF',
@@ -16,7 +16,7 @@ export const commonProjectsAtts: Record<ProjectNames, CommonProjectAtts> = {
     }
 }
 
-export const enProjects: Record<ProjectNames, ProjectAtts> = {
+export const enProjects: Record<ProjectName, ProjectAtts> = {
     "Static Portfolio": {
         name: 'Static Portfolio',
         desciption: "A clean and lightweight static portfolio website built to display skills, experiences, and projects in a simple and elegant way."
@@ -31,7 +31,7 @@ export const enProjects: Record<ProjectNames, ProjectAtts> = {
     }
 }
 
-export const arProjects: Record<ProjectNames, ProjectAtts> = {
+export const arProjects: Record<ProjectName, ProjectAtts> = {
     "Static Portfolio": {
         name: 'الصفحة الشخصية الثابتة',
         desciption: 'موقع بورتفوليو ثابت وخفيف، مصمم لعرض المهارات والخبرات والمشاريع بطريقة بسيطة وأنيقة.',
@@ -48,7 +48,7 @@ export const arProjects: Record<ProjectNames, ProjectAtts> = {
     }
 }
 
-export const trProjects: Record<ProjectNames, ProjectAtts> = {
+export const trProjects: Record<ProjectName, ProjectAtts> = {
     "Static Portfolio": {
         name: 'statik portföy',
         desciption: 'Becerileri, deneyimleri ve projeleri sade ve şık bir şekilde sergilemek için hazırlanmış temiz ve hafif bir statik portföy sitesi.'

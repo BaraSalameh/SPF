@@ -1,6 +1,6 @@
-import { Skill, SkillNames, WidgetNames } from "./types.features"
+import { Skill, SkillName, WidgetName } from "./types.features"
 
-export const enNavigator: Record<WidgetNames, string> = {
+export const enNavigator: Record<WidgetName, string> = {
     Home: 'Home',
     Education: 'Education',
     Experience: 'Experience',
@@ -10,7 +10,7 @@ export const enNavigator: Record<WidgetNames, string> = {
     Certificates: 'Certificates'
 }
 
-export const arNavigator: Record<WidgetNames, string> = {
+export const arNavigator: Record<WidgetName, string> = {
     Home: 'الرئيسية',
     Education: 'التعليم',
     Experience: 'الخبرات',
@@ -20,7 +20,7 @@ export const arNavigator: Record<WidgetNames, string> = {
     Certificates: 'الشهادات'
 }
 
-export const trNavigator: Record<WidgetNames, string> = {
+export const trNavigator: Record<WidgetName, string> = {
     Home: 'Ana Sayfa',
     Education: 'Eğitim',
     Experience: 'Işler',
@@ -30,7 +30,7 @@ export const trNavigator: Record<WidgetNames, string> = {
     Certificates: 'Sertifikalar'
 }
 
-export const skillsGroup: Record<SkillNames, Skill> = {
+export const skillsGroup: Record<SkillName, Skill> = {
     "React.js": {
         name: 'React.js',
         logo: '',

@@ -16,58 +16,58 @@ export const  Company = () => {
     return(
         <div className="flex flex-wrap justify-center gap-5">
             <Card
-                title={compamies.aaup.name}
-                subTitle={compamies.aaup.location}
+                title={compamies.AAUP.name}
+                subTitle={compamies.AAUP.location}
                 logoUrl="/AAUP.png"
                 content={
                     <Cpy
-                        position={compamies.aaup.position}
-                        startDate={commonAtts.aaup.startDate}
-                        endDate={commonAtts.aaup.endDate}
+                        position={compamies.AAUP.position}
+                        startDate={commonAtts.AAUP.startDate}
+                        endDate={commonAtts.AAUP.endDate}
                         linkLabel={visit}
-                        linkUrl={commonAtts.aaup.website}
+                        linkUrl={commonAtts.AAUP.website}
                     />
                 }
             />
             <Card
-                title={compamies.erpEasy.name}
-                subTitle={compamies.erpEasy.location}
+                title={compamies.Spinnel.name}
+                subTitle={compamies.Spinnel.location}
                 logoUrl="/spinnel.png"
                 content={
                     <Cpy
-                        position={compamies.erpEasy.position}
-                        startDate={commonAtts.erpEasy.startDate}
-                        endDate={commonAtts.erpEasy.endDate}
+                        position={compamies.Spinnel.position}
+                        startDate={commonAtts.Spinnel.startDate}
+                        endDate={commonAtts.Spinnel.endDate}
                         linkLabel={visit}
-                        linkUrl={commonAtts.erpEasy.website}
+                        linkUrl={commonAtts.Spinnel.website}
                     />
                 }
             />
             <Card
-                title={compamies.jawwal.name}
-                subTitle={compamies.jawwal.location}
-                logoUrl="/jawwal.jpg"
+                title={compamies.Jawwal.name}
+                subTitle={compamies.Jawwal.location}
+                logoUrl="/Jawwal.jpg"
                 content={
                     <Cpy
-                        position={compamies.jawwal.position}
-                        startDate={commonAtts.jawwal.startDate}
-                        endDate={commonAtts.jawwal.endDate}
+                        position={compamies.Jawwal.position}
+                        startDate={commonAtts.Jawwal.startDate}
+                        endDate={commonAtts.Jawwal.endDate}
                         linkLabel={visit}
-                        linkUrl={commonAtts.jawwal.website}
+                        linkUrl={commonAtts.Jawwal.website}
                     />
                 }
             />
             <Card
-                title={compamies.ulitimitats.name}
-                subTitle={compamies.ulitimitats.location}
+                title={compamies.UATS.name}
+                subTitle={compamies.UATS.location}
                 logoUrl="/uats.png"
                 content={
                     <Cpy
-                        position={compamies.ulitimitats.position}
-                        startDate={commonAtts.ulitimitats.startDate}
-                        endDate={commonAtts.ulitimitats.endDate}
+                        position={compamies.UATS.position}
+                        startDate={commonAtts.UATS.startDate}
+                        endDate={commonAtts.UATS.endDate}
                         linkLabel={visit}
-                        linkUrl={commonAtts.ulitimitats.website}
+                        linkUrl={commonAtts.UATS.website}
                     />
                 }
             />

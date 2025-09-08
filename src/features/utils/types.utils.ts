@@ -1,17 +1,21 @@
-import { UniversityNames, ExperienceNames, ProjectNames } from "../types.features";
+import { UniversityName, CompanyName, ProjectName, CertificateName } from "../types.features";
 
 
 export type SkillMapping = {
     Education: { // widget name
         prop: "educations"; // property name in skill
-        key: UniversityNames; 
+        key: UniversityName; 
     };
     Experience: {
         prop: "experiences";
-        key: ExperienceNames; 
+        key: CompanyName; 
     };
     Projects: {
         prop: "projects";
-        key: ProjectNames; 
+        key: ProjectName; 
+    };
+    Certificates: {
+        prop: "certificates";
+        key: CertificateName; 
     };
 };
