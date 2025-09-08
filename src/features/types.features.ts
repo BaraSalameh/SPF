@@ -4,6 +4,7 @@ export type CompanyName = 'AAUP' | 'Jawwal' | 'UATS' | 'Spinnel';
 export type ProjectName = 'Aluminum' | 'Portfolio' | 'Static Portfolio';
 export type SkillName = 'React.js' | 'Next.js' | 'Typescript' | 'ASP.NET' | 'SQL Server' | 'Javascript';
 export type CertificateName = 'AXSOS Academy';
+export type LanguageName = 'English' | 'Arabic' | 'Turkish' | 'Spanish';
 
 export type Skill = {
     name: SkillName;
