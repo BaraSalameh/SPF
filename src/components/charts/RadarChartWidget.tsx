@@ -17,6 +17,6 @@ export const RadarChartWidget = ({
                 fill="#F97316"
                 fillOpacity={0.7}
             />
-            <Tooltip content={CustomTooltip} />
+            <Tooltip content={<CustomTooltip />} />
         </RadarChart>
     </ResponsiveContainer>

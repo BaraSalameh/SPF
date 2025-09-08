@@ -16,7 +16,7 @@ export const BarChartWidget = ({
             <BarChart data={data}>
                 <XAxis dataKey="name" />
                 <YAxis />
-                <Tooltip content={CustomTooltip} />
+                <Tooltip content={<CustomTooltip />} />
                 <Bar
                     dataKey="value"
                     radius={[10, 0, 10, 0]}

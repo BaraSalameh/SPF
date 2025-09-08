@@ -30,7 +30,7 @@ export const PieChartWidget = ({
                     ))}
                 </Pie>
                 <Legend />
-                <Tooltip content={CustomTooltip} />
+                <Tooltip content={<CustomTooltip />} />
             </PieChart>
         </ResponsiveContainer>
     );
