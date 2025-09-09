@@ -2,19 +2,19 @@
 
 import { useParams } from "next/navigation";
 import { Language } from "@/components/types";
-import { arCertificates, enCertificates, trCertificates } from "../static";
+import { arDescription, enDescription, trDescription } from "../static";
 
-export const useCertificate = () => {
+export const useDescription = () => {
     const { lang } = useParams<{ lang: Language }>();
 
     switch (lang) {
         case "en":
-            return enCertificates;
+            return enDescription;
         case "ar":
-            return arCertificates;
+            return arDescription;
         case "tr":
-            return trCertificates;
+            return trDescription;
         default:
-            return enCertificates;
+            return enDescription;
     }
 }

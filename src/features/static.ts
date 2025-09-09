@@ -37,6 +37,9 @@ export const skillsGroup: Record<SkillName, Skill> = {
         projects: [
            "Aluminum"
         ],
+        certificates: [
+            "AXSOS Academy"
+        ]
     },
     "Next.js": {
         name: 'Next.js',
@@ -44,7 +47,7 @@ export const skillsGroup: Record<SkillName, Skill> = {
         projects: [
            "Static Portfolio",
            "Portfolio"
-        ],
+        ]
     },
     Typescript: {
         name: 'Typescript',
@@ -52,7 +55,7 @@ export const skillsGroup: Record<SkillName, Skill> = {
         projects: [
            "Static Portfolio",
            "Portfolio"
-        ],
+        ]
     },
     "ASP.NET": {
         name: 'ASP.NET',
@@ -60,7 +63,7 @@ export const skillsGroup: Record<SkillName, Skill> = {
         projects: [
             "Portfolio",
             "Aluminum"
-        ],
+        ]
     },
     "SQL Server": {
         name: 'SQL Server',
@@ -69,6 +72,9 @@ export const skillsGroup: Record<SkillName, Skill> = {
             "Portfolio",
             "Aluminum"
         ],
+        certificates: [
+            "AXSOS Academy"
+        ]
     },
     Javascript: {
         name: 'Javascript',
@@ -76,5 +82,8 @@ export const skillsGroup: Record<SkillName, Skill> = {
         projects: [
            "Aluminum"
         ],
+        certificates: [
+            "AXSOS Academy"
+        ]
     },
 }
