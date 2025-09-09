@@ -1,5 +1,3 @@
-type Gender = 'Male' | 'Female';
-
 export type ContactInformation = {
     email: string;
     mobile: string;

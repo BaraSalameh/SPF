@@ -2,7 +2,7 @@
 
 import { Card, ResponsiveIcon, Text, Link, Modal } from "@/components/ui";
 import React from "react";
-import { File, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import { mapSkillsToWidget } from "../utils/mapSkillsToWidget";
 import { widget } from "@/styles";
 import { commonCertificateAtts } from "./static";

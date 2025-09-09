@@ -15,7 +15,7 @@ export const Utility = () => {
             <Modal
                 icon={'/window.svg'}
                 title={utilities.contactInfo}
-                children={<Information />}
+                jsx={<Information />}
             />
         </footer>
     )

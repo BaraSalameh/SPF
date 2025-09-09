@@ -4,10 +4,10 @@ export { Utility } from './Utility';
 export { Information } from './Information';
 
 export {
-    information,
-    enFullName,
-    arFullName,
-    trFullName,
+    commonInformation,
+    enInformation,
+    arInformation,
+    trInformation,
     enBio,
     arBio,
     trBio,

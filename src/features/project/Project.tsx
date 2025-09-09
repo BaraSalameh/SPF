@@ -5,7 +5,7 @@ import React from "react";
 import { useDescription, useProject, useVisitLive, useVisitSource } from "./hooks";
 import { commonProjectsAtts } from "./static";
 import { ProjectProps } from "./types.project";
-import { File, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import { mapSkillsToWidget } from "../utils/mapSkillsToWidget";
 import { widget } from "@/styles";
 

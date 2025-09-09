@@ -12,8 +12,8 @@ export const Modal = ({
     subTitle = title,
     content,
     icon,
-    children
-}: {title: string; subTitle?: string; content?: string; icon?: string; children?: ReactNode}) => {
+    jsx
+}: {title: string; subTitle?: string; content?: string; icon?: string; jsx?: ReactNode}) => {
 
     const [openModal, setOpenModal] = useState(false);
     const currentIcon = icon ? <ResponsiveIcon icon={icon} iconType="Image" /> : <ResponsiveIcon />;
@@ -37,7 +37,7 @@ export const Modal = ({
                         <div>
                             <Text size="md">{content}</Text>
                         </div>
-                        {children}
+                        {jsx}
                     </div>
                 </BlurBackground>
             )}

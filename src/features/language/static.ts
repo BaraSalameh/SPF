@@ -1,5 +1,5 @@
 import { LanguageName } from "../types.features"
-import { CommonLanguageAtts, LanguageAtts, Level } from "./types.language"
+import { CommonLanguageAtts, LanguageAtts } from "./types.language"
 
 export const commonLanguageAtts: Record<LanguageName, CommonLanguageAtts> = {
     English: {
