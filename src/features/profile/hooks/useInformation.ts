@@ -1,20 +1,20 @@
 'use client';
 
 import { useParams } from "next/navigation";
-import { arFullName, enFullName, trFullName } from "../static";
+import { arInformation, enInformation, trInformation } from "../static";
 import { Language } from "@/components/types";
 
-export const useFullName = () => {
+export const useInformation = () => {
     const { lang } = useParams<{ lang: Language }>();
 
     switch (lang) {
         case "en":
-            return enFullName;
+            return enInformation;
         case "ar":
-            return arFullName;
+            return arInformation;
         case "tr":
-            return trFullName;
+            return trInformation;
         default:
-            return enFullName;
+            return enInformation;
     }
 }

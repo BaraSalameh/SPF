@@ -28,7 +28,7 @@ export const Certificate = () => {
                         description={
                             <Modal
                                 title={description}
-                                icon={File}
+                                icon={'/file.svg'}
                                 content={certificates["AXSOS Academy"].desciption}
                             />
                         }

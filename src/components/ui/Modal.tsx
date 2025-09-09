@@ -1,28 +1,29 @@
 'use client';
 
-import { LucideIcon, X } from 'lucide-react';
-import React, { useState } from 'react';
+import { X } from 'lucide-react';
+import React, { ReactNode, useState } from 'react';
 import { ResponsiveIcon } from './ResponsiveIcon';
 import { Text } from './Text';
 import { BlurBackground } from '../shared';
-import { card } from '@/styles';
+import { card, link } from '@/styles';
 
 export const Modal = ({
     title,
     subTitle = title,
     content,
-    icon
-}: {title: string; subTitle?: string; content: string; icon?: LucideIcon}) => {
+    icon,
+    children
+}: {title: string; subTitle?: string; content?: string; icon?: string; children?: ReactNode}) => {
 
     const [openModal, setOpenModal] = useState(false);
-    const currentIcon = icon ? <ResponsiveIcon icon={icon} /> : <ResponsiveIcon />;
+    const currentIcon = icon ? <ResponsiveIcon icon={icon} iconType="Image" /> : <ResponsiveIcon />;
             
     return (
         <React.Fragment>
-            <Text onClick={() => setOpenModal(true)}>
+            <div className={link()} onClick={() => setOpenModal(true)}>
                 {currentIcon}
                 {title ? title : null}
-            </Text>
+            </div>
             {openModal && (
                 <BlurBackground intent='sm'>
                     <div className={card()}>
@@ -36,6 +37,7 @@ export const Modal = ({
                         <div>
                             <Text size="md">{content}</Text>
                         </div>
+                        {children}
                     </div>
                 </BlurBackground>
             )}

@@ -28,7 +28,7 @@ export const Project = () => {
                         description={
                             <Modal
                                 title={description}
-                                icon={File}
+                                icon={'/file.svg'}
                                 content={projects["Static Portfolio"].desciption}
                             />
                         }
@@ -48,7 +48,7 @@ export const Project = () => {
                         description={
                             <Modal
                                 title={description}
-                                icon={File}
+                                icon={'/file.svg'}
                                 content={projects.Portfolio.desciption}
                             />
                         }
@@ -68,7 +68,7 @@ export const Project = () => {
                         description={
                             <Modal
                                 title={description}
-                                icon={File}
+                                icon={'/file.svg'}
                                 content={projects.Aluminum.desciption}
                             />
                         }

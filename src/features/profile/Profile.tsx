@@ -1,8 +1,10 @@
+'use client'
+
 import { CoverImage, LangToggle, ThemeToggle } from "@/components/ui";
 import { Bio, Utility } from ".";
 import { container, narrowSection, wideSection } from "@/styles/container";
 import { Title } from "@/components/shared";
-import { useFullName } from "./hooks/useFullName";
+import { useInformation } from "./hooks/useInformation";
 
 export const Profile = () =>
     <main id="home" className={container()}>
@@ -14,7 +16,7 @@ export const Profile = () =>
                 <ThemeToggle />
                 <LangToggle />
             </div>
-            <Title title={useFullName} />
+            <Title title={useInformation().fullname} />
             <Bio />
             <Utility />
         </div>
