@@ -1,3 +1,3 @@
 export { Title } from './Title';
-export { NavigateHome } from './NavigateHome';
+export { Navigator } from './Navigator';
 export { BlurBackground } from './BlurBackground';

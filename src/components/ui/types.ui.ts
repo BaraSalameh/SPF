@@ -26,9 +26,10 @@ export interface ResponsiveIconProps {
 }
 
 export interface NavButtonProps {
-    navigateTo: string;
+    navigateTo?: string;
     label?: string;
     icon?: LucideIcon;
+    onClick?: () => void;
 }
 
 export interface CardProps {

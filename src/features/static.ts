@@ -1,33 +1,39 @@
-import { Skill, SkillName, WidgetName } from "./types.features"
+import { NavigationKey, Skill, SkillName, WidgetName } from "./types.features"
 
-export const enNavigator: Record<WidgetName, string> = {
+export const enNavigator: Record<WidgetName | NavigationKey, string> = {
     Home: 'Home',
     Education: 'Education',
     Experience: 'Experience',
     Projects: 'Project',
     Skills: 'Skills',
     Languages: 'Languages',
-    Certificates: 'Certificates'
+    Certificates: 'Certificates',
+    Open: 'Navigation',
+    Close: 'Close'
 }
 
-export const arNavigator: Record<WidgetName, string> = {
+export const arNavigator: Record<WidgetName | NavigationKey, string> = {
     Home: 'الرئيسية',
     Education: 'التعليم',
     Experience: 'الخبرات',
     Projects: 'المشاريع',
     Skills: 'المهارات',
     Languages: 'اللغات',
-    Certificates: 'الشهادات'
+    Certificates: 'الشهادات',
+    Open: 'التوجيهات',
+    Close: 'اغلاق'
 }
 
-export const trNavigator: Record<WidgetName, string> = {
-    Home: 'Ana Sayfa',
+export const trNavigator: Record<WidgetName | NavigationKey, string> = {
+    Home: 'Anasayfa',
     Education: 'Eğitim',
     Experience: 'Işler',
     Projects: 'Projeler',
     Skills: 'Yetenekler',
     Languages: 'Diller',
-    Certificates: 'Sertifikalar'
+    Certificates: 'Sertifikalar',
+    Open: 'Gezinmeyi',
+    Close: 'Kapat'
 }
 
 export const skillsGroup: Record<SkillName, Skill> = {

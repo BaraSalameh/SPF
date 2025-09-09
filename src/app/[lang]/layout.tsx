@@ -6,6 +6,7 @@ import { ThemeProvider } from 'next-themes';
 import { notFound, useParams } from "next/navigation";
 import { Language } from "@/components/types";
 import { ReactNode } from "react";
+import { Navigator } from "@/components/shared";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -33,6 +34,9 @@ const PortfolioLayout = ({children}: {children: ReactNode}) => {
         <html lang={lang} dir={dir} suppressHydrationWarning>
             <body className={`bg-light-background dark:bg-dark-background ${geistSans.variable} ${geistMono.variable}`}>
                 <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+                    <div className={`fixed h-screen flex items-center z-1 ${dir === "ltr" ? 'left-5 sm:left-10' : 'right-5 sm:right-10'}`}>
+                        <Navigator />
+                    </div>
                     <main>{children}</main>
                 </ThemeProvider>
             </body>

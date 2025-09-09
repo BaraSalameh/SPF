@@ -2,7 +2,7 @@
 
 import { Company } from ".";
 import { container, narrowSection, wideSection } from "@/styles/container";
-import { Title, NavigateHome } from "@/components/shared";
+import { Title } from "@/components/shared";
 import { useChart, useTitle } from "./hooks";
 
 export const Experience = () =>
@@ -13,6 +13,5 @@ export const Experience = () =>
         <div className={wideSection()}>
             <Title title={useTitle} />
             <Company />
-            <NavigateHome />
         </div>
     </main>

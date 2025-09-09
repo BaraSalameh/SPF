@@ -3,7 +3,7 @@
 import { Card, ResponsiveIcon } from "@/components/ui";
 import React from "react";
 import { Text } from '@/components/ui';
-import { Briefcase, Folder, GraduationCap, Star } from "lucide-react";
+import { Award, Briefcase, Folder, GraduationCap } from "lucide-react";
 import { skillsGroup } from "../static";
 import { SkillProps } from "./types.skill";
 import { widget } from "@/styles";
@@ -82,10 +82,10 @@ const Skl = ({ educations, experiences, projects, certificates, languageMap }: S
             }
             {certificates &&
                 <Text size='xs'>
-                    <ResponsiveIcon icon={Star} />
+                    <ResponsiveIcon icon={Award} />
                     {certificates?.map((item, idx) => idx < certificates.length - 1
                         ? `${languageMap.certificates[item].name} | `
-                        : item)
+                        : languageMap.certificates[item].name)
                     }
                 </Text>
             }

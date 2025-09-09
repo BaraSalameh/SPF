@@ -1,6 +1,6 @@
 'use client'
 
-import { NavigateHome, Title } from "@/components/shared";
+import { Title } from "@/components/shared";
 import { container, narrowSection, wideSection } from "@/styles";
 import { useChart, useTitle } from "./hooks";
 import { Certificate } from "./Certificate";
@@ -13,6 +13,5 @@ export const Certificates = () =>
         <div className={wideSection()}>
             <Title title={useTitle} />
             <Certificate />
-            <NavigateHome />
         </div>
     </main>

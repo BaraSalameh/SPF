@@ -4,29 +4,41 @@ import { useState } from "react";
 import { ResponsiveIcon } from "./ResponsiveIcon";
 import { Text } from '@/components/ui'
 import { NavButtonProps } from "./types.ui";
+import { navButtonContainer, navButtonIconContainer, navButtonText } from "@/styles";
 
-export const NavButton = ({ navigateTo, label, icon}: NavButtonProps) => {
+export const NavButton = ({ navigateTo, label, icon, onClick}: NavButtonProps) => {
     const [hovered, setHovered] = useState(false);
 
+    const handleClick = () => {
+        onClick?.();
+        setHovered(false);
+    }
+    
     return (
-        <a
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-            href={`#${navigateTo}`}
-            className={`
-                flex items-center gap-2
-                bg-light-component dark:bg-dark-component
-                hover:bg-light-bg-hover dark:hover:bg-dark-bg-hover
-                rounded-full px-4 py-2
-                transition-all duration-1000 ease-in-out
-                overflow-hidden
-                ${hovered ? "sm:max-w-[20rem]" : "sm:max-w-[3.5rem]"}
-            `}
-        >
-            <Text className="flex-shrink-0">{<ResponsiveIcon icon={icon} />}</Text>
-            <Text className={`whitespace-nowrap transition-opacity duration-200 ${hovered ? "sm:opacity-100" : "sm:opacity-0"}`}>
-                {label}
-            </Text>
-        </a>
+        onClick
+        ?
+            <div
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+                className={navButtonContainer({hovered})}
+                onClick={handleClick}
+            >
+                <Text className={navButtonIconContainer()}>{<ResponsiveIcon icon={icon} />}</Text>
+                <Text className={navButtonText({hovered})}>
+                    {label}
+                </Text>
+            </div>
+        :
+            <a
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+                href={`#${navigateTo}`}
+                className={navButtonContainer({hovered: hovered})}
+            >
+                <Text className={navButtonIconContainer()}>{<ResponsiveIcon icon={icon} />}</Text>
+                <Text className={navButtonText({hovered})}>
+                    {label}
+                </Text>
+            </a>
     )
 }

@@ -16,5 +16,8 @@ export type { CardVariantProps } from './card';
 export { widget } from './widget';
 export type { WidgetVariantProps } from './widget';
 
+export { navButtonContainer, navButtonIconContainer, navButtonText } from './navButton';
+export type { NavButtonContainerVariantProps, NavButtonIconContainerVariantProps, NavButtonTextVariantProps } from './navButton';
+
 export { container, narrowSection, wideSection } from './container';
 export type { ContainerVariantProps, NarrowSectionVariantProps, WideSectionVariantProps } from './container';

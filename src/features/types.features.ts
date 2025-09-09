@@ -6,6 +6,8 @@ export type SkillName = 'React.js' | 'Next.js' | 'Typescript' | 'ASP.NET' | 'SQL
 export type CertificateName = 'AXSOS Academy';
 export type LanguageName = 'English' | 'Arabic' | 'Turkish' | 'Spanish';
 
+export type NavigationKey = 'Open' | 'Close';
+
 export type Skill = {
     name: SkillName;
     logo: string;

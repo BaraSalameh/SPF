@@ -1,6 +1,5 @@
 export { Profile } from './Profile';
 export { Bio } from './Bio';
-export { Navigator } from './Navigator';
 export { Utility } from './Utility';
 
 export {
