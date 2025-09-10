@@ -12,7 +12,7 @@ export const commonLanguageAtts: Record<LanguageName, CommonLanguageAtts> = {
     },
     Turkish: {
         level: 3,
-        logoUrl: '/TR.svg'
+        logoUrl: '/Tr.svg'
     },
     Spanish: {
         level: 1,

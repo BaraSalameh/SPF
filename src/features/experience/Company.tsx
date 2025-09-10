@@ -47,7 +47,7 @@ export const  Company = () => {
             <Card
                 title={compamies.Jawwal.name}
                 subTitle={compamies.Jawwal.location}
-                logoUrl="/Jawwal.jpg"
+                logoUrl="/jawwal.jpg"
                 content={
                     <Cpy
                         position={compamies.Jawwal.position}
