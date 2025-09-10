@@ -4,7 +4,7 @@ import React from "react";
 import { Text } from '@/components/ui';
 import { useChartTitle } from "./useChartTitle";
 import { mapSkillCountToWidget } from "@/features/utils";
-import { useNavigator } from "@/features/hooks/useNavigator";
+import { useNavigator } from "@/features/hooks";
 import { WidgetName } from "@/features/types.features";
 
 export const useChart = () => {

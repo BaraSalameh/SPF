@@ -2,17 +2,13 @@
 
 import { useEffect, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
-import { Text } from './Text';
-import { ThemeToggleProps } from './types.ui';
-import { ResponsiveIcon } from './ResponsiveIcon';
 import { useTheme } from 'next-themes';
+import { NavButton } from './NavButton';
+import { useSetting } from '@/features/hooks';
 
-export const ThemeToggle = ({
-    title,
-    themeNameIncluded = false,
-    className
-}: ThemeToggleProps) => {
+export const ThemeToggle = () => {
     
+    const settings = useSetting();
     const { theme, setTheme } = useTheme();
     const [ mounted, setMounted ] = useState(false);
 
@@ -23,20 +19,12 @@ export const ThemeToggle = ({
     if (!mounted) return null;
 
     const isDark = theme === 'dark';
-
-    const text: string | null =
-        title
-        ?   themeNameIncluded
-            ?   `${title}${theme}`
-            :   `${title}`
-        :   themeNameIncluded
-            ?   `${theme}`
-            :   null
         
     return (
-        <Text onClick={() => setTheme(isDark ? 'light' : 'dark')} className={className}>
-            <ResponsiveIcon icon={isDark ? Sun : Moon} />
-            {text}
-        </Text>
+        <NavButton
+            onClick={() => setTheme(isDark ? 'light' : 'dark')}
+            icon={isDark ? Moon : Sun}
+            label={settings.theme[isDark ? 'dark' : 'light']}
+        />
     );
 };

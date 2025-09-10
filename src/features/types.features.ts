@@ -16,3 +16,14 @@ export type Skill = {
     projects?: ProjectName[];
     certificates?: CertificateName[];
 }
+
+type Theme = {
+    dark: string;
+    light: string;
+}
+export interface SettingAtts {
+    language: string;
+    theme: Theme
+    open: string;
+    close: string
+}

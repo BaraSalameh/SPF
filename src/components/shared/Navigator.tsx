@@ -1,7 +1,7 @@
 'use client'
 
 import { NavButton } from "@/components/ui"
-import { useNavigator } from "@/features/hooks/useNavigator";
+import { useNavigator } from "@/features/hooks";
 import { Award, Briefcase, Folder, GraduationCap, Home, Languages, Navigation, StarIcon, X } from "lucide-react"
 import { Fragment, useState } from "react";
 
@@ -10,7 +10,7 @@ export const Navigator = () => {
     const [ showNavigation, setShowNavigation ] = useState(false);
 
     return (
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-2">
             <NavButton
                 onClick={() => setShowNavigation(!showNavigation)}
                 icon={showNavigation ? X : Navigation}

@@ -1,13 +1,14 @@
 'use client';
 
 import { Languages } from 'lucide-react';
-import { Text } from './Text';
-import { ResponsiveIcon } from './ResponsiveIcon';
 import { redirect, useParams } from "next/navigation";
 import { Language } from '../types';
+import { useSetting } from '@/features/hooks';
+import { NavButton } from './NavButton';
 
 export const LangToggle = () => {
     
+    const settings = useSetting();
     const params = useParams<{ lang: Language }>();
     const { lang } = params;
 
@@ -22,12 +23,12 @@ export const LangToggle = () => {
     } as const;
 
     const nextLang = langMap[lang]?.next ?? "en";
-    const label = langMap[lang]?.label ?? "English";
 
     return (
-        <Text onClick={() => handleLanguageUpdate(nextLang)}>
-            <ResponsiveIcon icon={Languages} />
-            {label}
-        </Text>
+        <NavButton
+            onClick={() => handleLanguageUpdate(nextLang)}
+            icon={Languages}
+            label={settings.language}
+        />
     );
 };

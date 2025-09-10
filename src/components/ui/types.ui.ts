@@ -10,12 +10,6 @@ export interface TextProps extends TextVariantProps {
     onClick?: () => void;
 }
 
-export interface ThemeToggleProps {
-    title?: string;
-    themeNameIncluded?: boolean;
-    className?: string;
-}
-
 type IconType = 'Lucide' | 'Image';
 export interface ResponsiveIconProps {
     icon?: LucideIcon | string;

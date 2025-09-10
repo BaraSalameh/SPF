@@ -1,4 +1,35 @@
-import { NavigationKey, Skill, SkillName, WidgetName } from "./types.features"
+import { NavigationKey, SettingAtts, Skill, SkillName, WidgetName } from "./types.features"
+
+
+export const enSettings: SettingAtts = {
+    language: 'English',
+    theme: {
+        dark : 'Dark',
+        light: 'Light'
+    },
+    open: 'Settings',
+    close: 'Close'
+}
+
+export const arSettings: SettingAtts = {
+    language: 'العربية',
+    theme: {
+        dark : 'مظلم',
+        light: 'مضيئ'
+    },
+    open: 'الاعدادات',
+    close: 'اغلاق'
+}
+
+export const trSettings: SettingAtts = {
+    language: 'Türkçe',
+    theme: {
+        dark : 'Karanlık',
+        light: 'Açık'
+    },
+    open: 'Ayarlar',
+    close: 'اغلاق'
+}
 
 export const enNavigator: Record<WidgetName | NavigationKey, string> = {
     Home: 'Home',
