@@ -1,0 +1,1 @@
+export type WidgetName = 'Home' | 'Education' | 'Experience' | 'Projects' | 'Skills' | 'Languages' | 'Certificates';

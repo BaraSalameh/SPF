@@ -1,4 +1,5 @@
-import { UniversityName, CompanyName, ProjectName, CertificateName } from "../types.features";
+import { CompanyName, ProjectName, UniversityName } from "@/content/user/types.user";
+import { CertificateName } from "../types.features";
 
 
 export type SkillMapping = {

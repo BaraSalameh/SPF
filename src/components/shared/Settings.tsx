@@ -1,12 +1,13 @@
 'use client'
 
 import { LangToggle, NavButton, ThemeToggle } from "@/components/ui"
-import { useSetting } from "@/features/hooks";
+import { LanguageContext } from "@/lib/contexts/LanguageContext";
 import { SettingsIcon, X } from "lucide-react"
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 export const Settings = () => {
-    const settings = useSetting();
+    const lang = useContext(LanguageContext);
+    const label = lang.systemLanguage.setting.label;
     const [ showSettings, setShowSettings ] = useState(false);
 
     return (
@@ -14,7 +15,7 @@ export const Settings = () => {
             <NavButton
                 onClick={() => setShowSettings(!showSettings)}
                 icon={showSettings ? X : SettingsIcon}
-                label={settings.openSettings}
+                label={label}
             />
             {showSettings &&
                 <div className="flex flex-col gap-2 px-10">

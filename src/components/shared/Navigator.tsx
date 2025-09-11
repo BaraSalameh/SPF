@@ -1,12 +1,13 @@
 'use client'
 
 import { NavButton } from "@/components/ui"
-import { useNavigator } from "@/features/hooks";
+import { LanguageContext } from "@/lib/contexts/LanguageContext";
 import { Award, Briefcase, Folder, GraduationCap, Home, Languages, Navigation, StarIcon, X } from "lucide-react"
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 export const Navigator = () => {
-    const navigator = useNavigator();
+    const lang = useContext(LanguageContext);
+    const navigator = lang.systemLanguage.navigation;
     const [ showNavigation, setShowNavigation ] = useState(false);
 
     return (
@@ -14,7 +15,7 @@ export const Navigator = () => {
             <NavButton
                 onClick={() => setShowNavigation(!showNavigation)}
                 icon={showNavigation ? X : Navigation}
-                label={showNavigation ? navigator.Close : navigator.Open}
+                label={navigator.label}
             />
             {showNavigation &&
                 <div className="flex flex-col gap-2 px-10">

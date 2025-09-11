@@ -1,20 +1,20 @@
 'use client';
 
 import { useParams } from "next/navigation";
-import { arSettings, enSettings, trSettings } from "../static";
 import { Language } from "@/components/types";
+import { systemAr, systemEn, systemTr } from "@/content/system";
 
-export const useSetting = () => {
+export const useSystemLanguage = () => {
     const { lang } = useParams<{ lang: Language }>();
 
     switch (lang) {
         case "en":
-            return enSettings;
+            return systemEn;
         case "ar":
-            return arSettings;
+            return systemAr;
         case "tr":
-            return trSettings;
+            return systemTr;
         default:
-            return enSettings;
+            return systemEn;
     }
 }

@@ -1,18 +1,18 @@
 import { Card, ResponsiveIcon } from "@/components/ui";
-import { useUniversity } from "./hooks/useUniversity"
-import React from "react";
+import React, { useContext } from "react";
 import { Text } from '@/components/ui';
 import { Calendar } from "lucide-react";
 import { Link } from '@/components/ui';
-import { useVisit } from "./hooks";
-import { commonUniversityAtts } from "./static";
-import { UniversityProps } from "./types.education";
 import { widget } from "@/styles";
+import { LanguageContext } from "@/lib/contexts/LanguageContext";
+import { userCommon } from "@/content/user";
+import { UniversityProps } from "./types.education";
 
 export const University = () => {
-    const universities = useUniversity();
-    const commonAtts = commonUniversityAtts;
-    const visitLabel = useVisit();
+    const lang = useContext(LanguageContext);
+    const universities = lang.userLanguage.education;
+    const label = lang.systemLanguage.education.linkLabel;
+    const commonAtts = userCommon.education;
 
     return(
         <div className={widget()}>
@@ -25,8 +25,8 @@ export const University = () => {
                         major={universities.UU.major}
                         startDate={commonAtts.UU.startDate}
                         endDate={commonAtts.UU.endDate}
-                        linkLabel={visitLabel}
-                        linkUrl={commonAtts.UU.website}
+                        linkLabel={label as string}
+                        linkUrl={commonAtts.UU.path}
                     />
                 }
             />
@@ -39,8 +39,8 @@ export const University = () => {
                         major={universities.AAUP.major}
                         startDate={commonAtts.AAUP.startDate}
                         endDate={commonAtts.AAUP.endDate}
-                        linkLabel={visitLabel}
-                        linkUrl={commonAtts.AAUP.website}
+                        linkLabel={label as string}
+                        linkUrl={commonAtts.AAUP.path}
                     />
                 }
             />

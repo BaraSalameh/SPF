@@ -2,19 +2,19 @@
 
 import { useParams } from "next/navigation";
 import { Language } from "@/components/types";
-import { arNavigator, enNavigator, trNavigator } from "../../static";
+import { systemAr, systemEn, systemTr } from "@/content/system";
 
 export const useTitle = () => {
     const { lang } = useParams<{ lang: Language }>();
 
     switch (lang) {
         case "en":
-            return enNavigator.Certificates;
+            return systemEn.navigation.Certificates;
         case "ar":
-            return arNavigator.Certificates;
+            return systemAr.navigation.Certificates;
         case "tr":
-            return trNavigator.Certificates;
+            return systemTr.navigation.Certificates;
         default:
-            return enNavigator.Certificates;
+            return systemEn.navigation.Certificates;
     }
 }

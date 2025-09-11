@@ -2,19 +2,21 @@
 
 import { useParams } from "next/navigation";
 import { Language } from "@/components/types";
-import { arNavigator, enNavigator, trNavigator } from "../../static";
+import { systemEn } from "@/content/system/en";
+import { systemAr } from "@/content/system/ar";
+import { systemTr } from "@/content/system/tr";
 
 export const useTitle = () => {
     const { lang } = useParams<{ lang: Language }>();
 
     switch (lang) {
         case "en":
-            return enNavigator.Skills;
+            return systemEn.navigation.Skills;
         case "ar":
-            return arNavigator.Skills;
+            return systemAr.navigation.Skills;
         case "tr":
-            return trNavigator.Skills;
+            return systemTr.navigation.Skills;
         default:
-            return enNavigator.Skills;
+            return systemEn.navigation.Skills;
     }
 }

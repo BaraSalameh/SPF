@@ -8,6 +8,7 @@ import { Language } from "@/components/types";
 import { ReactNode } from "react";
 import { Navigator, Settings } from "@/components/shared";
 import { ScrollSpy } from "@/components/shared/ScrollSpy";
+import { LanguageProvider } from "@/lib/contexts/LanguageProvider";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -35,12 +36,14 @@ const PortfolioLayout = ({children}: {children: ReactNode}) => {
         <html lang={lang} dir={dir} suppressHydrationWarning>
             <body className={`bg-light-background dark:bg-dark-background ${geistSans.variable} ${geistMono.variable}`}>
                 <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-                    <ScrollSpy />
-                    <div className={`fixed h-screen flex flex-col gap-10 justify-center z-1 ${dir === "ltr" ? 'left-5 sm:left-10' : 'right-5 sm:right-10'}`}>
-                        <Navigator />
-                        <Settings  />
-                    </div>
-                    <main>{children}</main>
+                    <LanguageProvider>
+                        <ScrollSpy />
+                        <div className={`fixed h-screen flex flex-col gap-10 justify-center z-1 ${dir === "ltr" ? 'left-5 sm:left-10' : 'right-5 sm:right-10'}`}>
+                            <Navigator />
+                            <Settings  />
+                        </div>
+                        <main>{children}</main>
+                    </LanguageProvider>
                 </ThemeProvider>
             </body>
         </html>

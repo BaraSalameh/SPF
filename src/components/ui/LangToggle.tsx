@@ -3,19 +3,20 @@
 import { Globe, Languages, X } from 'lucide-react';
 import { useParams, useRouter } from "next/navigation";
 import { Language } from '../types';
-import { useSetting } from '@/features/hooks';
 import { NavButton } from './NavButton';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { LanguageContext } from '@/lib/contexts/LanguageContext';
 
 export const LangToggle = () => {
     
-    const settings = useSetting();
+    const applang = useContext(LanguageContext);
     const router = useRouter();
     const params = useParams<{ lang: Language }>();
-
+    
     const [ showLanguages, setShowLanguages ] = useState(false);
+    
+    const label = applang.systemLanguage.setting.language.label;
     const { lang } = params;
-
 
     const handleLanguageUpdate = (nextLanguage: string) => {
         if (lang === nextLanguage) return;
@@ -37,7 +38,7 @@ export const LangToggle = () => {
                 hoverable={false}
                 onClick={() => setShowLanguages(!showLanguages)}
                 icon={showLanguages ? X : Globe}
-                label={settings.openLanguages}
+                label={label}
             />
             {showLanguages &&
                 <div className="flex flex-col gap-2 px-10">      

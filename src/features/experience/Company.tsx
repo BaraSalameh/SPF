@@ -1,18 +1,18 @@
 import { Card, ResponsiveIcon } from "@/components/ui";
-import React from "react";
+import React, { useContext } from "react";
 import { Text } from '@/components/ui';
 import { Calendar } from "lucide-react";
-import { useCompany } from "./hooks/useCompany";
 import { Link } from '@/components/ui';
-import { useVisit } from "./hooks";
-import { commonCompanyAtts } from "./static";
 import { CompanyProps } from "./types.experience";
 import { widget } from "@/styles";
+import { LanguageContext } from "@/lib/contexts/LanguageContext";
+import { userCommon } from "@/content/user";
 
 export const  Company = () => {
-    const compamies = useCompany();
-    const visit = useVisit();
-    const commonAtts = commonCompanyAtts;
+    const lang = useContext(LanguageContext);
+    const compamies = lang.userLanguage.experience;
+    const visit = lang.systemLanguage.experience.linkLabel;
+    const commonAtts = userCommon.experience;
 
     return(
         <div className={widget()}>
@@ -25,8 +25,8 @@ export const  Company = () => {
                         position={compamies.AAUP.position}
                         startDate={commonAtts.AAUP.startDate}
                         endDate={commonAtts.AAUP.endDate}
-                        linkLabel={visit}
-                        linkUrl={commonAtts.AAUP.website}
+                        linkLabel={visit as string}
+                        linkUrl={commonAtts.AAUP.path}
                     />
                 }
             />
@@ -39,8 +39,8 @@ export const  Company = () => {
                         position={compamies.Spinnel.position}
                         startDate={commonAtts.Spinnel.startDate}
                         endDate={commonAtts.Spinnel.endDate}
-                        linkLabel={visit}
-                        linkUrl={commonAtts.Spinnel.website}
+                        linkLabel={visit as string}
+                        linkUrl={commonAtts.Spinnel.path}
                     />
                 }
             />
@@ -53,8 +53,8 @@ export const  Company = () => {
                         position={compamies.Jawwal.position}
                         startDate={commonAtts.Jawwal.startDate}
                         endDate={commonAtts.Jawwal.endDate}
-                        linkLabel={visit}
-                        linkUrl={commonAtts.Jawwal.website}
+                        linkLabel={visit as string}
+                        linkUrl={commonAtts.Jawwal.path}
                     />
                 }
             />
@@ -67,8 +67,8 @@ export const  Company = () => {
                         position={compamies.UATS.position}
                         startDate={commonAtts.UATS.startDate}
                         endDate={commonAtts.UATS.endDate}
-                        linkLabel={visit}
-                        linkUrl={commonAtts.UATS.website}
+                        linkLabel={visit as string}
+                        linkUrl={commonAtts.UATS.path}
                     />
                 }
             />

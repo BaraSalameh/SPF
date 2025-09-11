@@ -1,20 +1,22 @@
 'use client';
 
 import { Card, ResponsiveIcon, Text, Link, Modal } from "@/components/ui";
-import React from "react";
-import { useDescription, useProject, useVisitLive, useVisitSource } from "./hooks";
-import { commonProjectsAtts } from "./static";
+import React, { useContext } from "react";
 import { ProjectProps } from "./types.project";
 import { Star } from "lucide-react";
 import { mapSkillsToWidget } from "../utils/mapSkillsToWidget";
 import { widget } from "@/styles";
+import { LanguageContext } from "@/lib/contexts/LanguageContext";
+import { userCommon } from "@/content/user";
 
 export const Project = () => {
-    const projects = useProject();
-    const commonAtts = commonProjectsAtts;
-    const visitLiveLabel = useVisitLive();
-    const visitSourceLabel = useVisitSource();
-    const description = useDescription();
+    const lang = useContext(LanguageContext);
+    const projects = lang.userLanguage.project;
+    const commonAtts = userCommon.project;
+    const labels =lang.systemLanguage.project;
+    const liveLabel = labels.linkLabel;
+    const sourceLabel = labels.sourceLabel;
+    const description = lang.systemLanguage.project.description;
 
     const projectSkills = mapSkillsToWidget("Projects");
 
@@ -27,16 +29,16 @@ export const Project = () => {
                     <Pjt
                         description={
                             <Modal
-                                title={description}
+                                title={description as string}
                                 icon={'/file.svg'}
-                                content={projects["Static Portfolio"].desciption}
+                                content={projects["Static Portfolio"].description}
                             />
                         }
                         skills={projectSkills["Static Portfolio"]}
-                        website={commonAtts["Static Portfolio"].website}
-                        liveLabel={visitLiveLabel}
+                        website={commonAtts["Static Portfolio"].path}
+                        liveLabel={liveLabel as string}
                         source={commonAtts["Static Portfolio"].source}
-                        sourceLabel={visitSourceLabel}
+                        sourceLabel={sourceLabel as string}
                     />
                 }
             />
@@ -47,16 +49,16 @@ export const Project = () => {
                     <Pjt
                         description={
                             <Modal
-                                title={description}
+                                title={description as string}
                                 icon={'/file.svg'}
-                                content={projects.Portfolio.desciption}
+                                content={projects.Portfolio.description}
                             />
                         }
                         skills={projectSkills.Portfolio}
-                        website={commonAtts.Portfolio.website}
-                        liveLabel={visitLiveLabel}
+                        website={commonAtts.Portfolio.path}
+                        liveLabel={liveLabel as string}
                         source={commonAtts.Portfolio.source}
-                        sourceLabel={visitSourceLabel}
+                        sourceLabel={sourceLabel as string}
                     />
                 }
             />
@@ -67,16 +69,16 @@ export const Project = () => {
                     <Pjt
                         description={
                             <Modal
-                                title={description}
+                                title={description as string}
                                 icon={'/file.svg'}
-                                content={projects.Aluminum.desciption}
+                                content={projects.Aluminum.description}
                             />
                         }
                         skills={projectSkills.Aluminum}
-                        website={commonAtts.Aluminum.website}
-                        liveLabel={visitLiveLabel}
+                        website={commonAtts.Aluminum.path}
+                        liveLabel={liveLabel as string}
                         source={commonAtts.Aluminum.source}
-                        sourceLabel={visitSourceLabel}
+                        sourceLabel={sourceLabel as string}
                     />
                 }
             />

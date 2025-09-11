@@ -1,17 +1,17 @@
 import { ChartEntry } from "@/components/charts/types.charts";
 import { BarChartWidget } from '@/components/charts';
 import { getDuration } from "@/components/utils";
-import React from "react";
+import React, { useContext } from "react";
 import { Text } from '@/components/ui';
-import { useCompany } from "./useCompany";
-import { useChartTitle } from "./useChartTitle";
-import { commonCompanyAtts } from "../static";
-import { CompanyName } from "@/features/types.features";
+import { userCommon } from "@/content/user";
+import { LanguageContext } from "@/lib/contexts/LanguageContext";
+import { CompanyName } from "@/content/user/types.user";
 
 export const useChart = () => {
-    const compamies = useCompany();
-    const chartTitle = useChartTitle();
-    const commonAtts = commonCompanyAtts;
+    const lang = useContext(LanguageContext);
+    const compamies = lang.userLanguage.experience;
+    const chartTitle = lang.systemLanguage.experience.chartLabel;
+    const commonAtts = userCommon.experience;
 
     const customData: ChartEntry[] = Object.entries(compamies)
         .map(([key, value]) => {

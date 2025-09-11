@@ -1,13 +1,11 @@
+import { CompanyName, EducationAtts, ExperienceAtts, ProjectName, ProjectsAtts, UniversityName } from "@/content/user/types.user";
 import { useCertificate } from "../certificate/hooks";
-import { useUniversity } from "../education/hooks";
-import { useCompany } from "../experience/hooks";
-import { useProject } from "../project/hooks";
-import { CertificateName, CompanyName, ProjectName, UniversityName } from "../types.features";
+import { CertificateName } from "../types.features";
 
 type LanguageMap = {
-    educations: ReturnType<typeof useUniversity>;
-    experiences: ReturnType<typeof useCompany>;
-    projects: ReturnType<typeof useProject>;
+    educations: EducationAtts;
+    experiences: ExperienceAtts;
+    projects: ProjectsAtts;
     certificates: ReturnType<typeof useCertificate>;
 }
 

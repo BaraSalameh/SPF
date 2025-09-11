@@ -1,17 +1,18 @@
 import { ChartEntry } from "@/components/charts/types.charts";
-import { useUniversity } from "./useUniversity"
 import { PieChartWidget } from '@/components/charts';
-import { commonUniversityAtts } from "../static";
 import { getDuration } from "@/components/utils";
-import React from "react";
+import React, { useContext } from "react";
 import { Text } from '@/components/ui';
-import { useChartTitle } from "./useChartTitle";
-import { UniversityName } from "@/features/types.features";
+import { LanguageContext } from "@/lib/contexts/LanguageContext";
+import { userCommon } from "@/content/user";
+import { UniversityName } from "@/content/user/types.user";
 
 export const useChart = () => {
-    const universities = useUniversity();
-    const chartTitle = useChartTitle();
-    const commonAtts = commonUniversityAtts;
+    const lang = useContext(LanguageContext);
+
+    const universities = lang.userLanguage.education;
+    const chartTitle = lang.systemLanguage.education.chartLabel;
+    const commonAtts = userCommon.education;
 
     const customData: ChartEntry[] = Object.entries(universities)
         .map(([key, value]) => {
