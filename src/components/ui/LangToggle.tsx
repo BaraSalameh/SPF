@@ -1,7 +1,7 @@
 'use client';
 
 import { Globe, Languages, X } from 'lucide-react';
-import { redirect, useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { Language } from '../types';
 import { useSetting } from '@/features/hooks';
 import { NavButton } from './NavButton';
@@ -10,13 +10,19 @@ import { useState } from 'react';
 export const LangToggle = () => {
     
     const settings = useSetting();
-    const [ showLanguages, setShowLanguages ] = useState(false);
+    const router = useRouter();
     const params = useParams<{ lang: Language }>();
+
+    const [ showLanguages, setShowLanguages ] = useState(false);
     const { lang } = params;
+
 
     const handleLanguageUpdate = (nextLanguage: string) => {
         if (lang === nextLanguage) return;
-        redirect(`/${nextLanguage}`);
+        
+        const currentHash = window.location.hash;
+
+        router.push(`/${nextLanguage}${currentHash}`);
     }
 
     const langMap: Record<Language, Record<string, string>> = {
