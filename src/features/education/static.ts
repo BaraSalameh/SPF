@@ -53,9 +53,9 @@ export const trUniversity: Record<UniversityName, universityAtts> = {
     }
 }
 
-export const enVisitUniversity = 'Visit Website →';
-export const arVisitUniversity = 'زيارة الموقع';
-export const trVisitUniversity = 'website gir →';
+export const enVisitUniversity = 'Visit University';
+export const arVisitUniversity = 'زيارة الجامعة';
+export const trVisitUniversity = 'Üniversiteyi Ziyaret Et';
 
 export const enChartTitle = 'Duration (Month)';
 export const arChartTitle = 'المدة الزمنية (شهر)';

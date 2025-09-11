@@ -10,6 +10,8 @@ export interface TextProps extends TextVariantProps {
     onClick?: () => void;
 }
 
+type Hoverable = true | false;
+
 type IconType = 'Lucide' | 'Image';
 export interface ResponsiveIconProps {
     icon?: LucideIcon | string;
@@ -24,6 +26,7 @@ export interface NavButtonProps {
     label?: string;
     icon?: LucideIcon;
     onClick?: () => void;
+    hoverable?: Hoverable;
 }
 
 export interface CardProps {

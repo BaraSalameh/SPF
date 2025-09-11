@@ -63,17 +63,17 @@ export const trProjects: Record<ProjectName, ProjectAtts> = {
     }
 }
 
-export const enVisitLiveProject = 'Live project →';
-export const arVisitLiveProject = 'زيارة المشروع';
-export const trVisitLiveProject = 'Projeye gir →';
+export const enVisitLiveProject = 'View Live Project';
+export const arVisitLiveProject = 'عرض المشروع المباشر';
+export const trVisitLiveProject = 'Canlı Projeyi Görüntüle';
 
 export const enDescription = 'Description';
 export const arDescription = 'الوصــف';
 export const trDescription = 'Açıklama';
 
-export const enVisitSourceProject = 'Source code →';
-export const arVisitSourceProject = 'الكود';
-export const trVisitSourceProject = 'Koda gir →';
+export const enVisitSourceProject = 'View on GitHub';
+export const arVisitSourceProject = 'عرض على GitHub';
+export const trVisitSourceProject = 'GitHub’da Görüntüle';
 
 export const enChartTitle = 'Project skills';
 export const arChartTitle = 'مهارات المشاريع';

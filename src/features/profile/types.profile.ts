@@ -29,5 +29,4 @@ export interface commonUtilityAtts  {
 export type UtilityAtts = {
     cv: string;
     contactInfo: string;
-    goTo: string;
 }

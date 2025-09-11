@@ -7,7 +7,7 @@ export const navButtonContainer = cva(
             hovered: {
                 true: "max-w-[20rem]",
                 false: "max-w-[3.5rem]"
-            },
+            }
         },
         defaultVariants: {
             hovered: false,

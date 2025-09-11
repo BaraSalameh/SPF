@@ -6,7 +6,7 @@ import { Text } from '@/components/ui'
 import { NavButtonProps } from "./types.ui";
 import { navButtonContainer, navButtonIconContainer, navButtonText } from "@/styles";
 
-export const NavButton = ({ navigateTo, label, icon, onClick}: NavButtonProps) => {
+export const NavButton = ({ navigateTo, label, icon, onClick, hoverable = true}: NavButtonProps) => {
     const [hovered, setHovered] = useState(false);
 
     const handleClick = () => {
@@ -20,11 +20,11 @@ export const NavButton = ({ navigateTo, label, icon, onClick}: NavButtonProps) =
             <div
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
-                className={navButtonContainer({hovered})}
+                className={navButtonContainer({hovered: hoverable ? hovered : true})}
                 onClick={handleClick}
             >
                 <Text className={navButtonIconContainer()}>{<ResponsiveIcon icon={icon} />}</Text>
-                <Text className={navButtonText({hovered})}>
+                <Text className={navButtonText({hovered: hoverable ? hovered : true})}>
                     {label}
                 </Text>
             </div>
@@ -33,10 +33,10 @@ export const NavButton = ({ navigateTo, label, icon, onClick}: NavButtonProps) =
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
                 href={`#${navigateTo}`}
-                className={navButtonContainer({hovered: hovered})}
+                className={navButtonContainer({hovered: hoverable ? hovered : true})}
             >
                 <Text className={navButtonIconContainer()}>{<ResponsiveIcon icon={icon} />}</Text>
-                <Text className={navButtonText({hovered})}>
+                <Text className={navButtonText({hovered: hoverable ? hovered : true})}>
                     {label}
                 </Text>
             </a>

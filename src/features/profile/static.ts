@@ -45,8 +45,8 @@ export const enInformation = {
     gender: "Male",
     facebook: 'Facebook',
     instagram: 'Instagram',
-    sendEmail: 'Send email',
-    sendMessage: 'Send Whatsapp message',
+    sendEmail: 'Send Email',
+    sendMessage: 'Send WhatsApp Message',
     copy: 'Copied'
 }
 
@@ -55,8 +55,8 @@ export const arInformation = {
     gender: "رجل",
     facebook: 'فيسبوك',
     instagram: 'انستجرام',
-    sendEmail: 'ارسل بريد الكتروني',
-    sendMessage: 'ارسل رسالة واتسـاب',
+    sendEmail: 'أرسل بريدًا إلكترونيًا',
+    sendMessage: 'أرسل رسالة واتساب',
     copy: 'تم النسخ'
 }
 
@@ -65,25 +65,22 @@ export const trInformation = {
     gender: "Erkek",
     facebook: 'Facebook',
     instagram: 'Instagram',
-    sendEmail: 'Email at',
-    sendMessage: 'Messaj at',
+    sendEmail: 'E-posta Gönder',
+    sendMessage: 'WhatsApp Mesajı Gönder',
     copy: 'kopyalandı'
 }
 
 export const enUtility: UtilityAtts = {
     cv: 'Resume',
     contactInfo: 'Personal and contact informations',
-    goTo: 'Go to nextjs.org →'
 }
 
 export const arUtility: UtilityAtts = {
     cv: 'السيرة الذاتية',
     contactInfo: 'المعلومات الشخصية والتواصل',
-    goTo: 'اذهب الى nextjs.org'
 }
 
 export const trUtility: UtilityAtts = {
     cv: 'Özgeçmiş',
     contactInfo: 'Kişisel ve iletişim bilgileri',
-    goTo: 'nextjs.org a git'
 }

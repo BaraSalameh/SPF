@@ -24,6 +24,6 @@ type Theme = {
 export interface SettingAtts {
     language: string;
     theme: Theme
-    open: string;
-    close: string
+    openSettings: string;
+    openLanguages: string;
 }

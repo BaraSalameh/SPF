@@ -93,9 +93,9 @@ export const trCompany: Record<CompanyName, CompanyAtts> = {
     }
 }
 
-export const enVisitCompany = 'Visit Website →';
-export const arVisitCompany = 'زيارة الموقع';
-export const trVisitCompany = 'website gir →';
+export const enVisitCompany = 'Visit Company';
+export const arVisitCompany = 'زيارة الشركة';
+export const trVisitCompany = 'Şirketi Ziyaret Et';
 
 export const enChartTitle = 'Duration (Month)';
 export const arChartTitle = 'المدة الزمنية (شهر)';

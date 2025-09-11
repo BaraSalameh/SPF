@@ -1,14 +1,13 @@
 import { NavigationKey, SettingAtts, Skill, SkillName, WidgetName } from "./types.features"
 
-
 export const enSettings: SettingAtts = {
     language: 'English',
     theme: {
         dark : 'Dark',
         light: 'Light'
     },
-    open: 'Settings',
-    close: 'Close'
+    openSettings: 'Settings',
+    openLanguages: 'Languages'
 }
 
 export const arSettings: SettingAtts = {
@@ -17,8 +16,8 @@ export const arSettings: SettingAtts = {
         dark : 'مظلم',
         light: 'مضيئ'
     },
-    open: 'الاعدادات',
-    close: 'اغلاق'
+    openSettings: 'الاعدادات',
+    openLanguages: 'اللغات'
 }
 
 export const trSettings: SettingAtts = {
@@ -27,8 +26,8 @@ export const trSettings: SettingAtts = {
         dark : 'Karanlık',
         light: 'Açık'
     },
-    open: 'Ayarlar',
-    close: 'اغلاق'
+    openSettings: 'Ayarlar',
+    openLanguages: 'Diller'
 }
 
 export const enNavigator: Record<WidgetName | NavigationKey, string> = {

@@ -35,9 +35,9 @@ export const trCertificates: Record<CertificateName, CertificateAtts> = {
     
 }
 
-export const enVisit = 'Visit website →';
-export const arVisit = 'زيارة موقع الاكاديمية';
-export const trVisit = 'Akademiye gir →';
+export const enVisit = 'Visit Provider';
+export const arVisit = 'زيارة المزود';
+export const trVisit = 'Sağlayıcıyı Ziyaret Et';
 
 export const enDescription = 'Description';
 export const arDescription = 'الوصــف';

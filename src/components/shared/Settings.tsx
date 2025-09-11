@@ -3,10 +3,10 @@
 import { LangToggle, NavButton, ThemeToggle } from "@/components/ui"
 import { useSetting } from "@/features/hooks";
 import { SettingsIcon, X } from "lucide-react"
-import { Fragment, useState } from "react";
+import { useState } from "react";
 
 export const Settings = () => {
-    const setting = useSetting();
+    const settings = useSetting();
     const [ showSettings, setShowSettings ] = useState(false);
 
     return (
@@ -14,13 +14,13 @@ export const Settings = () => {
             <NavButton
                 onClick={() => setShowSettings(!showSettings)}
                 icon={showSettings ? X : SettingsIcon}
-                label={showSettings ? setting.close : setting.open}
+                label={settings.openSettings}
             />
             {showSettings &&
-                <Fragment>
+                <div className="flex flex-col gap-2 px-10">
                     <ThemeToggle />
                     <LangToggle />
-                </Fragment>
+                </div>
             }
         </div>
     )

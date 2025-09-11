@@ -22,6 +22,7 @@ export const ThemeToggle = () => {
         
     return (
         <NavButton
+            hoverable={false}
             onClick={() => setTheme(isDark ? 'light' : 'dark')}
             icon={isDark ? Moon : Sun}
             label={settings.theme[isDark ? 'dark' : 'light']}
