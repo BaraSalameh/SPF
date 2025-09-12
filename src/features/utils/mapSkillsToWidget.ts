@@ -1,9 +1,9 @@
-import { skillsGroup } from "../static";
-import { SkillName } from "../types.features";
+import { userCommon } from "@/content/user";
 import { SkillMapping } from "./types.utils";
+import { SkillName } from "@/content/user/types.user";
 
 export const mapSkillsToWidget = <T extends keyof SkillMapping>(to: T) => {
-    const skills = skillsGroup;
+    const skills = userCommon.skill;
 
     const mappedSkills: Record<SkillMapping[T]["key"], SkillName[]> =
         {} as Record<SkillMapping[T]["key"], SkillName[]>;

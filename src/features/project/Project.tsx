@@ -1,7 +1,7 @@
 'use client';
 
 import { Card, ResponsiveIcon, Text, Link, Modal } from "@/components/ui";
-import React, { useContext } from "react";
+import React from "react";
 import { ProjectProps } from "./types.project";
 import { Star } from "lucide-react";
 import { mapSkillsToWidget } from "../utils/mapSkillsToWidget";

@@ -2,15 +2,15 @@ import { ChartEntry } from "@/components/charts/types.charts";
 import { RadarChartWidget } from '@/components/charts';
 import React from "react";
 import { Text } from '@/components/ui';
-import { skillsGroup } from "@/features/static";
-import { SkillName } from "@/features/types.features";
 import { useLanguage } from "@/lib/hooks";
+import { userCommon } from "@/content/user";
+import { SkillName } from "@/content/user/types.user";
 
 export const useChart = () => {
     const lang = useLanguage();
     const chartTitle = lang.systemLanguage.project.chartLabel;
 
-    const skills = skillsGroup;
+    const skills = userCommon.skill;
     const skillCounts: Record<SkillName, number> = {} as Record<SkillName, number>;
 
     Object.entries(skills).forEach(([key, value]) => {

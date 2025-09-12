@@ -38,7 +38,7 @@ type LanguageAtts = 'name' | 'proficiency';
 
 
 // Certificate widget types
-type CertificatesAtts = Record<CertificateName, Record<CertificateAtts, string>>;
+export type CertificatesAtts = Record<CertificateName, Record<CertificateAtts, string>>;
 export type CertificateName = 'AXSOS Academy';
 type CertificateAtts = 'name' | 'position' | 'description';
 
@@ -52,6 +52,7 @@ export interface UserCommonLanguage {
     education: Record<UniversityName, Record<CommonAtts, string>>;
     experience: Record<CompanyName, Record<CommonAtts, string>>;
     project: Record<ProjectName, Record<ProjectCommonAtts, string>>;
+    skill: Record<SkillName, Skill>;
     language: Record<LanguageName, LanguageCommonAtts>;
     certificate: Record<CertificateName, Record<WebsiteAtts, string>>
 }
@@ -77,6 +78,17 @@ interface SocialMedia {
 
 // Project widget common types
 type ProjectCommonAtts = 'path' | 'source';
+
+// Skill widget common types
+export type SkillName = 'React.js' | 'Next.js' | 'Typescript' | 'ASP.NET' | 'SQL Server' | 'Javascript';
+export interface Skill {
+    name: SkillName;
+    logo: string;
+    educations?: UniversityName[];
+    experiences?: CompanyName[];
+    projects?: ProjectName[];
+    certificates?: CertificateName[];
+}
 
 // Language widget common types
 interface LanguageCommonAtts {

@@ -1,16 +1,8 @@
-import { CompanyName, EducationAtts, ExperienceAtts, ProjectName, ProjectsAtts, UniversityName } from "@/content/user/types.user";
-import { useCertificate } from "../certificate/hooks";
-import { CertificateName } from "../types.features";
-
-type LanguageMap = {
-    educations: EducationAtts;
-    experiences: ExperienceAtts;
-    projects: ProjectsAtts;
-    certificates: ReturnType<typeof useCertificate>;
-}
+import { CertificateName, CompanyName, ProjectName, UniversityName } from "@/content/user/types.user";
+import { useLanguage } from "@/lib/hooks";
 
 export interface SkillProps {
-    languageMap: LanguageMap;
+    languageMap: ReturnType<typeof useLanguage>;
     educations?: UniversityName[];
     experiences?: CompanyName[];
     projects?: ProjectName[];

@@ -1,7 +1,10 @@
-import { skillsGroup } from "../static";
+import { userCommon } from "@/content/user";
 import { SkillMapping } from "./types.utils";
 
 export const mapSkillCountToWidget = <T extends keyof SkillMapping>(to: T) => {
+
+    const skillsGroup = userCommon.skill;
+    
     const skillPropMap: { [K in keyof SkillMapping]: SkillMapping[K]["prop"] } = {
         Education: 'educations',
         Experience: 'experiences',
