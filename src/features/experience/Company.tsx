@@ -1,18 +1,21 @@
 import { Card, ResponsiveIcon } from "@/components/ui";
 import React from "react";
 import { Text } from '@/components/ui';
-import { Calendar } from "lucide-react";
+import { Calendar, Star } from "lucide-react";
 import { Link } from '@/components/ui';
 import { CompanyProps } from "./types.experience";
 import { widget } from "@/styles";
 import { userCommon } from "@/content/user";
 import { useLanguage } from "@/lib/hooks";
+import { mapSkillsToWidget } from "../utils";
 
 export const  Company = () => {
     const lang = useLanguage();
     const compamies = lang.userLanguage.experience;
     const visit = lang.systemLanguage.experience.linkLabel;
     const commonAtts = userCommon.experience;
+
+    const projectSkills = mapSkillsToWidget("Experience");
 
     return(
         <div className={widget()}>
@@ -25,6 +28,7 @@ export const  Company = () => {
                         position={compamies.AAUP.position}
                         startDate={commonAtts.AAUP.startDate}
                         endDate={commonAtts.AAUP.endDate}
+                        skills={projectSkills.AAUP}
                         linkLabel={visit as string}
                         linkUrl={commonAtts.AAUP.path}
                     />
@@ -39,6 +43,7 @@ export const  Company = () => {
                         position={compamies.Spinnel.position}
                         startDate={commonAtts.Spinnel.startDate}
                         endDate={commonAtts.Spinnel.endDate}
+                        skills={projectSkills.Spinnel}
                         linkLabel={visit as string}
                         linkUrl={commonAtts.Spinnel.path}
                     />
@@ -53,6 +58,7 @@ export const  Company = () => {
                         position={compamies.Jawwal.position}
                         startDate={commonAtts.Jawwal.startDate}
                         endDate={commonAtts.Jawwal.endDate}
+                        skills={projectSkills.Jawwal}
                         linkLabel={visit as string}
                         linkUrl={commonAtts.Jawwal.path}
                     />
@@ -67,6 +73,7 @@ export const  Company = () => {
                         position={compamies.UATS.position}
                         startDate={commonAtts.UATS.startDate}
                         endDate={commonAtts.UATS.endDate}
+                        skills={projectSkills.UATS}
                         linkLabel={visit as string}
                         linkUrl={commonAtts.UATS.path}
                     />
@@ -76,7 +83,7 @@ export const  Company = () => {
     )
 }
 
-const Cpy = ({ position, startDate, endDate, linkLabel, linkUrl }: CompanyProps) =>
+const Cpy = ({ position, startDate, endDate, skills, linkLabel, linkUrl }: CompanyProps) =>
     <React.Fragment>
         <Text size='sm'>
             {position}
@@ -85,5 +92,11 @@ const Cpy = ({ position, startDate, endDate, linkLabel, linkUrl }: CompanyProps)
             <ResponsiveIcon icon={Calendar} />
             {startDate} - {endDate}
         </Text>
+        {skills &&
+            <Text size='xs'>
+                <ResponsiveIcon icon={Star} />
+                {skills?.map((item: string, idx: number) => idx < skills.length - 1 ? `${item} | ` : item)}
+            </Text>
+        }
         <Link label={linkLabel} to={linkUrl} icon="/globe.svg"/>
     </React.Fragment>

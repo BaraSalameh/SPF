@@ -89,7 +89,7 @@ export const userCommon: UserCommonLanguage = {
             name: 'React.js',
             logo: '',
             projects: [
-            "Aluminum"
+                "Aluminum"
             ],
             certificates: [
                 "AXSOS Academy"
@@ -99,21 +99,28 @@ export const userCommon: UserCommonLanguage = {
             name: 'Next.js',
             logo: '',
             projects: [
-            "Static Portfolio",
-            "Portfolio"
+                "Static Portfolio",
+                "Portfolio"
             ]
         },
         Typescript: {
             name: 'Typescript',
             logo: '',
             projects: [
-            "Static Portfolio",
-            "Portfolio"
+                "Static Portfolio",
+                "Portfolio"
             ]
         },
         "ASP.NET": {
             name: 'ASP.NET',
             logo: '',
+            educations: [
+                "AAUP"
+            ],
+            experiences: [
+                "Spinnel",
+                "UATS"
+            ],
             projects: [
                 "Portfolio",
                 "Aluminum"
@@ -122,6 +129,14 @@ export const userCommon: UserCommonLanguage = {
         "SQL Server": {
             name: 'SQL Server',
             logo: '',
+            educations: [
+                "AAUP"
+            ],
+            experiences: [
+                "AAUP",
+                "Spinnel",
+                "UATS"
+            ],
             projects: [
                 "Portfolio",
                 "Aluminum"
@@ -133,11 +148,18 @@ export const userCommon: UserCommonLanguage = {
         Javascript: {
             name: 'Javascript',
             logo: '',
+            educations: [
+                "AAUP"
+            ],
             projects: [
-            "Aluminum"
+                "Aluminum"
             ],
             certificates: [
                 "AXSOS Academy"
+            ],
+            experiences: [
+                "Spinnel",
+                "UATS"
             ]
         },
     },

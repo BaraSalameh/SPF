@@ -86,13 +86,15 @@ export const Project = () => {
     )
 }
 
-const Pjt = ({ description, website, liveLabel, source, sourceLabel, skills }: ProjectProps) =>
+const Pjt = ({ description, skills, website, liveLabel, source, sourceLabel }: ProjectProps) =>
     <React.Fragment>
         {description}
-        <Text size='xs'>
-            <ResponsiveIcon icon={Star} />
-            {skills?.map((item: string, idx: number) => idx < skills.length - 1 ? `${item} | ` : item)}
-        </Text>
+        {skills &&
+            <Text size='xs'>
+                <ResponsiveIcon icon={Star} />
+                {skills?.map((item: string, idx: number) => idx < skills.length - 1 ? `${item} | ` : item)}
+            </Text>
+        }
         <div className="flex flex-wrap justify-center gap-5">
             <Link label={liveLabel} to={website} icon="/globe.svg"/>
             <Link label={sourceLabel} to={source} icon="/globe.svg"/>
