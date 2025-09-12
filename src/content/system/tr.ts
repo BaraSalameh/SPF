@@ -47,5 +47,8 @@ export const systemTr: SystemLanguage = {
         sourceLabel: 'GitHub’da Görüntüle',
         description: 'Açıklama',
         chartLabel: 'Projenin yetenekleri'
+    },
+    skill: {
+        chartLabel: 'Widgetin yetenekleri'
     }
 }

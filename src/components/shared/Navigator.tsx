@@ -1,12 +1,12 @@
 'use client'
 
 import { NavButton } from "@/components/ui"
-import { LanguageContext } from "@/lib/contexts/LanguageContext";
+import { useLanguage } from "@/lib/hooks";
 import { Award, Briefcase, Folder, GraduationCap, Home, Languages, Navigation, StarIcon, X } from "lucide-react"
-import { useContext, useState } from "react";
+import { useState } from "react";
 
 export const Navigator = () => {
-    const lang = useContext(LanguageContext);
+    const lang = useLanguage();
     const navigator = lang.systemLanguage.navigation;
     const [ showNavigation, setShowNavigation ] = useState(false);
 

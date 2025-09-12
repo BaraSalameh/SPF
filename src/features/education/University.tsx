@@ -1,15 +1,15 @@
 import { Card, ResponsiveIcon } from "@/components/ui";
-import React, { useContext } from "react";
+import React from "react";
 import { Text } from '@/components/ui';
 import { Calendar } from "lucide-react";
 import { Link } from '@/components/ui';
 import { widget } from "@/styles";
-import { LanguageContext } from "@/lib/contexts/LanguageContext";
 import { userCommon } from "@/content/user";
 import { UniversityProps } from "./types.education";
+import { useLanguage } from "@/lib/hooks";
 
 export const University = () => {
-    const lang = useContext(LanguageContext);
+    const lang = useLanguage();
     const universities = lang.userLanguage.education;
     const label = lang.systemLanguage.education.linkLabel;
     const commonAtts = userCommon.education;

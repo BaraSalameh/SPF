@@ -2,12 +2,11 @@
 
 import { Link, Modal } from '@/components/ui';
 import { Information } from "./Information";
-import { useContext } from 'react';
-import { LanguageContext } from '@/lib/contexts/LanguageContext';
 import { userCommon } from '@/content/user';
+import { useLanguage } from '@/lib/hooks';
 
 export const Utility = () => {
-    const lang = useContext(LanguageContext);
+    const lang = useLanguage();
     const utilities = lang.systemLanguage.profile.utility;
     const information = userCommon.profile;
 

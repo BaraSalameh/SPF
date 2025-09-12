@@ -1,14 +1,14 @@
 'use client';
 
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { NavButton } from './NavButton';
-import { LanguageContext } from '@/lib/contexts/LanguageContext';
+import { useLanguage } from '@/lib/hooks';
 
 export const ThemeToggle = () => {
     
-    const lang = useContext(LanguageContext);
+    const lang = useLanguage();
     const { theme, setTheme } = useTheme();
     const [ mounted, setMounted ] = useState(false);
     

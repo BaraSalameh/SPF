@@ -1,14 +1,14 @@
 import { ChartEntry } from "@/components/charts/types.charts";
 import { BarChartWidget } from '@/components/charts';
 import { getDuration } from "@/components/utils";
-import React, { useContext } from "react";
+import React from "react";
 import { Text } from '@/components/ui';
 import { userCommon } from "@/content/user";
-import { LanguageContext } from "@/lib/contexts/LanguageContext";
 import { CompanyName } from "@/content/user/types.user";
+import { useLanguage } from "@/lib/hooks";
 
 export const useChart = () => {
-    const lang = useContext(LanguageContext);
+    const lang = useLanguage();
     const compamies = lang.userLanguage.experience;
     const chartTitle = lang.systemLanguage.experience.chartLabel;
     const commonAtts = userCommon.experience;

@@ -1,14 +1,14 @@
 import { ChartEntry } from "@/components/charts/types.charts";
 import { PieChartWidget } from '@/components/charts';
 import { getDuration } from "@/components/utils";
-import React, { useContext } from "react";
+import React from "react";
 import { Text } from '@/components/ui';
-import { LanguageContext } from "@/lib/contexts/LanguageContext";
 import { userCommon } from "@/content/user";
 import { UniversityName } from "@/content/user/types.user";
+import { useLanguage } from "@/lib/hooks";
 
 export const useChart = () => {
-    const lang = useContext(LanguageContext);
+    const lang = useLanguage();
 
     const universities = lang.userLanguage.education;
     const chartTitle = lang.systemLanguage.education.chartLabel;

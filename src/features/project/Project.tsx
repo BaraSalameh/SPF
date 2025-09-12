@@ -6,11 +6,11 @@ import { ProjectProps } from "./types.project";
 import { Star } from "lucide-react";
 import { mapSkillsToWidget } from "../utils/mapSkillsToWidget";
 import { widget } from "@/styles";
-import { LanguageContext } from "@/lib/contexts/LanguageContext";
 import { userCommon } from "@/content/user";
+import { useLanguage } from "@/lib/hooks";
 
 export const Project = () => {
-    const lang = useContext(LanguageContext);
+    const lang = useLanguage();
     const projects = lang.userLanguage.project;
     const commonAtts = userCommon.project;
     const labels =lang.systemLanguage.project;

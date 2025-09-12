@@ -1,16 +1,15 @@
 import { ChartEntry } from "@/components/charts/types.charts";
 import { RadarChartWidget } from '@/components/charts';
-import React, { useContext } from "react";
+import React from "react";
 import { Text } from '@/components/ui';
-import { useChartTitle } from "./useChartTitle";
 import { mapSkillCountToWidget } from "@/features/utils";
-import { LanguageContext } from "@/lib/contexts/LanguageContext";
 import { WidgetName } from "@/content/types.content";
+import { useLanguage } from "@/lib/hooks";
 
 export const useChart = () => {
-    const chartTitle = useChartTitle();
-    const lang = useContext(LanguageContext);
+    const lang = useLanguage();
     const widgetLanguage = lang.systemLanguage.navigation;
+    const title = lang.systemLanguage.skill.chartLabel;
 
     const data = [
         mapSkillCountToWidget("Education"),
@@ -29,7 +28,7 @@ export const useChart = () => {
     return (
         <React.Fragment>
             <Text position='center'>
-                {chartTitle}
+                {title}
             </Text>
             <RadarChartWidget
                 data={customData}

@@ -4,11 +4,10 @@ import { CoverImage } from "@/components/ui";
 import { Bio, Utility } from ".";
 import { container, narrowSection, wideSection } from "@/styles/container";
 import { Title } from "@/components/shared";
-import { useContext } from "react";
-import { LanguageContext } from "@/lib/contexts/LanguageContext";
+import { useLanguage } from "@/lib/hooks";
 
 export const Profile = () => {
-    const lang = useContext(LanguageContext);
+    const lang = useLanguage();
     const fullname = lang.userLanguage.profile.information.fullname;
 
     return (

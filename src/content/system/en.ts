@@ -47,5 +47,8 @@ export const systemEn: SystemLanguage = {
         sourceLabel: 'View on GitHub',
         description: 'Description',
         chartLabel: 'Project skills'
+    },
+    skill: {
+        chartLabel: 'Corresponding widget skills'
     }
 }

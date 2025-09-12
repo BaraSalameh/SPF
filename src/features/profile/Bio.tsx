@@ -1,11 +1,10 @@
 'use client';
 
 import { Text } from "@/components/ui";
-import { LanguageContext } from "@/lib/contexts/LanguageContext";
-import { useContext } from "react";
+import { useLanguage } from "@/lib/hooks";
 
 export const Bio = () => {
-    const lang = useContext(LanguageContext);
+    const lang = useLanguage();
     const bio = lang.userLanguage.profile.information.bio
 
     return (

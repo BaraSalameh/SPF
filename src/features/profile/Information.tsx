@@ -1,13 +1,13 @@
 'use client'
 
-import { Fragment, useContext, useState } from "react";
+import { Fragment, useState } from "react";
 import { Link, ResponsiveIcon, Text } from '@/components/ui';
 import { Cake, Mail, MailCheck, MessageCircleCode, Phone, VenusAndMars } from "lucide-react";
-import { LanguageContext } from "@/lib/contexts/LanguageContext";
 import { userCommon } from "@/content/user";
+import { useLanguage } from "@/lib/hooks";
 
 export const Information = () => {
-    const lang = useContext(LanguageContext);
+    const lang = useLanguage();
     const common = userCommon.profile;
 
     const [emailCopied, setEmailCopied] = useState(false);

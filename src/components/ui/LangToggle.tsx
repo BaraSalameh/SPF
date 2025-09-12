@@ -4,12 +4,12 @@ import { Globe, Languages, X } from 'lucide-react';
 import { useParams, useRouter } from "next/navigation";
 import { Language } from '../types';
 import { NavButton } from './NavButton';
-import { useContext, useState } from 'react';
-import { LanguageContext } from '@/lib/contexts/LanguageContext';
+import { useState } from 'react';
+import { useLanguage } from '@/lib/hooks';
 
 export const LangToggle = () => {
     
-    const applang = useContext(LanguageContext);
+    const applang = useLanguage();
     const router = useRouter();
     const params = useParams<{ lang: Language }>();
     

@@ -4,11 +4,10 @@ import { Title } from "@/components/shared";
 import { container, narrowSection, wideSection } from "@/styles";
 import { useChart } from "./hooks";
 import { Project } from "./Project";
-import { useContext } from "react";
-import { LanguageContext } from "@/lib/contexts/LanguageContext";
+import { useLanguage } from "@/lib/hooks";
 
 export const Projects = () => {
-    const lang = useContext(LanguageContext);
+    const lang = useLanguage();
     const title = lang.systemLanguage.navigation.Projects;
 
     return (

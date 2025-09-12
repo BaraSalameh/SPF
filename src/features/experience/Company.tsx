@@ -1,15 +1,15 @@
 import { Card, ResponsiveIcon } from "@/components/ui";
-import React, { useContext } from "react";
+import React from "react";
 import { Text } from '@/components/ui';
 import { Calendar } from "lucide-react";
 import { Link } from '@/components/ui';
 import { CompanyProps } from "./types.experience";
 import { widget } from "@/styles";
-import { LanguageContext } from "@/lib/contexts/LanguageContext";
 import { userCommon } from "@/content/user";
+import { useLanguage } from "@/lib/hooks";
 
 export const  Company = () => {
-    const lang = useContext(LanguageContext);
+    const lang = useLanguage();
     const compamies = lang.userLanguage.experience;
     const visit = lang.systemLanguage.experience.linkLabel;
     const commonAtts = userCommon.experience;

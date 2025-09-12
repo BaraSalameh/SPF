@@ -47,5 +47,8 @@ export const systemAr: SystemLanguage = {
         sourceLabel: 'عرض على GitHub',
         description: 'الوصــف',
         chartLabel: 'مهارات المشاريع'
+    },
+    skill: {
+        chartLabel: 'توزيع المهارات'
     }
 }

@@ -1,17 +1,17 @@
 'use client'
 
 import { Card, ResponsiveIcon } from "@/components/ui";
-import React, { useContext } from "react";
+import React from "react";
 import { Text } from '@/components/ui';
 import { Award, Briefcase, Folder, GraduationCap } from "lucide-react";
 import { skillsGroup } from "../static";
 import { SkillProps } from "./types.skill";
 import { widget } from "@/styles";
 import { useCertificate } from "../certificate/hooks";
-import { LanguageContext } from "@/lib/contexts/LanguageContext";
+import { useLanguage } from "@/lib/hooks";
 
 export const Skill = () => {
-    const lang = useContext(LanguageContext);
+    const lang = useLanguage();
 
     const skills = skillsGroup;
     const educationLanguage = lang.userLanguage.education;
