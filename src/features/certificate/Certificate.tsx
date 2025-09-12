@@ -5,15 +5,16 @@ import React from "react";
 import { Star } from "lucide-react";
 import { mapSkillsToWidget } from "../utils/mapSkillsToWidget";
 import { widget } from "@/styles";
-import { commonCertificateAtts } from "./static";
-import { useCertificate, useDescription, useVisit } from "./hooks";
 import { CertificateProps } from "./types.certificate";
+import { useLanguage } from "@/lib/hooks";
+import { userCommon } from "@/content/user";
 
 export const Certificate = () => {
-    const certificates = useCertificate();
-    const commonAtts = commonCertificateAtts;
-    const visit = useVisit();
-    const description = useDescription();
+    const lang = useLanguage();
+    const certificates =lang.userLanguage.certificate;
+    const commonAtts = userCommon.certificate;
+    const description = lang.systemLanguage.certificate.description;
+    const label = lang.systemLanguage.certificate.linkLabel;
 
     const certificateSkills = mapSkillsToWidget("Certificates");
 
@@ -22,19 +23,19 @@ export const Certificate = () => {
             <Card
                 title={certificates["AXSOS Academy"].name}
                 subTitle={certificates["AXSOS Academy"].position}
-                logoUrl={commonAtts["AXSOS Academy"].logoUrl}
+                logoUrl={commonAtts["AXSOS Academy"].icon}
                 content={
                     <Cte
                         description={
                             <Modal
-                                title={description}
+                                title={description as string}
                                 icon={'/file.svg'}
-                                content={certificates["AXSOS Academy"].desciption}
+                                content={certificates["AXSOS Academy"].description}
                             />
                         }
                         skills={certificateSkills["AXSOS Academy"]}
-                        website={commonAtts["AXSOS Academy"].website}
-                        label={visit}
+                        website={commonAtts["AXSOS Academy"].path}
+                        label={label as string}
                     />
                 }
             />

@@ -53,5 +53,10 @@ export const systemTr: SystemLanguage = {
     },
     language: {
         chartLabel: 'Dil Seviyesi'
+    },
+    certificate: {
+        chartLabel: 'Sertifikanın yetenekleri',
+        linkLabel: 'Sağlayıcıyı Ziyaret Et',
+        description: 'Açıklama'
     }
 }

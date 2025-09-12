@@ -5,6 +5,7 @@ export interface UserLanguage {
     experience: ExperienceAtts;
     project: ProjectsAtts;
     language: LanguagesAtts;
+    certificate: CertificatesAtts;
 }
 
 // Profile widget types
@@ -30,10 +31,17 @@ export type ProjectsAtts = Record<ProjectName, Record<ProjectAtts, string>>
 export type ProjectName = 'Aluminum' | 'Portfolio' | 'Static Portfolio';
 export type ProjectAtts = 'name' | 'description';
 
-// Languyage widget types
+// Language widget types
 type LanguagesAtts = Record<LanguageName, Record<LanguageAtts, string>>;
 export type LanguageName = 'English' | 'Arabic' | 'Turkish' | 'Spanish';
 type LanguageAtts = 'name' | 'proficiency';
+
+
+// Certificate widget types
+type CertificatesAtts = Record<CertificateName, Record<CertificateAtts, string>>;
+export type CertificateName = 'AXSOS Academy';
+type CertificateAtts = 'name' | 'position' | 'description';
+
 
 
 type CommonAtts = 'startDate' | 'endDate' | 'path';
@@ -44,7 +52,8 @@ export interface UserCommonLanguage {
     education: Record<UniversityName, Record<CommonAtts, string>>;
     experience: Record<CompanyName, Record<CommonAtts, string>>;
     project: Record<ProjectName, Record<ProjectCommonAtts, string>>;
-    language: Record<LanguageName, LanguageCommonAtts>
+    language: Record<LanguageName, LanguageCommonAtts>;
+    certificate: Record<CertificateName, Record<WebsiteAtts, string>>
 }
 
 // Profile widget common types

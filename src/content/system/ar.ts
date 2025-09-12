@@ -53,5 +53,10 @@ export const systemAr: SystemLanguage = {
     },
     language: {
         chartLabel: 'مستوى اللغة'
+    },
+    certificate: {
+        chartLabel: 'مهارات الشهادة',
+        linkLabel: 'زيارة المزود',
+        description: 'الوصــف'
     }
 }

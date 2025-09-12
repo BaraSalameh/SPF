@@ -73,5 +73,12 @@ export const userEn: UserLanguage = {
             name: 'Spanish',
             proficiency: 'Beginner'
         }
+    },
+    certificate: {
+        "AXSOS Academy": {
+            name: 'Axsos Academy',
+            description: '+530 coding hours in total (web fundamentals, data structures, and algorithms, Flask and Django, Spring Boot,MERN).',
+            position: 'Full-Stack Developer Certificate'
+        },
     }
 }

@@ -53,5 +53,10 @@ export const systemEn: SystemLanguage = {
     },
     language: {
         chartLabel: 'Language Proficiency'
+    },
+    certificate: {
+        chartLabel: 'Certificate skills',
+        linkLabel: 'Visit Provider',
+        description: 'Description'
     }
 }

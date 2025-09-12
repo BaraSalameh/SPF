@@ -1,8 +1,7 @@
-import { CompanyName, ProjectName, UniversityName } from "@/content/user/types.user";
+import { CertificateName, CompanyName, ProjectName, UniversityName } from "@/content/user/types.user";
 
 
 export type SkillName = 'React.js' | 'Next.js' | 'Typescript' | 'ASP.NET' | 'SQL Server' | 'Javascript';
-export type CertificateName = 'AXSOS Academy';
 
 
 export type NavigationKey = 'Open' | 'Close';

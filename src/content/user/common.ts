@@ -101,5 +101,11 @@ export const userCommon: UserCommonLanguage = {
             level: 1,
             logoUrl: '/SP.svg'
         }
+    },
+    certificate: {
+        "AXSOS Academy": {
+            path: 'https://axsos.academy/',
+            icon: '/axsos.png'
+        }
     }
 }

@@ -4,10 +4,11 @@ import React from "react";
 import { Text } from '@/components/ui';
 import { skillsGroup } from "@/features/static";
 import { SkillName } from "@/features/types.features";
-import { useChartTitle } from "./useChartTitle";
+import { useLanguage } from "@/lib/hooks";
 
 export const useChart = () => {
-    const chartTitle = useChartTitle();
+    const lang = useLanguage();
+    const title = lang.systemLanguage.certificate.chartLabel;
 
     const skills = skillsGroup;
     const skillCounts: Record<SkillName, number> = {} as Record<SkillName, number>;
@@ -26,7 +27,7 @@ export const useChart = () => {
     return (
         <React.Fragment>
             <Text position='center'>
-                {chartTitle}
+                {title}
             </Text>
             <RadarChartWidget
                 data={customData}

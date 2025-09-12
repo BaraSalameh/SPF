@@ -75,5 +75,12 @@ export const userAr: UserLanguage = {
             name: 'الاسبانية',
             proficiency: 'مبتدئ'
         }
+    },
+    certificate: {
+        "AXSOS Academy": {
+            name: 'اكاديمية اكسـوس',
+            description: 'أكثر من 530 ساعة برمجة في المجموع (أساسيات الويب، هياكل البيانات والخوارزميات، Flask وDjango، Spring Boot، ومكدس MERN).',
+            position: 'شهادة مطور مواقع انترنت'
+        },
     }
 }

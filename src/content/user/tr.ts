@@ -73,5 +73,12 @@ export const userTr: UserLanguage = {
             name: 'İspanyolca',
             proficiency: 'Başlangıç'
         }
-        }
+    },
+    certificate: {
+        "AXSOS Academy": {
+            name: 'Axsos Akademisi',
+            description: 'Toplamda 530’dan fazla kodlama saati (web temelleri, veri yapıları ve algoritmalar, Flask ve Django, Spring Boot ve MERN yığını).',
+            position: 'Full-Stack Geliştirici Sertifikası'
+        },
+    }
 }

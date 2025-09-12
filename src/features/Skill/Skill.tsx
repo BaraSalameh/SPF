@@ -7,7 +7,6 @@ import { Award, Briefcase, Folder, GraduationCap } from "lucide-react";
 import { skillsGroup } from "../static";
 import { SkillProps } from "./types.skill";
 import { widget } from "@/styles";
-import { useCertificate } from "../certificate/hooks";
 import { useLanguage } from "@/lib/hooks";
 
 export const Skill = () => {
@@ -17,7 +16,7 @@ export const Skill = () => {
     const educationLanguage = lang.userLanguage.education;
     const experienceLanguage = lang.userLanguage.experience;
     const projectLanguage = lang.userLanguage.project;
-    const certificateLanguage = useCertificate();
+    const certificateLanguage = lang.userLanguage.certificate;
 
     return(
         <div className={widget()}>
