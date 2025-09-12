@@ -50,5 +50,8 @@ export const systemTr: SystemLanguage = {
     },
     skill: {
         chartLabel: 'Widgetin yetenekleri'
+    },
+    language: {
+        chartLabel: 'Dil Seviyesi'
     }
 }

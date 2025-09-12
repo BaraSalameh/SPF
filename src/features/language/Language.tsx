@@ -2,35 +2,35 @@
 
 import { Card } from "@/components/ui";
 import React from "react";
-import { useLanguage } from "./hooks";
-import { commonLanguageAtts } from "./static";
 import { widget } from "@/styles";
+import { userCommon } from "@/content/user";
+import { useLanguage } from "@/lib/hooks";
 
 export const Language = () => {
-    const languages = useLanguage();
-    const commonAtts = commonLanguageAtts;
+    const lang = useLanguage();
+    const commonAtts = userCommon;
 
     return(
         <div className={widget()}>
             <Card
-                title={languages.Arabic.name}
-                subTitle={languages.Arabic.proficiency}
-                logoUrl={commonAtts.Arabic.logoUrl}
+                title={lang.userLanguage.language.Arabic.name}
+                subTitle={lang.userLanguage.language.Arabic.proficiency}
+                logoUrl={commonAtts.language.Arabic.logoUrl}
             />
             <Card
-                title={languages.English.name}
-                subTitle={languages.English.proficiency}
-                logoUrl={commonAtts.English.logoUrl}
+                title={lang.userLanguage.language.English.name}
+                subTitle={lang.userLanguage.language.English.proficiency}
+                logoUrl={commonAtts.language.English.logoUrl}
             />
             <Card
-                title={languages.Turkish.name}
-                subTitle={languages.Turkish.proficiency}
-                logoUrl={commonAtts.Turkish.logoUrl}
+                title={lang.userLanguage.language.Turkish.name}
+                subTitle={lang.userLanguage.language.Turkish.proficiency}
+                logoUrl={commonAtts.language.Turkish.logoUrl}
             />
             <Card
-                title={languages.Spanish.name}
-                subTitle={languages.Spanish.proficiency}
-                logoUrl={commonAtts.Spanish.logoUrl}
+                title={lang.userLanguage.language.Spanish.name}
+                subTitle={lang.userLanguage.language.Spanish.proficiency}
+                logoUrl={commonAtts.language.Spanish.logoUrl}
             />
         </div>
     )

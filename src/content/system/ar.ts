@@ -50,5 +50,8 @@ export const systemAr: SystemLanguage = {
     },
     skill: {
         chartLabel: 'توزيع المهارات'
+    },
+    language: {
+        chartLabel: 'مستوى اللغة'
     }
 }

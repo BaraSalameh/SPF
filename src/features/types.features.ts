@@ -3,7 +3,7 @@ import { CompanyName, ProjectName, UniversityName } from "@/content/user/types.u
 
 export type SkillName = 'React.js' | 'Next.js' | 'Typescript' | 'ASP.NET' | 'SQL Server' | 'Javascript';
 export type CertificateName = 'AXSOS Academy';
-export type LanguageName = 'English' | 'Arabic' | 'Turkish' | 'Spanish';
+
 
 export type NavigationKey = 'Open' | 'Close';
 

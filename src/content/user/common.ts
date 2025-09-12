@@ -83,5 +83,23 @@ export const userCommon: UserCommonLanguage = {
             path: '',
             source: 'https://github.com/BaraSalameh/FE_Aluminum',
         }
+    },
+    language: {
+        English: {
+            level: 3,
+            logoUrl: '/UK.svg'
+        },
+        Arabic: {
+            level: 4,
+            logoUrl: '/KSA.svg'
+        },
+        Turkish: {
+            level: 3,
+            logoUrl: '/Tr.svg'
+        },
+        Spanish: {
+            level: 1,
+            logoUrl: '/SP.svg'
+        }
     }
 }

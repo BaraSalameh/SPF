@@ -55,5 +55,23 @@ export const userTr: UserLanguage = {
             name: 'Alüminyum',
             description: 'Stok, sipariş ve iş akışlarını kapsayan alüminyum iş süreçlerini yönetmek için geliştirilmiş, verimliliği ve kolay yönetimi sağlayan kapsamlı bir web çözümü.'
         }
-    }
+    },
+    language: {
+        English: {
+            name: 'İngilizce',
+            proficiency: 'İleri'
+        },
+        Arabic: {
+            name: 'Arapça',
+            proficiency: 'Ana Dil'
+        },
+        Turkish: {
+            name: 'Türkçe',
+            proficiency: 'İleri'
+        },
+        Spanish: {
+            name: 'İspanyolca',
+            proficiency: 'Başlangıç'
+        }
+        }
 }

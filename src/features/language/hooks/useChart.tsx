@@ -2,19 +2,18 @@ import { ChartEntry } from "@/components/charts/types.charts";
 import { BarChartWidget } from '@/components/charts';
 import React from "react";
 import { Text } from '@/components/ui';
-import { LanguageName } from "@/features/types.features";
-import { useLanguage } from "./useLanguage";
-import { useChartTitle } from "./useChartTitle";
-import { commonLanguageAtts } from "../static";
+import { useLanguage } from "@/lib/hooks";
+import { LanguageName } from "@/content/user/types.user";
+import { userCommon } from "@/content/user";
 
 export const useChart = () => {
-    const languages = useLanguage();
-    const chartTitle = useChartTitle();
-    const commonAtts = commonLanguageAtts;
+    const lang = useLanguage();
+    const title = lang.systemLanguage.language.chartLabel;
+    const commonAtts = userCommon;
 
-    const customData: ChartEntry[] = Object.entries(languages)
+    const customData: ChartEntry[] = Object.entries(lang.userLanguage.language)
         .map(([key, value]) => {
-            const commonAtt = commonAtts[key as LanguageName];
+            const commonAtt = commonAtts.language[key as LanguageName];
 
             return ({
                 name: value.name,
@@ -26,7 +25,7 @@ export const useChart = () => {
     return (
         <React.Fragment>
             <Text position='center'>
-                {chartTitle}
+                {title}
             </Text>
             <BarChartWidget
                 data={customData}

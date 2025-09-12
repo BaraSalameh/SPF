@@ -15,6 +15,7 @@ export interface SystemLanguage {
     experience: CommonAtts;
     project: CommonAtts;
     skill: CommonAtts;
+    language: CommonAtts;
 }
 
 // Navigation widget types

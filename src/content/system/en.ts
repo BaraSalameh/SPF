@@ -50,5 +50,8 @@ export const systemEn: SystemLanguage = {
     },
     skill: {
         chartLabel: 'Corresponding widget skills'
+    },
+    language: {
+        chartLabel: 'Language Proficiency'
     }
 }

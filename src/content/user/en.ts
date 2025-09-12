@@ -55,5 +55,23 @@ export const userEn: UserLanguage = {
             name: 'Aluminum',
             description: 'A complete web-based solution developed to manage aluminum business operations, including inventory, orders, and workflow, ensuring efficiency and smooth management.'
         }
+    },
+    language: {
+        English: {
+            name: 'English',
+            proficiency: 'Advanced'
+        },
+        Arabic: {
+            name: 'Arabic',
+            proficiency: 'Native'
+        },
+        Turkish: {
+            name: 'Turkish',
+            proficiency: 'Advanced'
+        },
+        Spanish: {
+            name: 'Spanish',
+            proficiency: 'Beginner'
+        }
     }
 }

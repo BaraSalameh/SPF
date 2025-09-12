@@ -4,6 +4,7 @@ export interface UserLanguage {
     education : EducationAtts;
     experience: ExperienceAtts;
     project: ProjectsAtts;
+    language: LanguagesAtts;
 }
 
 // Profile widget types
@@ -29,6 +30,11 @@ export type ProjectsAtts = Record<ProjectName, Record<ProjectAtts, string>>
 export type ProjectName = 'Aluminum' | 'Portfolio' | 'Static Portfolio';
 export type ProjectAtts = 'name' | 'description';
 
+// Languyage widget types
+type LanguagesAtts = Record<LanguageName, Record<LanguageAtts, string>>;
+export type LanguageName = 'English' | 'Arabic' | 'Turkish' | 'Spanish';
+type LanguageAtts = 'name' | 'proficiency';
+
 
 type CommonAtts = 'startDate' | 'endDate' | 'path';
 
@@ -38,6 +44,7 @@ export interface UserCommonLanguage {
     education: Record<UniversityName, Record<CommonAtts, string>>;
     experience: Record<CompanyName, Record<CommonAtts, string>>;
     project: Record<ProjectName, Record<ProjectCommonAtts, string>>;
+    language: Record<LanguageName, LanguageCommonAtts>
 }
 
 // Profile widget common types
@@ -61,3 +68,11 @@ interface SocialMedia {
 
 // Project widget common types
 type ProjectCommonAtts = 'path' | 'source';
+
+// Language widget common types
+interface LanguageCommonAtts {
+    level: Level;
+    logoUrl: string;
+}
+
+type Level = 1 | 2 | 3 | 4;

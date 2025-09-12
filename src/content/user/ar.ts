@@ -57,5 +57,23 @@ export const userAr: UserLanguage = {
             name: 'المنيوم',
             description: 'حل ويب متكامل مصمم لإدارة أعمال الألمنيوم، بما يشمل المخزون والطلبات وسير العمل، مما يضمن الكفاءة والإدارة السلسة.'
         }
+    },
+    language: {
+        English: {
+            name: 'الانجليزية',
+            proficiency: 'متقدم'
+        },
+        Arabic: {
+            name: 'العربية',
+            proficiency: 'اللغة الام'
+        },
+        Turkish: {
+            name: 'التركية',
+            proficiency: 'متقدم'
+        },
+        Spanish: {
+            name: 'الاسبانية',
+            proficiency: 'مبتدئ'
+        }
     }
 }
