@@ -1,6 +1,7 @@
 import { LucideIcon } from "lucide-react";
 import { TextVariantProps } from "@/styles";
 import { Size } from "../types";
+import { ReactNode } from "react";
 
 export type ImageExtension = 'jpg' | 'png';
 
@@ -36,3 +37,12 @@ export interface CardProps {
     content?: React.ReactNode;
     className?: string;
 };
+
+export interface ModalProps {
+    title: string;
+    subTitle?: string;
+    content?: string;
+    icon?: string;
+    jsx?: ReactNode;
+    closeOnOutsideClick?: boolean;
+}

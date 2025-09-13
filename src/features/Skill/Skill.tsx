@@ -39,7 +39,6 @@ export const Skill = () => {
                 icon={'/window.svg'}
                 title={lang.systemLanguage.skill.modalLabel as string}
                 jsx={cards(true)}
-                
             />
             <div className={widget()}>
                 {cards(false)}

@@ -14,7 +14,7 @@ export const blurBackground = cva(
                 lg: 'bg-black/75 backdrop-blur-lg bg-opacity-75'
             },
             clickable: {
-                true: 'cursor-pointer',
+                true: 'cursor-pointer [&>*]:cursor-default',
                 false: null
             }
         },

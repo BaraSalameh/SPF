@@ -6,14 +6,16 @@ import { ResponsiveIcon } from './ResponsiveIcon';
 import { Text } from './Text';
 import { BlurBackground } from '../shared';
 import { card, link } from '@/styles';
+import { ModalProps } from './types.ui';
 
 export const Modal = ({
     title,
     subTitle = title,
     content,
     icon,
-    jsx
-}: {title: string; subTitle?: string; content?: string; icon?: string; jsx?: ReactNode}) => {
+    jsx,
+    closeOnOutsideClick = true
+}: ModalProps) => {
 
     const [openModal, setOpenModal] = useState(false);
     const currentIcon = icon ? <ResponsiveIcon icon={icon} iconType="Image" /> : <ResponsiveIcon />;
@@ -25,7 +27,7 @@ export const Modal = ({
                 {title ? title : null}
             </div>
             {openModal && (
-                <BlurBackground intent='sm'>
+                <BlurBackground intent='sm' onClick={closeOnOutsideClick ? () => setOpenModal(false) : undefined}>
                     <div className={card()}>
                         {/* Header */}
                         <div className='flex justify-between'>
