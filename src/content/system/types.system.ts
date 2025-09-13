@@ -5,6 +5,7 @@ interface CommonAtts {
     linkLabel?: string;
     chartLabel: string;
     description?: string;
+    modalLabel?: string;
 }
 
 export interface SystemLanguage {

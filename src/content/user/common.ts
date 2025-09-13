@@ -103,8 +103,8 @@ export const userCommon: UserCommonLanguage = {
                 "Portfolio"
             ]
         },
-        Typescript: {
-            name: 'Typescript',
+        TypeScript: {
+            name: 'TypeScript',
             logo: '',
             projects: [
                 "Static Portfolio",
@@ -145,8 +145,8 @@ export const userCommon: UserCommonLanguage = {
                 "AXSOS Academy"
             ]
         },
-        Javascript: {
-            name: 'Javascript',
+        JavaScript: {
+            name: 'JavaScript',
             logo: '',
             educations: [
                 "AAUP"
@@ -160,6 +160,332 @@ export const userCommon: UserCommonLanguage = {
             experiences: [
                 "Spinnel",
                 "UATS"
+            ]
+        },
+        "Agile Development": {
+            name: 'Agile Development',
+            logo: '',
+            educations: [
+                "AAUP"
+            ],
+            projects: [
+                "Portfolio",
+                "Static Portfolio"
+            ],
+            certificates: [
+                "AXSOS Academy"
+            ],
+            experiences: [
+                "Spinnel",
+                "UATS"
+            ]
+        },
+        "C#": {
+            name: 'C#',
+            logo: '',
+            educations: [
+                "AAUP"
+            ],
+            projects: [
+                "Portfolio",
+                "Aluminum"
+            ],
+            experiences: [
+                "Spinnel",
+                "UATS"
+            ]
+        },
+        "Express.js": {
+            name: 'Express.js',
+            logo: '',
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        "Microsoft Access": {
+            name: 'Microsoft Access',
+            logo: '',
+            projects: [
+                "Portfolio",
+                "Static Portfolio"
+            ]
+        },
+        "Microsoft Azure": {
+            name: 'Microsoft Azure',
+            logo: '',
+            projects: [
+                "Portfolio",
+                "Static Portfolio"
+            ]
+        },
+        "Problem Solving": {
+            name: 'Problem Solving',
+            logo: '',
+            educations: [
+                "AAUP",
+                "UU"
+            ],
+            experiences: [
+                "Spinnel",
+                "UATS"
+            ],
+            projects: [
+                "Portfolio",
+                "Static Portfolio"
+            ],
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        "Redux.js": {
+            name: 'Redux.js',
+            logo: '',
+            projects: [
+                "Aluminum",
+                "Portfolio",
+            ]
+        },
+        "Spring Boot": {
+            name: 'Spring Boot',
+            logo: '',
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        "Time Management": {
+            name: 'Time Management',
+            logo: '',
+            educations: [
+                "AAUP",
+                "UU"
+            ],
+            experiences: [
+                "AAUP",
+                "Jawwal",
+                "Spinnel",
+                "UATS"
+            ],
+            projects: [
+                "Aluminum",
+                "Portfolio",
+                "Static Portfolio"
+            ],
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        "Visual Basic": {
+            name: 'Visual Basic',
+            logo: '',
+            educations: [
+                "AAUP"
+            ],
+            experiences: [
+                "Spinnel"
+            ]
+        },
+        Bootstrap: {
+            name: 'Bootstrap',
+            logo: '',
+            educations: [
+                "AAUP"
+            ],
+            experiences: [
+                "UATS"
+            ],
+            projects: [
+                "Aluminum"
+            ],
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        Communication: {
+            name: 'Communication',
+            logo: '',
+            experiences: [
+                "Jawwal"
+            ],
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        CSS: {
+            name: 'CSS',
+            logo: '',
+            educations: [
+                "AAUP"
+            ],
+            experiences: [
+                "UATS"
+            ],
+            projects: [
+                "Aluminum"
+            ],
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        Django: {
+            name: 'Django',
+            logo: '',
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        Figma: {
+            name: 'Figma',
+            logo: '',
+            experiences: [
+                "UATS"
+            ]
+        },
+        Flask: {
+            name: 'Flask',
+            logo: '',
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        HTML5: {
+            name: 'HTML5',
+            logo: '',
+            educations: [
+                "AAUP"
+            ],
+            experiences: [
+                "UATS"
+            ],
+            projects: [
+                "Aluminum",
+                "Portfolio",
+                "Static Portfolio"
+            ],
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        Java: {
+            name: 'Java',
+            logo: '',
+            educations: [
+                "AAUP"
+            ],
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        jQuery: {
+            name: 'jQuery',
+            logo: '',
+            educations: [
+                "AAUP"
+            ],
+            experiences: [
+                "UATS"
+            ],
+            projects: [
+                "Aluminum"
+            ],
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        JSON: {
+            name: 'JSON',
+            logo: '',
+            educations: [
+                "AAUP"
+            ],
+            experiences: [
+                "Spinnel",
+                "UATS"
+            ],
+            projects: [
+                "Aluminum",
+                "Portfolio"
+            ],
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        Leadership: {
+            name: 'Leadership',
+            logo: '',
+            educations: [
+                "AAUP",
+                "UU"
+            ],
+            projects: [
+                "Aluminum",
+                "Portfolio",
+                "Static Portfolio"
+            ],
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        MongoDB: {
+            name: 'MongoDB',
+            logo: '',
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        Python: {
+            name: 'Python',
+            logo: '',
+            educations: [
+                "AAUP",
+                'UU'
+            ],
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        Research: {
+            name: 'Research',
+            logo: '',
+            educations: [
+                'UU'
+            ]
+        },
+        Teamwork: {
+            name: 'Teamwork',
+            logo: '',
+            educations: [
+                "AAUP",
+                'UU'
+            ],
+            experiences: [
+                "Jawwal",
+                "Spinnel"
+            ],
+            certificates: [
+                "AXSOS Academy"
+            ]
+        },
+        Vercel: {
+            name: 'Vercel',
+            logo: '',
+            projects: [
+                "Portfolio",
+                "Static Portfolio"
+            ]
+        },
+        Yii: {
+            name: 'Yii',
+            logo: '',
+            experiences: [
+                "UATS"
+            ]
+        },
+        Tailwind: {
+            name: 'Tailwind',
+            logo: '',
+            projects: [
+                "Portfolio",
+                "Static Portfolio"
             ]
         },
     },

@@ -1,7 +1,7 @@
 'use client'
 
-import { Card, ResponsiveIcon } from "@/components/ui";
-import React from "react";
+import { Card, Modal, ResponsiveIcon } from "@/components/ui";
+import React, { Fragment } from "react";
 import { Text } from '@/components/ui';
 import { Award, Briefcase, Folder, GraduationCap } from "lucide-react";
 import { SkillProps } from "./types.skill";
@@ -13,28 +13,38 @@ export const Skill = () => {
 
     const lang = useLanguage();
     const skills = userCommon.skill;
+    const cards = (isSubComponent: boolean) => Object.entries(skills)
+    .slice(0, isSubComponent ? undefined : 4)
+    .map(([key, value]) =>
+        <Card
+            className={isSubComponent ? "min-h-fit bg-light-sub-component dark:bg-dark-sub-component" : ''}
+            key={key}
+            title={value.name}
+            logoUrl={value.logo}
+            content={
+                <Skl
+                    languageMap={lang}
+                    educations={value.educations}
+                    experiences={value.experiences}
+                    projects={value.projects}
+                    certificates={value.certificates}
+                />
+            }
+        />
+    )
 
     return(
-        <div className={widget()}>
-            {
-                Object.entries(skills).map(([key, value]) => 
-                    <Card
-                        key={key}
-                        title={value.name}
-                        logoUrl={value.logo}
-                        content={
-                            <Skl
-                                languageMap={lang}
-                                educations={value.educations}
-                                experiences={value.experiences}
-                                projects={value.projects}
-                                certificates={value.certificates}
-                            />
-                        }
-                    />
-                )
-            }
-        </div>
+        <Fragment>
+            <Modal
+                icon={'/window.svg'}
+                title={lang.systemLanguage.skill.modalLabel as string}
+                jsx={cards(true)}
+                
+            />
+            <div className={widget()}>
+                {cards(false)}
+            </div>
+        </Fragment>
     )
 }
 
@@ -43,43 +53,51 @@ const Skl = ({ educations, experiences, projects, certificates, languageMap }: S
     
     
     return (
-        <React.Fragment>
+        <Fragment>
             {educations &&
-                <Text size='xs'>
+                <div className="grid grid-cols-10 items-center">
                     <ResponsiveIcon icon={GraduationCap} />
-                    {educations?.map((item, idx) => idx < educations.length - 1
-                        ? `${languageMap.userLanguage.education[item].name} | `
-                        : languageMap.userLanguage.education[item].name)
-                    }
-                </Text>
+                    <Text size='xs' className="col-span-9">
+                        {educations?.map((item, idx) => idx < educations.length - 1
+                            ? `${languageMap.userLanguage.education[item].name} | `
+                            : languageMap.userLanguage.education[item].name)
+                        }
+                    </Text>
+                </div>
             }
             {experiences &&
-                <Text size='xs'>
+                <div className="grid grid-cols-10 items-center">
                     <ResponsiveIcon icon={Briefcase} />
-                    {experiences?.map((item, idx) => idx < experiences.length - 1
-                        ? `${languageMap.userLanguage.experience[item].name} | `
-                        : languageMap.userLanguage.experience[item].name)
-                    }
-                </Text>
+                    <Text size='xs' className="col-span-9">
+                        {experiences?.map((item, idx) => idx < experiences.length - 1
+                            ? `${languageMap.userLanguage.experience[item].name} | `
+                            : languageMap.userLanguage.experience[item].name)
+                        }
+                    </Text>
+                </div>
             }
             {projects &&
-                <Text size='xs'>
+                <div className="grid grid-cols-10 items-center">
                     <ResponsiveIcon icon={Folder} />
-                    {projects?.map((item, idx) => idx < projects.length - 1
-                        ? `${languageMap.userLanguage.project[item].name} | `
-                        : languageMap.userLanguage.project[item].name)
-                    }
-                </Text>
+                    <Text size='xs' className="col-span-9">
+                        {projects?.map((item, idx) => idx < projects.length - 1
+                            ? `${languageMap.userLanguage.project[item].name} | `
+                            : languageMap.userLanguage.project[item].name)
+                        }
+                    </Text>
+                </div>
             }
             {certificates &&
-                <Text size='xs'>
+                <div className="grid grid-cols-10 items-center">
                     <ResponsiveIcon icon={Award} />
-                    {certificates?.map((item, idx) => idx < certificates.length - 1
-                        ? `${languageMap.userLanguage.certificate[item].name} | `
-                        : languageMap.userLanguage.certificate[item].name)
-                    }
-                </Text>
+                    <Text size='xs' className="col-span-9">
+                        {certificates?.map((item, idx) => idx < certificates.length - 1
+                            ? `${languageMap.userLanguage.certificate[item].name} | `
+                            : languageMap.userLanguage.certificate[item].name)
+                        }
+                    </Text>
+                </div>
             }
-        </React.Fragment>
+        </Fragment>
     )
 }

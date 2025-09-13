@@ -49,7 +49,8 @@ export const systemTr: SystemLanguage = {
         chartLabel: 'Projenin yetenekleri'
     },
     skill: {
-        chartLabel: 'Widgetin yetenekleri'
+        chartLabel: 'Widgetin yetenekleri',
+        modalLabel: 'Tüm yetenekleri görüntüle'
     },
     language: {
         chartLabel: 'Dil Seviyesi'

@@ -49,7 +49,8 @@ export const systemAr: SystemLanguage = {
         chartLabel: 'مهارات المشاريع'
     },
     skill: {
-        chartLabel: 'توزيع المهارات'
+        chartLabel: 'توزيع المهارات',
+        modalLabel: 'عرض جميع المهارات'
     },
     language: {
         chartLabel: 'مستوى اللغة'

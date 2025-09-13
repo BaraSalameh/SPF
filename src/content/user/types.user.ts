@@ -80,7 +80,10 @@ interface SocialMedia {
 type ProjectCommonAtts = 'path' | 'source';
 
 // Skill widget common types
-export type SkillName = 'React.js' | 'Next.js' | 'Typescript' | 'ASP.NET' | 'SQL Server' | 'Javascript';
+export type SkillName = 'React.js' |'Next.js' | 'TypeScript' | 'ASP.NET' | 'SQL Server' | 'JavaScript' | 'C#' | 'Microsoft Azure' |
+                        'Vercel' | 'JSON' | 'Visual Basic' | 'Leadership' | 'Express.js' | 'Bootstrap' | 'jQuery' | 'Yii' | 'Figma' |
+                        'Time Management' | 'MongoDB' | 'Teamwork' | 'Microsoft Access' | 'Django' | 'Flask' | 'Spring Boot' | 'Redux.js'|
+                        'Python' | 'Agile Development' | 'CSS' | 'HTML5' | 'Java' | 'Research' | 'Communication' | 'Problem Solving' | 'Tailwind';
 export interface Skill {
     name: SkillName;
     logo: string;

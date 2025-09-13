@@ -93,10 +93,12 @@ const Cpy = ({ position, startDate, endDate, skills, linkLabel, linkUrl }: Compa
             {startDate} - {endDate}
         </Text>
         {skills &&
-            <Text size='xs'>
+            <div className="grid grid-cols-10 items-center">
                 <ResponsiveIcon icon={Star} />
-                {skills?.map((item: string, idx: number) => idx < skills.length - 1 ? `${item} | ` : item)}
-            </Text>
+                <Text size='xs' className="col-span-9">
+                    {skills?.map((item: string, idx: number) => idx < skills.length - 1 ? `${item} | ` : item)}
+                </Text>
+            </div>
         }
         <Link label={linkLabel} to={linkUrl} icon="/globe.svg"/>
     </React.Fragment>

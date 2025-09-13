@@ -34,4 +34,5 @@ export interface CardProps {
     subTitle?: string;
     logoUrl?: string;
     content?: React.ReactNode;
+    className?: string;
 };

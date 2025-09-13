@@ -17,7 +17,9 @@ export const useChart = () => {
         skillCounts[key as SkillName] = value.projects?.length ?? 0
     });
 
-    const customData: ChartEntry[] = Object.entries(skillCounts).map(
+    const customData: ChartEntry[] = Object.entries(skillCounts)
+    .filter(([_, value]) => value !== 0)
+    .map(
         ([name, value]) => ({
             name,
             value,

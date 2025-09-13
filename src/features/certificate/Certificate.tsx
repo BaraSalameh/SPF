@@ -47,10 +47,12 @@ const Cte = ({ label, description, website, skills }: CertificateProps) =>
     <React.Fragment>
         {description}
         {skills &&
-            <Text size='xs'>
+            <div className="grid grid-cols-10 items-center">
                 <ResponsiveIcon icon={Star} />
-                {skills?.map((item: string, idx: number) => idx < skills.length - 1 ? `${item} | ` : item)}
-            </Text>
+                <Text size='xs' className="col-span-9">
+                    {skills?.map((item: string, idx: number) => idx < skills.length - 1 ? `${item} | ` : item)}
+                </Text>
+            </div>
         }
         <div className="flex flex-wrap justify-center gap-5">
             <Link label={label} to={website} icon="/globe.svg"/>

@@ -2,14 +2,16 @@ import Image from "next/image";
 import { Text } from '@/components/ui';
 import { CardProps } from "./types.ui";
 import { card } from "@/styles";
+import { cn } from "../utils";
 
 export const Card = ({
     title,
     subTitle,
     logoUrl,
     content,
+    className,
 }: CardProps) => 
-    <div className={card()}>
+    <div className={cn(card(), className)}>
         <div className="flex items-center gap-3">
             {logoUrl &&
                 <div className="relative w-20 h-20">
