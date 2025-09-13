@@ -1,5 +1,7 @@
 import { cva, VariantProps } from 'class-variance-authority';
 
+const hoverStyle = 'hover:text-light-bg-hover dark:hover:text-dark-bg-hover';
+
 export const text = cva(
     'flex items-center whitespace-pre-line font-[family-name:var(--font-geist-mono)]',
     {
@@ -38,7 +40,11 @@ export const text = cva(
                 lg: 'gap-15'
             },
             clickable: {
-                true: 'cursor-pointer hover:text-light-bg-hover dark:hover:text-dark-bg-hover',
+                true: `cursor-pointer ${hoverStyle}`,
+                false: null
+            },
+            copyable: {
+                true: `cursor-copy ${hoverStyle}`,
                 false: null
             }
         },
@@ -48,7 +54,8 @@ export const text = cva(
             text: 'standard',
             position: 'start',
             space: 'sm',
-            clickable: false
+            clickable: false,
+            copyable: false,
         },
     }
 );

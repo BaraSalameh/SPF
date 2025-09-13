@@ -1,7 +1,7 @@
 'use client';
 
 import { X } from 'lucide-react';
-import React, { ReactNode, useState } from 'react';
+import React, { useState } from 'react';
 import { ResponsiveIcon } from './ResponsiveIcon';
 import { Text } from './Text';
 import { BlurBackground } from '../shared';

@@ -18,7 +18,7 @@ export const useChart = () => {
     });
 
     const customData: ChartEntry[] = Object.entries(skillCounts)
-    .filter(([_, value]) => value !== 0)
+    .filter(([, value]) => value !== 0)
     .map(
         ([name, value]) => ({
             name,

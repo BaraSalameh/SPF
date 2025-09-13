@@ -25,15 +25,15 @@ export const Information = () => {
  
     return (
         <Fragment>
-                <Text intent={emailCopied ? "success" : "primary"} onClick={() => handleCopy(common.contactInformaion.email, setEmailCopied)}>
+                <Text copyable={true} intent={emailCopied ? "success" : "primary"} onClick={() => handleCopy(common.contactInformaion.email, setEmailCopied)}>
                     <ResponsiveIcon icon={emailCopied ? MailCheck : Mail} />
                     {emailCopied ? sysInfo.copy : common.contactInformaion.email}
                 </Text>
-            <Text intent={MobileCopied ? "success" : "primary"} onClick={() => handleCopy(common.contactInformaion.mobile, setMobilCopied)}>
+            <Text copyable={true} intent={MobileCopied ? "success" : "primary"} onClick={() => handleCopy(common.contactInformaion.mobile, setMobilCopied)}>
                 <ResponsiveIcon icon={Phone} />
                 {MobileCopied ? sysInfo.copy : common.contactInformaion.mobile}
             </Text>
-           <Text intent={whatsappCopied ? "success" : "primary"} onClick={() => handleCopy(common.contactInformaion.whatsapp, setWhatsappCopied)}>
+           <Text copyable={true} intent={whatsappCopied ? "success" : "primary"} onClick={() => handleCopy(common.contactInformaion.whatsapp, setWhatsappCopied)}>
                 <ResponsiveIcon icon={MessageCircleCode} />
                 {whatsappCopied ? sysInfo.copy : common.contactInformaion.whatsapp}
             </Text>

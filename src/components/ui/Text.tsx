@@ -13,10 +13,11 @@ export const Text = ({
     position,
     space,
     className,
+    copyable,
     onClick
 }: TextProps) => {
     return (
-        <p className={cn(paragraph({ intent, size, text, position, space, clickable: onClick ? true : false }), className)} onClick={onClick}>
+        <p className={cn(paragraph({ intent, size, text, position, space, clickable: copyable ? false : onClick ? true : false, copyable }), className)} onClick={onClick}>
             {children}
         </p>
     );
