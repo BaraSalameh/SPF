@@ -17,10 +17,11 @@ export const Skill = () => {
     .slice(0, isSubComponent ? undefined : 4)
     .map(([key, value]) =>
         <Card
-            className={isSubComponent ? "min-h-[fit-content] bg-light-sub-component dark:bg-dark-sub-component" : ''}
             key={key}
             title={value.name}
             logoUrl={value.logo}
+            subComponent={isSubComponent}
+            scrollable={false}
             content={
                 <Skl
                     languageMap={lang}
@@ -38,7 +39,7 @@ export const Skill = () => {
             <Modal
                 icon={'/window.svg'}
                 title={lang.systemLanguage.skill.modalLabel as string}
-                jsx={cards(true)}
+                content={cards(true)}
             />
             <div className={widget()}>
                 {cards(false)}
@@ -47,56 +48,50 @@ export const Skill = () => {
     )
 }
 
-const Skl = ({ educations, experiences, projects, certificates, languageMap }: SkillProps) => {
-    
-    
-    
-    return (
-        <Fragment>
-            {educations &&
-                <div className="grid grid-cols-10 items-center">
-                    <ResponsiveIcon icon={GraduationCap} />
-                    <Text size='xs' className="col-span-9">
-                        {educations?.map((item, idx) => idx < educations.length - 1
-                            ? `${languageMap.userLanguage.education[item].name} | `
-                            : languageMap.userLanguage.education[item].name)
-                        }
-                    </Text>
-                </div>
-            }
-            {experiences &&
-                <div className="grid grid-cols-10 items-center">
-                    <ResponsiveIcon icon={Briefcase} />
-                    <Text size='xs' className="col-span-9">
-                        {experiences?.map((item, idx) => idx < experiences.length - 1
-                            ? `${languageMap.userLanguage.experience[item].name} | `
-                            : languageMap.userLanguage.experience[item].name)
-                        }
-                    </Text>
-                </div>
-            }
-            {projects &&
-                <div className="grid grid-cols-10 items-center">
-                    <ResponsiveIcon icon={Folder} />
-                    <Text size='xs' className="col-span-9">
-                        {projects?.map((item, idx) => idx < projects.length - 1
-                            ? `${languageMap.userLanguage.project[item].name} | `
-                            : languageMap.userLanguage.project[item].name)
-                        }
-                    </Text>
-                </div>
-            }
-            {certificates &&
-                <div className="grid grid-cols-10 items-center">
-                    <ResponsiveIcon icon={Award} />
-                    <Text size='xs' className="col-span-9">
-                        {certificates?.map((item, idx) => idx < certificates.length - 1
-                            ? `${languageMap.userLanguage.certificate[item].name} | `
-                            : languageMap.userLanguage.certificate[item].name)
-                        }
-                    </Text>
-                </div>
-            }
-        </Fragment>
-    )
-}
+const Skl = ({ educations, experiences, projects, certificates, languageMap }: SkillProps) => 
+    <Fragment>
+        {educations &&
+            <div className="grid grid-cols-10 items-center">
+                <ResponsiveIcon icon={GraduationCap} />
+                <Text size='xs' className="col-span-9">
+                    {educations?.map((item, idx) => idx < educations.length - 1
+                        ? `${languageMap.userLanguage.education[item].name} | `
+                        : languageMap.userLanguage.education[item].name)
+                    }
+                </Text>
+            </div>
+        }
+        {experiences &&
+            <div className="grid grid-cols-10 items-center">
+                <ResponsiveIcon icon={Briefcase} />
+                <Text size='xs' className="col-span-9">
+                    {experiences?.map((item, idx) => idx < experiences.length - 1
+                        ? `${languageMap.userLanguage.experience[item].name} | `
+                        : languageMap.userLanguage.experience[item].name)
+                    }
+                </Text>
+            </div>
+        }
+        {projects &&
+            <div className="grid grid-cols-10 items-center">
+                <ResponsiveIcon icon={Folder} />
+                <Text size='xs' className="col-span-9">
+                    {projects?.map((item, idx) => idx < projects.length - 1
+                        ? `${languageMap.userLanguage.project[item].name} | `
+                        : languageMap.userLanguage.project[item].name)
+                    }
+                </Text>
+            </div>
+        }
+        {certificates &&
+            <div className="grid grid-cols-10 items-center">
+                <ResponsiveIcon icon={Award} />
+                <Text size='xs' className="col-span-9">
+                    {certificates?.map((item, idx) => idx < certificates.length - 1
+                        ? `${languageMap.userLanguage.certificate[item].name} | `
+                        : languageMap.userLanguage.certificate[item].name)
+                    }
+                </Text>
+            </div>
+        }
+    </Fragment>

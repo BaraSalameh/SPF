@@ -13,7 +13,6 @@ export const Modal = ({
     subTitle = title,
     content,
     icon,
-    jsx,
     closeOnOutsideClick = true
 }: ModalProps) => {
 
@@ -36,10 +35,10 @@ export const Modal = ({
                         </div>
                         <hr />
                         {/* Main */}
-                        <div>
-                            <Text size="md">{content}</Text>
-                        </div>
-                        {jsx}
+                        { typeof content === 'string'
+                        ?    <Text size="md">{content}</Text>
+                        :   content
+                        }
                     </div>
                 </BlurBackground>
             )}

@@ -1,5 +1,5 @@
 import { LucideIcon } from "lucide-react";
-import { TextVariantProps } from "@/styles";
+import { CardVariantProps, TextVariantProps } from "@/styles";
 import { Size } from "../types";
 import { ReactNode } from "react";
 
@@ -30,7 +30,7 @@ export interface NavButtonProps {
     hoverable?: Hoverable;
 }
 
-export interface CardProps {
+export interface CardProps extends CardVariantProps {
     title: string;
     subTitle?: string;
     logoUrl?: string;
@@ -41,8 +41,7 @@ export interface CardProps {
 export interface ModalProps {
     title: string;
     subTitle?: string;
-    content?: string;
+    content?: ReactNode | string;
     icon?: string;
-    jsx?: ReactNode;
     closeOnOutsideClick?: boolean;
 }

@@ -10,8 +10,10 @@ export const Card = ({
     logoUrl,
     content,
     className,
+    subComponent,
+    scrollable
 }: CardProps) => 
-    <div className={cn(card(), className)}>
+    <div className={cn(card({ subComponent, scrollable }), className)}>
         <div className="flex items-center gap-3">
             {logoUrl &&
                 <div className="relative w-20 h-20">

@@ -147,7 +147,7 @@ export const userCommon: UserCommonLanguage = {
         "Microsoft Access": {
             name: 'Microsoft Access',
             logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoftaccess.svg',
-            projects: ["Portfolio", "Static Portfolio"]
+            educations: ["AAUP"]
         },
         "Microsoft Azure": {
             name: 'Microsoft Azure',
