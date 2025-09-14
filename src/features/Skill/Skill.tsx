@@ -17,7 +17,7 @@ export const Skill = () => {
     .slice(0, isSubComponent ? undefined : 4)
     .map(([key, value]) =>
         <Card
-            className={isSubComponent ? "min-h-fit bg-light-sub-component dark:bg-dark-sub-component" : ''}
+            className={isSubComponent ? "min-h-[fit-content] bg-light-sub-component dark:bg-dark-sub-component" : ''}
             key={key}
             title={value.name}
             logoUrl={value.logo}
