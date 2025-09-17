@@ -40,7 +40,10 @@ export const systemEn: SystemLanguage = {
     },
     experience: {
         linkLabel: 'Visit Company',
-        chartLabel: 'Duration (Month)'
+        chartLabel: 'Duration (Month)',
+        modalLabel: 'Responsibilites and Achivements',
+        description: 'Responsibilites',
+        sourceLabel: 'Achivements'
     },
     project: {
         linkLabel: 'View Live Project',

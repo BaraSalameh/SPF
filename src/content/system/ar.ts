@@ -40,7 +40,10 @@ export const systemAr: SystemLanguage = {
     },
     experience: {
         linkLabel: 'زيارة الشركة',
-        chartLabel: 'المدة الزمنية (شهر)'
+        chartLabel: 'المدة الزمنية (شهر)',
+        modalLabel: 'المسؤوليات والإنجازات',
+        description: 'المسؤوليات',
+        sourceLabel: 'الإنجازات'
     },
     project: {
         linkLabel: 'عرض المشروع المباشر',

@@ -22,9 +22,16 @@ export type UniversityName = 'AAUP' | 'UU';
 export type universityAtts = 'name' | 'location' | 'major';
 
 // Experience widget types
-export type ExperienceAtts = Record<CompanyName, Record<CompanyAtts, string>>
+export type ExperienceAtts = Record<CompanyName, CompanyAtts>
 export type CompanyName = 'AAUP' | 'Jawwal' | 'UATS' | 'Spinnel';
-export type CompanyAtts = 'name' | 'location' | 'position';
+interface CompanyAtts {
+    name: string;
+    location: string;
+    position: string;
+    responsibility?: string[];
+    achievement?: string[];
+}
+
 
 // Project widget types
 export type ProjectsAtts = Record<ProjectName, Record<ProjectAtts, string>>

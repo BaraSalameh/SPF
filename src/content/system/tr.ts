@@ -40,7 +40,10 @@ export const systemTr: SystemLanguage = {
     },
     experience: {
         linkLabel: 'Şirketi Ziyaret Et',
-        chartLabel: 'Süre (Ay)'
+        chartLabel: 'Süre (Ay)',
+        modalLabel: 'Sorumluluklar ve Başarılar',
+        description: 'Sorumluluklar',
+        sourceLabel: 'Başarılar'
     },
     project: {
         linkLabel: 'Canlı Projeyi Görüntüle',

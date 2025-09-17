@@ -1,5 +1,5 @@
 import { LucideIcon } from "lucide-react";
-import { CardVariantProps, TextVariantProps } from "@/styles";
+import { CardVariantProps, ListVariantProps, TextVariantProps } from "@/styles";
 import { Size } from "../types";
 import { ReactNode } from "react";
 
@@ -44,4 +44,9 @@ export interface ModalProps {
     content?: ReactNode | string;
     icon?: string;
     closeOnOutsideClick?: boolean;
+}
+
+export interface ListProps extends ListVariantProps {
+    children: React.ReactNode;
+    className?: string;
 }

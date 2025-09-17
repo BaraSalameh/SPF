@@ -21,3 +21,6 @@ export type { NavButtonContainerVariantProps, NavButtonIconContainerVariantProps
 
 export { container, narrowSection, wideSection } from './container';
 export type { ContainerVariantProps, NarrowSectionVariantProps, WideSectionVariantProps } from './container';
+
+export { list } from './list';
+export type { ListVariantProps } from './list';

@@ -25,21 +25,61 @@ export const userTr: UserLanguage = {
             name: 'Arab American Üniversitesi',
             location: 'Jenin, Filistin',
             position: 'Hoca',
+            responsibility: [
+                "Lisans öğrencilerine C++, Python, Ağ ve Veritabanı konularında dersler hazırlamak ve sunmak.",
+                "Müfredat gereksinimlerine uygun ders materyalleri, ödevler ve laboratuvar çalışmaları geliştirmek.",
+                "Öğrencilere programlama temelleri ve problem çözme tekniklerini anlamalarında rehberlik ve mentorluk yapmak.",
+                "Öğrenci performansını sınavlar, projeler ve sunumlar aracılığıyla değerlendirmek.",
+                "Modern öğretim yöntemlerini takip ederek derslere uygulamalı kodlama laboratuvarları dahil etmek."
+            ],
+            achievement: [
+                "100’den fazla lisans öğrencisine programlama ve bilgisayar bilimi temelleri konusunda mentorluk ve danışmanlık yaparak problem çözme becerilerini ve kodlama özgüvenlerini geliştirdim.",
+                "Uygulamalı kodlama atölyeleri ve veritabanı laboratuvarlarını tanıttım."
+            ]
         },
         Spinnel: {
             name: 'ERP Easy (Spinnel)',
             location: 'Ramallah, Filistin',
             position: 'Orta website uzmanı',
+            responsibility: [
+                "ASP.NET Web API ve VB.NET Windows Forms kullanarak ERP modüllerini tasarlamak, geliştirmek ve bakımını yapmak.",
+                "SQL Server veritabanlarını, sorgularını ve saklı yordamlarını oluşturarak ve optimize ederek sistem performansını sağlamak.",
+                "Gereksinim toplama ve sistem analizine çok disiplinli ekiplerle katılmak.",
+                "Yazılım hatalarını ve kullanıcı tarafından bildirilen sorunları gidermek ve çözmek.",
+                "ERP çözümlerinin dağıtımına yardımcı olmak ve müşterilere teknik destek sağlamak."
+            ],
+            achievement: [
+                "ASP.NET Web API ve VB.NET Windows Forms kullanarak kurumsal ERP modüllerini geliştirdim ve bakımını yaptım, bu da sistem verimliliğini artırdı.",
+                "SQL Server sorgularını ve saklı yordamlarını optimize ederek veritabanı yanıt sürelerini azalttım ve birden fazla modülde veri doğruluğunu sağladım.",
+                "ERP çözümlerini müşterilere sunmak için çok disiplinli ekiplerle iş birliği yaptım."
+            ]
         },
         Jawwal: {
             name: 'Jawwal',
             location: 'Ramallah, Filistin',
             position: 'Büyükelçi',
+            responsibility: [
+                "Saha teknisyenleri tarafından kurulan fiber optik ağların yerinde denetimlerini ve denetimlerini gerçekleştirmek.",
+                "Ağ kalite standartlarına ve şirket politikalarına uygunluğu doğrulamak.",
+                "Denetim bulgularını belgelemek ve yönetim incelemesi için raporlar hazırlamak.",
+                "Operasyonel gecikmeleri azaltmak için saha süreçlerini optimize etmeye yardımcı olmak."
+            ],
         },
         UATS: {
             name: 'Ultimate Advanced Turnkey Solutions',
             location: 'Rawabi, Filistin',
             position: 'Yeni website uzmanı',
+            responsibility: [
+                "ASP.NET Web API, HTML5, CSS3 ve JavaScript kullanarak web uygulamaları geliştirmek ve bakımını yapmak.",
+                "Müşteri projelerini desteklemek için SQL Server veritabanlarını tasarlamak ve uygulamak.",
+                "Figma kullanarak UI/UX ekipleriyle iş birliği yaparak tasarımları işlevsel uygulamalara dönüştürmek.",
+                "Proje planlamasına, sprint değerlendirmelerine ve günlük toplantılara katılarak zamanında teslimatı sağlamak."
+            ],
+            achievement: [
+                "ASP.NET Web API, HTML5, CSS3 ve JavaScript kullanarak web uygulamaları geliştirdim ve dağıttım; 5’ten fazla müşteri odaklı projeyi zamanında ve bütçe dahilinde teslim ettim.",
+                "SQL Server sorgularını optimize ederek, temiz kodlama uygulayarak ve verimli API tasarımıyla uygulama performansını artırdım.",
+                "Figma ve GitHub kullanarak tasarımcılar ve ürün yöneticileriyle iş birliği yaparak sorunsuz ekip çalışması sağladım ve geliştirme döngüsünü kısalttım."
+            ]
         }
     },
     project: {
