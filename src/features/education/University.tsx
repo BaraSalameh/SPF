@@ -23,6 +23,7 @@ export const University = () => {
                 title={universities.UU.name}
                 subTitle={universities.UU.location}
                 logoUrl="/UU.jpg"
+                link={commonAtts.UU.path}
                 content={
                     <Usy
                         major={universities.UU.major}
@@ -38,6 +39,7 @@ export const University = () => {
                 title={universities.AAUP.name}
                 subTitle={universities.AAUP.location}
                 logoUrl="/AAUP.png"
+                link={commonAtts.UU.path}
                 content={
                     <Usy
                         major={universities.AAUP.major}
@@ -70,5 +72,5 @@ const Usy = ({ major, startDate, endDate, skills, linkLabel, linkUrl }: Universi
                 </Text>
             </div>
         }
-        <Link label={linkLabel} to={linkUrl} icon="/globe.svg"/>
+        {/* <Link label={linkLabel} to={linkUrl} icon="/globe.svg"/> */}
     </React.Fragment>

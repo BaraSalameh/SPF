@@ -10,11 +10,11 @@ const Portfolio = () =>
     <div className="space-y-10">
         <Profile />
         <Experience />
-        <Education />
         <Projects />
         <Skills />
-        <Languages />
+        <Education />
         <Certificates />
+        <Languages />
     </div>
 
 export default Portfolio;
