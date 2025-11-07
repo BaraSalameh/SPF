@@ -17,6 +17,8 @@ export const systemAr: SystemLanguage = {
             contactInfo: 'معلومات التواصل'
         },
         information: {
+            gitHub: 'غيت هب',
+            linkedIn: 'لينكد ان',
             facebook: 'فيسبوك',
             instagram: 'انستجرام',
             email: 'أرسل بريدًا إلكترونيًا',

@@ -18,6 +18,14 @@ export const userCommon: UserCommonLanguage = {
             birthdate: '19/02/1999',
         },
         socialMedia: {
+            gitHub: {
+                path: 'https://github.com/BaraSalameh',
+                icon: '/github.svg'
+            },
+            linkedIn: {
+                path: 'https://www.linkedin.com/in/albaraa-i-a-salama-30978420a',
+                icon: '/linkedin.svg'
+            },
             facebook: {
                 path: 'https://www.facebook.com/bara.salameh/',
                 icon: '/facebook.svg'
@@ -28,11 +36,11 @@ export const userCommon: UserCommonLanguage = {
             },
             email: {
                 path: `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`,
-                icon: '/send-email.svg'
+                icon: '/gmail.svg'
             },
             whatsapp: {
                 path: `https://wa.me/${whatsapp}`,
-                icon: '/message.svg'
+                icon: '/whatsapp.svg'
             }
         }
     },

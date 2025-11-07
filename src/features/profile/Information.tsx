@@ -37,6 +37,8 @@ export const Information = () => {
                 {whatsappCopied ? sysInfo.copy : common.contactInformaion.whatsapp}
             </Text>
             <div className="flex flex-wrap justify-center gap-5">
+                <Link label={sysInfo.gitHub} icon={common.socialMedia?.gitHub?.icon ?? ''} to={common.socialMedia?.gitHub?.path ?? ''} />
+                <Link label={sysInfo.linkedIn} icon={common.socialMedia?.linkedIn?.icon ?? ''} to={common.socialMedia?.linkedIn?.path ?? ''} />
                 <Link label={sysInfo.facebook} icon={common.socialMedia?.facebook?.icon ?? ''} to={common.socialMedia?.facebook?.path ?? ''} />
                 <Link label={sysInfo.instagram} icon={common.socialMedia?.instagram?.icon ?? ''} to={common.socialMedia?.instagram?.path ?? ''} />
                 <Link label={sysInfo.email} icon={common.socialMedia?.email?.icon ?? ''} to={common.socialMedia?.email?.path ?? ''} />

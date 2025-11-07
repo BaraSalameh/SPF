@@ -17,6 +17,8 @@ export const systemTr: SystemLanguage = {
             contactInfo: 'İletişim bilgileri',
         },
         information: {
+            gitHub: 'GitHub',
+            linkedIn: 'LinkedIn',
             facebook: 'Facebook',
             instagram: 'Instagram',
             email: 'E-posta Gönder',

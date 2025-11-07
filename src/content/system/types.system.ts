@@ -30,4 +30,4 @@ interface ProfileAtts {
 
 type UtilityAtts = 'cv' | 'contactInfo';
 
-type InformationAtts = 'facebook' | 'instagram' | 'email' | 'whatsapp' | 'copy';
+type InformationAtts = 'gitHub' | 'linkedIn' | 'facebook' | 'instagram' | 'email' | 'whatsapp' | 'copy';

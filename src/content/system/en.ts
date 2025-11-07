@@ -17,6 +17,8 @@ export const systemEn: SystemLanguage = {
             contactInfo: 'Contact informations',
         },
         information: {
+            gitHub: 'GitHub',
+            linkedIn: 'LinkedIn',
             facebook: 'Facebook',
             instagram: 'Instagram',
             email: 'Send Email',

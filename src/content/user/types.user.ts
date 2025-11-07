@@ -79,6 +79,8 @@ type PersonalInformation = 'birthdate'
 type ContactInformation = 'email' | 'mobile' | 'whatsapp';
 
 interface SocialMedia {
+    gitHub?: Record<WebsiteAtts, string>;
+    linkedIn?: Record<WebsiteAtts, string>;
     facebook?: Record<WebsiteAtts, string>;
     instagram?: Record<WebsiteAtts, string>;
     whatsapp?: Record<WebsiteAtts, string>;
