@@ -1,6 +1,6 @@
 'use client';
 
-import { Card, ResponsiveIcon, Text, Link, Modal } from "@/components/ui";
+import { Card, ResponsiveIcon, Text } from "@/components/ui";
 import React from "react";
 import { Star } from "lucide-react";
 import { mapSkillsToWidget } from "../utils/mapSkillsToWidget";
@@ -13,9 +13,6 @@ export const Certificate = () => {
     const lang = useLanguage();
     const certificates =lang.userLanguage.certificate;
     const commonAtts = userCommon.certificate;
-    const description = lang.systemLanguage.certificate.description;
-    const label = lang.systemLanguage.certificate.linkLabel;
-
     const certificateSkills = mapSkillsToWidget("Certificates");
 
     return(
@@ -24,18 +21,11 @@ export const Certificate = () => {
                 title={certificates["AXSOS Academy"].name}
                 subTitle={certificates["AXSOS Academy"].position}
                 logoUrl={commonAtts["AXSOS Academy"].icon}
+                link={commonAtts["AXSOS Academy"].path}
                 content={
                     <Cte
-                        description={
-                            <Modal
-                                title={description as string}
-                                icon={'/file.svg'}
-                                content={certificates["AXSOS Academy"].description}
-                            />
-                        }
+                        description={<Text size={"xs"}>{certificates["AXSOS Academy"].description}</Text>}
                         skills={certificateSkills["AXSOS Academy"]}
-                        website={commonAtts["AXSOS Academy"].path}
-                        label={label as string}
                     />
                 }
             />
@@ -43,9 +33,8 @@ export const Certificate = () => {
     )
 }
 
-const Cte = ({ label, description, website, skills }: CertificateProps) =>
+const Cte = ({ description, skills }: CertificateProps) =>
     <React.Fragment>
-        {description}
         {skills &&
             <div className="grid grid-cols-10 items-center">
                 <ResponsiveIcon icon={Star} />
@@ -54,7 +43,5 @@ const Cte = ({ label, description, website, skills }: CertificateProps) =>
                 </Text>
             </div>
         }
-        <div className="flex flex-wrap justify-center gap-5">
-            <Link label={label} to={website} icon="/globe.svg"/>
-        </div>
+        {description}
     </React.Fragment>
