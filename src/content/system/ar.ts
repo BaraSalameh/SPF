@@ -11,20 +11,10 @@ export const systemAr: SystemLanguage = {
         Languages: 'اللغات',
         Certificates: 'الشهادات'
     },
-    setting: {
-        label: 'الاعدادات',
-        theme: {
-            dark : 'مظلم',
-            light: 'مضيئ'
-        },
-        language: {
-           label: 'اللغات'
-        }
-    },
     profile: {
         utility: {
             cv: 'السيرة الذاتية',
-            contactInfo: 'المعلومات الشخصية والتواصل',
+            contactInfo: 'معلومات التواصل'
         },
         information: {
             facebook: 'فيسبوك',

@@ -11,20 +11,10 @@ export const systemEn: SystemLanguage = {
         Languages: 'Languages',
         Certificates: 'Certificates'
     },
-    setting: {
-        label: 'Settings',
-        theme: {
-            dark : 'Dark',
-            light: 'Light'
-        },
-        language: {
-            label: 'Languages'
-        }
-    },
     profile: {
         utility: {
             cv: 'Resume',
-            contactInfo: 'Personal and contact informations',
+            contactInfo: 'Contact informations',
         },
         information: {
             facebook: 'Facebook',

@@ -5,7 +5,9 @@ export const userEn: UserLanguage = {
         information: {
             fullname: 'Albaraa I. A. Salameh',
             gender: "Male",
-            bio: "I’m a software developer with experience in backend, frontend, and desktop apps. I’ve worked on e-commerce projects, ERP systems, and more across different companies.\n\nI enjoy structuring and architecting apps, making sure everything is built the right way from the start. I like thinking through the best approach to organize code and ensure the app is scalable and maintainable in the long run.\n\nI’m always looking for ways to grow and improve in the industry. I love staying up to date with new technologies, and I’m excited to keep learning and taking new challenges to level up my skills."
+            bio: `Full-Stack Software Engineer with master's in cyber security and 5+ years of experience building and deploying scalable web applications.
+            \nDelivered over 6+ end-to-end projects improving system efficiency and user satisfaction by up to 30%. Skilled in clean architecture, RESTful API design, and
+            cloud deployment (Azure/AWS).\n\nStrong collaborator with a passion for writing maintainable, high-quality code and continuously adopting modern technologies to solve complex business challenges.`
         }
     },
     education: {

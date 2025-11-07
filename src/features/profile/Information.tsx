@@ -2,7 +2,7 @@
 
 import { Fragment, useState } from "react";
 import { Link, ResponsiveIcon, Text } from '@/components/ui';
-import { Cake, Mail, MailCheck, MessageCircleCode, Phone, VenusAndMars } from "lucide-react";
+import { Mail, MailCheck, MessageCircleCode, Phone } from "lucide-react";
 import { userCommon } from "@/content/user";
 import { useLanguage } from "@/lib/hooks";
 
@@ -15,7 +15,6 @@ export const Information = () => {
     const [whatsappCopied, setWhatsappCopied] = useState(false);
 
     const sysInfo = lang.systemLanguage.profile.information;
-    const userInfo = lang.userLanguage.profile.information;
     
     const handleCopy = async (toCopy: string, action: (value: boolean) => void) => {
         await navigator.clipboard.writeText(toCopy);
@@ -36,14 +35,6 @@ export const Information = () => {
            <Text copyable={true} intent={whatsappCopied ? "success" : "primary"} onClick={() => handleCopy(common.contactInformaion.whatsapp, setWhatsappCopied)}>
                 <ResponsiveIcon icon={MessageCircleCode} />
                 {whatsappCopied ? sysInfo.copy : common.contactInformaion.whatsapp}
-            </Text>
-            <Text>
-                <ResponsiveIcon icon={VenusAndMars} />
-                {userInfo.gender}
-            </Text>
-            <Text>
-                <ResponsiveIcon icon={Cake} />
-                {`${common.personalInformation.birthdate}`}
             </Text>
             <div className="flex flex-wrap justify-center gap-5">
                 <Link label={sysInfo.facebook} icon={common.socialMedia?.facebook?.icon ?? ''} to={common.socialMedia?.facebook?.path ?? ''} />

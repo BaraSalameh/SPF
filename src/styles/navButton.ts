@@ -1,7 +1,7 @@
 import { cva, VariantProps } from 'class-variance-authority';
 
 export const navButtonContainer = cva(
-    'flex items-center gap-2 bg-light-component dark:bg-dark-component hover:bg-light-bg-hover dark:hover:bg-dark-bg-hover rounded-full px-4 py-2 transition-all duration-1000 ease-in-out overflow-hidden cursor-pointer',
+    'flex items-center gap-2 bg-light-component dark:bg-dark-component hover:bg-light-bg-hover dark:hover:bg-dark-bg-hover rounded-full px-4 py-2 transition-all duration-500 overflow-hidden cursor-pointer',
     {
         variants: {
             hovered: {

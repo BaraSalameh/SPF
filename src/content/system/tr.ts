@@ -11,20 +11,10 @@ export const systemTr: SystemLanguage = {
         Languages: 'Diller',
         Certificates: 'Sertifikalar'
     },
-    setting: {
-        label: 'Ayarlar',
-        theme: {
-            dark : 'Karanlık',
-            light: 'Açık'
-        },
-        language: {
-            label: 'Diller'
-        }
-    },
     profile: {
         utility: {
             cv: 'Özgeçmiş',
-            contactInfo: 'Kişisel ve iletişim bilgileri',
+            contactInfo: 'İletişim bilgileri',
         },
         information: {
             facebook: 'Facebook',

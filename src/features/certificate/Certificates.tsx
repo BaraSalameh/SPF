@@ -1,8 +1,7 @@
 'use client'
 
 import { Title } from "@/components/shared";
-import { container, narrowSection, wideSection } from "@/styles";
-import { useChart } from "./hooks";
+import { container, wideSection } from "@/styles";
 import { Certificate } from "./Certificate";
 import { useLanguage } from "@/lib/hooks";
 
@@ -12,9 +11,6 @@ export const Certificates = () => {
 
     return (
         <main id="certificate" className={container()}>
-            <div className={narrowSection()}>
-                {useChart()}
-            </div>
             <div className={wideSection()}>
                 <Title title={title} />
                 <Certificate />

@@ -10,7 +10,6 @@ interface CommonAtts {
 
 export interface SystemLanguage {
     navigation: Record<NavigationAtts, string>;
-    setting: SettingAtts;
     profile: ProfileAtts;
     education: CommonAtts
     experience: CommonAtts;
@@ -22,16 +21,6 @@ export interface SystemLanguage {
 
 // Navigation widget types
 type NavigationAtts = WidgetName | 'label';
-
-// Settings widget types
-interface SettingAtts {
-    label: string;
-    theme: Record<ThemeAtts, string>;
-    language: Record<languageAtts, string>
-}
-
-type ThemeAtts = 'dark' | 'light';
-type languageAtts = 'label';
 
 // Profile widget types
 interface ProfileAtts {

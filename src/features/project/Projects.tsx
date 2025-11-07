@@ -1,8 +1,7 @@
 'use client';
 
 import { Title } from "@/components/shared";
-import { container, narrowSection, wideSection } from "@/styles";
-import { useChart } from "./hooks";
+import { container, wideSection } from "@/styles";
 import { Project } from "./Project";
 import { useLanguage } from "@/lib/hooks";
 
@@ -15,9 +14,6 @@ export const Projects = () => {
             <div className={wideSection()}>
                 <Title title={title} />
                 <Project />
-            </div>
-            <div className={narrowSection()}>
-                {useChart()}
             </div>
         </main>
     )

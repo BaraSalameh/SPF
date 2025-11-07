@@ -2,32 +2,21 @@
 
 import { NavButton } from "@/components/ui"
 import { useLanguage } from "@/lib/hooks";
-import { Award, Briefcase, Folder, GraduationCap, Home, Languages, Navigation, StarIcon, X } from "lucide-react"
-import { useState } from "react";
+import { Award, Briefcase, Folder, GraduationCap, Languages, StarIcon } from "lucide-react"
 
 export const Navigator = () => {
     const lang = useLanguage();
     const navigator = lang.systemLanguage.navigation;
-    const [ showNavigation, setShowNavigation ] = useState(false);
 
     return (
-        <div className="flex flex-col gap-2">
-            <NavButton
-                onClick={() => setShowNavigation(!showNavigation)}
-                icon={showNavigation ? X : Navigation}
-                label={navigator.label}
-            />
-            {showNavigation &&
-                <div className="flex flex-col gap-2 px-10">
-                    <NavButton hoverable={false} navigateTo="home" icon={Home} label={navigator.Home} />
-                    <NavButton hoverable={false} navigateTo="education" icon={GraduationCap} label={navigator.Education} />
-                    <NavButton hoverable={false} navigateTo="experience" icon={Briefcase} label={navigator.Experience} />
-                    <NavButton hoverable={false} navigateTo="project" icon={Folder} label={navigator.Projects} />
-                    <NavButton hoverable={false} navigateTo="skill" icon={StarIcon} label={navigator.Skills} />
-                    <NavButton hoverable={false} navigateTo="language" icon={Languages} label={navigator.Languages} />
-                    <NavButton hoverable={false} navigateTo="certificate" icon={Award} label={navigator.Certificates} />
-                </div>
-            }
+        <div className="flex flex-wrap justify-center gap-2">
+            {/* <NavButton navigateTo="home" icon={Home} label={navigator.Home} /> */}
+            <NavButton navigateTo="education" icon={GraduationCap} label={navigator.Education} />
+            <NavButton navigateTo="experience" icon={Briefcase} label={navigator.Experience} />
+            <NavButton navigateTo="project" icon={Folder} label={navigator.Projects} />
+            <NavButton navigateTo="skill" icon={StarIcon} label={navigator.Skills} />
+            <NavButton navigateTo="language" icon={Languages} label={navigator.Languages} />
+            <NavButton navigateTo="certificate" icon={Award} label={navigator.Certificates} />
         </div>
     )
 }

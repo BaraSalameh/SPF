@@ -1,21 +1,13 @@
 'use client';
 
-import { Globe, Languages, X } from 'lucide-react';
 import { useParams, useRouter } from "next/navigation";
 import { Language } from '../types';
-import { NavButton } from './NavButton';
-import { useState } from 'react';
-import { useLanguage } from '@/lib/hooks';
+import { Text } from './Text';
 
 export const LangToggle = () => {
-    
-    const applang = useLanguage();
     const router = useRouter();
     const params = useParams<{ lang: Language }>();
     
-    const [ showLanguages, setShowLanguages ] = useState(false);
-    
-    const label = applang.systemLanguage.setting.language.label;
     const { lang } = params;
 
     const handleLanguageUpdate = (nextLanguage: string) => {
@@ -27,41 +19,15 @@ export const LangToggle = () => {
     }
 
     const langMap: Record<Language, Record<string, string>> = {
-        en: { next: "en", label: "English" },
-        ar: { next: "ar", label: "العربية" },
-        tr: { next: "tr", label: "Türkçe" },
+        en: { next: "ar", label: "En" },
+        ar: { next: "tr", label: "ع" },
+        tr: { next: "en", label: "Tr" },
     } as const;
 
     return (
-        <div className={`flex flex-col gap-2`}>
-            <NavButton
-                hoverable={false}
-                onClick={() => setShowLanguages(!showLanguages)}
-                icon={showLanguages ? X : Globe}
-                label={label}
-            />
-            {showLanguages &&
-                <div className="flex flex-col gap-2 px-10">      
-                    <NavButton
-                        hoverable={false}
-                        onClick={() => handleLanguageUpdate(langMap.en.next)}
-                        icon={Languages}
-                        label={langMap.en.label}
-                    />
-                    <NavButton
-                        hoverable={false}
-                        onClick={() => handleLanguageUpdate(langMap.ar.next)}
-                        icon={Languages}
-                        label={langMap.ar.label}
-                    />
-                    <NavButton
-                        hoverable={false}
-                        onClick={() => handleLanguageUpdate(langMap.tr.next)}
-                        icon={Languages}
-                        label={langMap.tr.label}
-                    />
-                </div>
-            }
-        </div>
+        <Text
+            onClick={() => handleLanguageUpdate(langMap[lang].next)}
+            className='cursor-pointer '
+        >{langMap[lang].label}</Text>
     );
 };

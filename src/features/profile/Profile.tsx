@@ -3,7 +3,7 @@
 import { CoverImage } from "@/components/ui";
 import { Bio, Utility } from ".";
 import { container, narrowSection, wideSection } from "@/styles/container";
-import { Title } from "@/components/shared";
+import { Navigator, Title } from "@/components/shared";
 import { useLanguage } from "@/lib/hooks";
 
 export const Profile = () => {
@@ -19,6 +19,7 @@ export const Profile = () => {
                 <Title title={fullname} />
                 <Bio />
                 <Utility />
+                <Navigator />
             </div>
         </main>
     )

@@ -11,7 +11,7 @@ export const userCommon: UserCommonLanguage = {
         },
         contactInformaion: {
             email: email,
-            mobile: '+972500026313',
+            mobile: '+972599926313',
             whatsapp: `+${whatsapp}`
         },
         personalInformation: {

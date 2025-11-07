@@ -1,9 +1,8 @@
 'use client';
 
 import { Title } from '@/components/shared';
-import { container, narrowSection, wideSection } from "@/styles";
+import { container, wideSection } from "@/styles";
 import { University } from ".";
-import { useChart } from "./hooks";
 import { useLanguage } from '@/lib/hooks';
 
 export const Education = () => {
@@ -16,9 +15,6 @@ export const Education = () => {
             <div className={wideSection()}>
                 <Title title={title} />
                 <University />
-            </div>
-            <div className={narrowSection()}>
-                {useChart()}
             </div>
         </main>
     )
