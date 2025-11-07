@@ -62,6 +62,36 @@ export const  Company = () => {
                     />
                 }
             />
+            <Card
+                title={companies.AXSOS.name}
+                subTitle={companies.AXSOS.location}
+                logoUrl="/axsos.png"
+                link={commonAtts.AXSOS.path}
+                content={
+                    <Cpy
+                        description={<RA achivements={companies.AXSOS.achievement} />}
+                        position={companies.AXSOS.position}
+                        startDate={commonAtts.AXSOS.startDate}
+                        endDate={commonAtts.AXSOS.endDate}
+                        skills={projectSkills.AXSOS}
+                    />
+                }
+            />
+            <Card
+                title={companies.MOE.name}
+                subTitle={companies.MOE.location}
+                logoUrl="/moe.png"
+                link={commonAtts.MOE.path}
+                content={
+                    <Cpy
+                        description={<RA achivements={companies.MOE.achievement} />}
+                        position={companies.MOE.position}
+                        startDate={commonAtts.MOE.startDate}
+                        endDate={commonAtts.MOE.endDate}
+                        skills={projectSkills.MOE}
+                    />
+                }
+            />
         </div>
     )
 }

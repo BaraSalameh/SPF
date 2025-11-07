@@ -59,18 +59,28 @@ export const userCommon: UserCommonLanguage = {
     experience: {
         AAUP: {
             startDate: '10/2024',
-            endDate: '02/2025',
+            endDate: 'Present',
             path: "https://www.aaup.edu"
         },
         Spinnel: {
             startDate: '02/2024',
-            endDate: '05/2024',
+            endDate: 'Present',
             path: "https://spineltechnology.com/"
         },
         UATS: {
-            startDate: '05/2022',
-            endDate: '08/2022',
+            startDate: '09/2021',
+            endDate: '02/2024',
             path: "https://www.ultimitats.com/"
+        },
+        AXSOS: {
+            startDate: '04/2021',
+            endDate: '08/2021',
+            path: "https://axsos.academy/"
+        },
+        MOE: {
+            startDate: '10/2020',
+            endDate: '02/2021',
+            path: "https://moe.edu.ps/"
         }
     },
     project: {

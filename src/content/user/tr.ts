@@ -26,30 +26,60 @@ export const userTr: UserLanguage = {
         AAUP: {
             name: 'Arab American Üniversitesi',
             location: 'Jenin, Filistin',
-            position: 'Hoca',
+            position: 'Öğretim Görevlisi (Yarı zamanlı)',
             achievement: [
-                "100’den fazla lisans öğrencisine programlama ve bilgisayar bilimi temelleri konusunda mentorluk ve danışmanlık yaparak problem çözme becerilerini ve kodlama özgüvenlerini geliştirdim.",
-                "Uygulamalı kodlama atölyeleri ve veritabanı laboratuvarlarını tanıttım."
+                "Üniversitenin Bilişim Fakültesinde dersler vererek bilgisayar biliminin teorik ve pratik yönlerini öğrettim.",
+                "Lisans öğrencilerine C++, Python, Ağ (Network), Veritabanı ve Bilgisayar Becerileri gibi temel dersleri öğrettim.",
+                "Öğrencilerin uygulamalı programlama ve problem çözme becerilerini geliştiren etkili ders materyalleri ve laboratuvar çalışmaları hazırladım.",
+                "Öğrencilere akademik rehberlik ve mentorluk sağlayarak teknik ve analitik yeteneklerini geliştirmelerine destek oldum.",
+                "Ders içeriklerini güncel endüstri trendleri ve modern teknolojilerle uyumlu hale getirerek müfredatın geliştirilmesine katkıda bulundum."
             ]
+
         },
         Spinnel: {
-            name: 'ERP Easy (Spinnel)',
+            name: 'Spinnel',
             location: 'Ramallah, Filistin',
-            position: 'Orta website uzmanı',
+            position: 'Full-Stack Yazılım Mühendisi (Tam zamanlı)',
             achievement: [
-                "ASP.NET Web API ve VB.NET Windows Forms kullanarak kurumsal ERP modüllerini geliştirdim ve bakımını yaptım, bu da sistem verimliliğini artırdı.",
-                "SQL Server sorgularını ve saklı yordamlarını optimize ederek veritabanı yanıt sürelerini azalttım ve birden fazla modülde veri doğruluğunu sağladım.",
-                "ERP çözümlerini müşterilere sunmak için çok disiplinli ekiplerle iş birliği yaptım."
+                "ASP.NET Web API ve VB.NET Windows Forms kullanarak kurumsal düzeyde ERP modülleri geliştirip dağıtarak, departmanlar arası sistem verimliliğini ve kullanıcı deneyimini artırdım.",
+                "Karmaşık SQL Server sorgularını ve saklı yordamları optimize ederek, veritabanı yanıt sürelerini azalttım ve modüller arasında veri tutarlılığını sağladım.",
+                "Gereksinimleri analiz etmek ve müşteri operasyonlarını kolaylaştıran özel ERP çözümleri sunmak için çok disiplinli ekiplerle iş birliği yaptım.",
+                "Kritik yazılım hatalarını giderip sistem kararlılığını artırarak, sistem güvenilirliğinde ve müşteri memnuniyetinde ölçülebilir bir artış sağladım."
             ]
         },
         UATS: {
             name: 'Ultimate Advanced Turnkey Solutions',
             location: 'Rawabi, Filistin',
-            position: 'Yeni website uzmanı',
+            position: 'Full-Stack Yazılım Mühendisi (Tam zamanlı)',
             achievement: [
-                "ASP.NET Web API, HTML5, CSS3 ve JavaScript kullanarak web uygulamaları geliştirdim ve dağıttım; 5’ten fazla müşteri odaklı projeyi zamanında ve bütçe dahilinde teslim ettim.",
-                "SQL Server sorgularını optimize ederek, temiz kodlama uygulayarak ve verimli API tasarımıyla uygulama performansını artırdım.",
-                "Figma ve GitHub kullanarak tasarımcılar ve ürün yöneticileriyle iş birliği yaparak sorunsuz ekip çalışması sağladım ve geliştirme döngüsünü kısalttım."
+                "ASP.NET Web API, HTML5, CSS3 ve JavaScript kullanarak 2’den fazla yüksek performanslı, müşteri odaklı web uygulaması geliştirdim ve dağıttım; proje teslim tarihleri ve bütçelerine sürekli olarak uyum sağladım.",
+                "SQL Server veritabanlarını ve sorgularını tasarlayıp optimize ederek uygulama performansını artırdım ve sistemler arası veri bütünlüğünü sağladım.",
+                "Figma’daki karmaşık UI/UX tasarımlarını duyarlı ve etkileşimli arayüzlere dönüştürerek kullanıcı etkileşimini ve kullanılabilirliği geliştirdim.",
+                "Tasarımcılar ve ürün yöneticileriyle Figma ve GitHub üzerinden yakın iş birliği yaparak geliştirme döngüsü süresini %25 oranında azalttım ve proje hedefleriyle uyumu sağladım.",
+                "Sprint incelemeleri, planlama ve günlük toplantılar yoluyla çevik (Agile) süreçlere katkıda bulunarak verimli proje teslimi ve sürekli iyileştirme sağladım."
+            ]
+        },
+        AXSOS: {
+            name: 'Axsos Akademisi',
+            location: 'Ramallah, Filistin',
+            position: 'Full-Stack Web Geliştirici (Stajyer)',
+            achievement: [
+                "Problem çözme, algoritmalar ve web temellerine odaklanan yoğun bir 4 aylık full-stack geliştirme bootcamp programını tamamlayarak hızlı öğrenme ve uyum yeteneğimi gösterdim.",
+                "Flask, Django (Python), Spring Boot (Java) ve MERN (MongoDB, Express, React, Node.js) kullanarak birden fazla full-stack web uygulaması geliştirdim ve dağıttım.",
+                "MVC mimarisi, RESTful API tasarımı ve frontend–backend entegrasyonu konularında uzmanlığımı güçlendirerek temiz ve ölçeklenebilir projeler geliştirdim.",
+                "Kodlama projeleri ve değerlendirmeler sırasında ekip arkadaşlarımla iş birliği yaptım; liderlik becerilerim ve istikrarlı performansımla takdir kazandım.",
+                "Farklı teknolojik yığınlarda (stack) başarılı bitirme projeleri sunarak uçtan uca geliştirme ve gerçek dünya uygulama tasarımı konularındaki yetkinliğimi sergiledim."
+            ]
+        },
+        MOE: {
+            name: 'Millî Eğitim Bakanlığı',
+            location: 'Ramallah, Filistin',
+            position: 'Full-Stack Web Geliştirici (Stajyer)',
+            achievement: [
+                "ASP.NET MVC kullanarak dahili web uygulamaları geliştirdim ve bakımını yaptım; bu sayede iç süreçlerdeki iş akışlarını ve otomasyonu iyileştirdim.",
+                "Birden fazla cihazda kullanılabilirliği artıran, duyarlı ve kullanıcı dostu arayüzler tasarladım ve stillendirdim.",
+                "Kıdemli geliştiricilere hata ayıklama, test ve dağıtım aşamalarında yardımcı olarak kararlı ve verimli yazılım sürümlerinin yayınlanmasını sağladım.",
+                "MVC mimarisi, Entity Framework ve RESTful API geliştirme konularındaki temel bilgimi uygulayarak pratik deneyimle full-stack geliştirme becerilerimi güçlendirdim."
             ]
         }
     },

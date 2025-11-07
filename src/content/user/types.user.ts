@@ -23,7 +23,7 @@ export type universityAtts = 'name' | 'location' | 'major';
 
 // Experience widget types
 export type ExperienceAtts = Record<CompanyName, CompanyAtts>
-export type CompanyName = 'AAUP' | 'UATS' | 'Spinnel';
+export type CompanyName = 'AAUP' | 'UATS' | 'Spinnel' | 'AXSOS' | 'MOE';
 interface CompanyAtts {
     name: string;
     location: string;

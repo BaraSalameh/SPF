@@ -26,16 +26,20 @@ export const userEn: UserLanguage = {
         AAUP: {
             name: 'Arab American University',
             location: 'Jenin, Palestine',
-            position: 'Lecturer',
+            position: 'Lecturer (Part-Time)',
             achievement: [
-                "Mentored and supervised 100+ undergraduate students on programming and computer science fundamentals, improving their problem-solving and coding confidence.",
-                "Introduced hands-on coding workshops and database labs"
+                "Delivered lectures at the university’s Faculty of Information Technology, teaching both theoretical and practical computer science concepts.",
+                "Taught core courses including C++, Python, Networking, Databases, and Computer Skills to undergraduate students.",
+                "Designed and implemented engaging course materials and lab exercises that strengthened students’ hands-on programming and problem-solving skills.",
+                "Provided academic guidance and mentorship to students, helping them develop strong technical and analytical abilities.",
+                "Contributed to curriculum improvement efforts by aligning course content with current industry trends and modern technologies."
             ]
+
         },
         Spinnel: {
             name: 'Spinnel',
             location: 'Ramallah, Palestine',
-            position: 'Full-Stack Software Engineer',
+            position: 'Full-Stack Software Engineer (Full-Time)',
             achievement: [
                 "Engineered and deployed enterprise-grade ERP modules using ASP.NET Web API and VB.NET Windows Forms, enhancing system efficiency and user experience across departments.",
                 "Optimized complex SQL Server queries and stored procedures, reducing database response times and ensuring consistent data accuracy across modules.",
@@ -46,12 +50,38 @@ export const userEn: UserLanguage = {
         UATS: {
             name: 'Ultimate Advanced Turnkey Solutions',
             location: 'Rawabi, Palestine',
-            position: 'Fresher Frontend software developer',
+            position: 'Full-Stack software Engineer (Full-Time)',
             achievement: [
-                "Built and deployed web applications using ASP.NET Web API, HTML5, CSS3, and JavaScript, delivering 5+ client-facing projects on time and within budget.",
-                "Improved application performance through optimized SQL Server queries, clean coding practices, and efficient API design.",
-                "Collaborated with designers and product managers using Figma and GitHub, ensuring seamless teamwork and reducing development cycle time."
+                "Developed and deployed 2+ high-performance client-facing web applications using ASP.NET Web API, HTML5, CSS3, and JavaScript, consistently meeting project deadlines and budgets.",
+                "Engineered and optimized SQL Server databases and queries, enhancing application performance and ensuring seamless data integrity across systems.",
+                "Translated complex UI/UX designs from Figma into responsive, interactive interfaces, improving user engagement and usability.",
+                "Collaborated closely with designers and product managers via Figma and GitHub, reducing development cycle time by 25% and ensuring alignment with project goals.",
+                "Contributed to agile workflows through sprint reviews, planning, and daily stand-ups, driving efficient project delivery and continuous improvement."
             ]
+        },
+        AXSOS: {
+            name: 'AXSOS Academy',
+            location: 'Ramallah, Palestine',
+            position: 'Full-Stack Web Developer (Intern)',
+            achievement: [
+                "Completed an intensive 4-month full-stack development bootcamp focused on problem-solving, algorithms, and web fundamentals, demonstrating rapid learning and adaptability.",
+                "Developed and deployed multiple full-stack web applications using Flask, Django (Python), Spring Boot (Java), and MERN (MongoDB, Express, React, Node.js).",
+                "Strengthened expertise in MVC architecture, RESTful API design, and frontend–backend integration, resulting in clean, scalable project implementations.",
+                "Led and collaborated with peers during coding projects and assessments, earning recognition for team leadership and consistent performance.",
+                "Delivered successful final projects across stacks, showcasing proficiency in end-to-end development and real-world application design."
+            ]
+        },
+        MOE: {
+            name: 'Ministry of Education',
+            location: 'Ramallah, Palestine',
+            position: 'Full-Stack Web Developer (Intern)',
+            achievement: [
+                "Developed and maintained internal web applications using ASP.NET MVC, contributing to improved internal workflows and process automation.",
+                "Built and styled responsive, user-friendly interfaces that enhanced usability across multiple devices.",
+                "Assisted senior developers in debugging, testing, and deployment, ensuring stable and efficient software releases.",
+                "Applied foundational knowledge of MVC architecture, Entity Framework, and RESTful API development, strengthening full-stack development skills through practical experience."
+            ]
+
         }
     },
     project: {
