@@ -31,7 +31,7 @@ export const systemEn: SystemLanguage = {
     experience: {
         linkLabel: 'Visit Company',
         chartLabel: 'Duration (Month)',
-        modalLabel: 'Responsibilites and Achivements',
+        modalLabel: 'Achivements',
         description: 'Responsibilites',
         sourceLabel: 'Achivements'
     },

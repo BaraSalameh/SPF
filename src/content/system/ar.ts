@@ -31,7 +31,7 @@ export const systemAr: SystemLanguage = {
     experience: {
         linkLabel: 'زيارة الشركة',
         chartLabel: 'المدة الزمنية (شهر)',
-        modalLabel: 'المسؤوليات والإنجازات',
+        modalLabel: 'الإنجازات',
         description: 'المسؤوليات',
         sourceLabel: 'الإنجازات'
     },

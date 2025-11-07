@@ -27,56 +27,26 @@ export const userEn: UserLanguage = {
             name: 'Arab American University',
             location: 'Jenin, Palestine',
             position: 'Lecturer',
-            responsibility: [
-                "Prepare and deliver lectures on C++, Python, Networking, and Databases for undergraduate students.",
-                "Develop course materials, assignments, and lab exercises aligned with curriculum requirements.",
-                "Guide and mentor students in understanding programming fundamentals and problem-solving techniques.",
-                "Assess student performance through exams, projects, and presentations.",
-                "Stay updated with modern teaching methods and incorporate practical coding labs into classes."
-            ],
             achievement: [
                 "Mentored and supervised 100+ undergraduate students on programming and computer science fundamentals, improving their problem-solving and coding confidence.",
                 "Introduced hands-on coding workshops and database labs"
             ]
         },
         Spinnel: {
-            name: 'ERP Easy (Spinnel)',
+            name: 'Spinnel',
             location: 'Ramallah, Palestine',
-            position: 'jr. Backend Software Developer',
-            responsibility: [
-                "Designed, developed, and maintained ERP modules using ASP.NET Web API and VB.NET Windows Forms.",
-                "Created and optimized SQL Server databases, queries, and stored procedures to ensure system performance.",
-                "Participated in requirements gathering and system analysis with cross-functional teams.",
-                "Troubleshot and resolved software defects and user-reported issues.",
-                "Assisted in deploying ERP solutions and providing technical support to clients."
-            ],
+            position: 'Full-Stack Software Engineer',
             achievement: [
-                "Developed and maintained enterprise ERP modules using ASP.NET Web API and VB.NET Windows Forms, which improved system efficiency",
-                "Optimized SQL Server queries and stored procedures, reducing database response times and ensuring data accuracy across multiple modules.",
-                "Collaborated with cross-functional teams to deploy ERP solutions for clients"
+                "Engineered and deployed enterprise-grade ERP modules using ASP.NET Web API and VB.NET Windows Forms, enhancing system efficiency and user experience across departments.",
+                "Optimized complex SQL Server queries and stored procedures, reducing database response times and ensuring consistent data accuracy across modules.",
+                "Collaborated with cross-functional teams to analyze requirements and deliver tailored ERP solutions that streamlined client operations.",
+                "Resolved critical software defects and improved stability, leading to a measurable increase in system reliability and client satisfaction."
             ]
-        },
-        Jawwal: {
-            name: 'Jawwal',
-            location: 'Ramallah, Palestine',
-            position: 'Embassador',
-            responsibility: [
-                "Conducted on-site inspections and audits of fiber optic networks installed by field technicians",
-                "Verified compliance with network quality standards and company policies.",
-                "Documented audit findings and prepared reports for management review.",
-                "Assisted in optimizing field processes to reduce operational delays."
-            ],
         },
         UATS: {
             name: 'Ultimate Advanced Turnkey Solutions',
             location: 'Rawabi, Palestine',
             position: 'Fresher Frontend software developer',
-            responsibility: [
-                "Developed and maintained web applications using ASP.NET Web API, HTML5, CSS3, and JavaScript.",
-                "Designed and implemented SQL Server databases to support client projects.",
-                "Collaborated with UI/UX teams using Figma to translate designs into functional applications",
-                "Participated in project planning, sprint reviews, and daily stand-ups to ensure on-time delivery."
-            ],
             achievement: [
                 "Built and deployed web applications using ASP.NET Web API, HTML5, CSS3, and JavaScript, delivering 5+ client-facing projects on time and within budget.",
                 "Improved application performance through optimized SQL Server queries, clean coding practices, and efficient API design.",

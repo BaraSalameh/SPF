@@ -9,8 +9,8 @@ import { Skills } from "@/features/Skill";
 const Portfolio = () => 
     <div className="space-y-10">
         <Profile />
-        <Education />
         <Experience />
+        <Education />
         <Projects />
         <Skills />
         <Languages />

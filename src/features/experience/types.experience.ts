@@ -6,13 +6,8 @@ export interface CompanyProps {
     startDate: string;
     endDate: string;
     skills: string[];
-    linkLabel: string;
-    linkUrl: string;
 }
 
-export interface ResponsibilityAndAchivementProps {
-    responsibilityLabel?: string;
-    achivementLabel?: string;
-    responsibilities?: string[];
+export interface AchivementProps {
     achivements?: string[];
 }

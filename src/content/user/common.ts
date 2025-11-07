@@ -59,11 +59,6 @@ export const userCommon: UserCommonLanguage = {
             endDate: '05/2024',
             path: "https://spineltechnology.com/"
         },
-        Jawwal: {
-            startDate: '10/2023',
-            endDate: '02/2024',
-            path: "https://www.jawwal.ps/"
-        },
         UATS: {
             startDate: '05/2022',
             endDate: '08/2022',
@@ -176,7 +171,7 @@ export const userCommon: UserCommonLanguage = {
             name: 'Time Management',
             logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/clockify.svg',
             educations: ["AAUP", "UU"],
-            experiences: ["AAUP", "Jawwal", "Spinnel", "UATS"],
+            experiences: ["AAUP", "Spinnel", "UATS"],
             projects: ["Aluminum", "Portfolio", "Static Portfolio"],
             certificates: ["AXSOS Academy"]
         },
@@ -197,7 +192,6 @@ export const userCommon: UserCommonLanguage = {
         Communication: {
             name: 'Communication',
             logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlemessages.svg',
-            experiences: ["Jawwal"],
             certificates: ["AXSOS Academy"]
         },
         CSS: {
@@ -280,7 +274,7 @@ export const userCommon: UserCommonLanguage = {
             name: 'Teamwork',
             logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/teamspeak.svg',
             educations: ["AAUP", "UU"],
-            experiences: ["Jawwal", "Spinnel"],
+            experiences: ["Spinnel"],
             certificates: ["AXSOS Academy"]
         },
         Vercel: {

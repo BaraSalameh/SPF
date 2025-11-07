@@ -35,6 +35,7 @@ export interface CardProps extends CardVariantProps {
     subTitle?: string;
     logoUrl?: string;
     content?: React.ReactNode;
+    link?: string;
     className?: string;
 };
 

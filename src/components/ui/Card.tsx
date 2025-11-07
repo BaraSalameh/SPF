@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Text } from '@/components/ui';
+import { Link, Text } from '@/components/ui';
 import { CardProps } from "./types.ui";
 import { card } from "@/styles";
 import { cn } from "../utils";
@@ -9,6 +9,7 @@ export const Card = ({
     subTitle,
     logoUrl,
     content,
+    link,
     className,
     subComponent,
     scrollable
@@ -16,18 +17,22 @@ export const Card = ({
     <div className={cn(card({ subComponent, scrollable }), className)}>
         <div className="flex items-center gap-3">
             {logoUrl &&
-                <div className="relative w-20 h-20">
+                <div className={`relative w-20 h-20`}>
                     <Image
                         src={logoUrl}
                         alt={`${title} logo`}
                         fill
-                        className="object-contain rounded-full border"
+                        className="object-contain rounded-2xl"
                     />
                 </div>
             }
             <div>
                 <Text>
-                    {title}
+                    {link
+                    ?   <Link label={title} to={link} />
+                    :   title
+                    }
+                    
                 </Text>
                 {subTitle &&
                     <Text size='sm' intent='secondary'>
