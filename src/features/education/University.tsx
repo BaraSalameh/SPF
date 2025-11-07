@@ -2,7 +2,6 @@ import { Card, ResponsiveIcon } from "@/components/ui";
 import React from "react";
 import { Text } from '@/components/ui';
 import { Calendar, Star } from "lucide-react";
-import { Link } from '@/components/ui';
 import { widget } from "@/styles";
 import { userCommon } from "@/content/user";
 import { UniversityProps } from "./types.education";
@@ -12,7 +11,6 @@ import { mapSkillsToWidget } from "../utils";
 export const University = () => {
     const lang = useLanguage();
     const universities = lang.userLanguage.education;
-    const label = lang.systemLanguage.education.linkLabel;
     const commonAtts = userCommon.education;
 
     const educationSkills = mapSkillsToWidget("Education");
@@ -30,8 +28,6 @@ export const University = () => {
                         startDate={commonAtts.UU.startDate}
                         endDate={commonAtts.UU.endDate}
                         skills={educationSkills["UU"]}
-                        linkLabel={label as string}
-                        linkUrl={commonAtts.UU.path}
                     />
                 }
             />
@@ -46,8 +42,6 @@ export const University = () => {
                         startDate={commonAtts.AAUP.startDate}
                         endDate={commonAtts.AAUP.endDate}
                         skills={educationSkills["AAUP"]}
-                        linkLabel={label as string}
-                        linkUrl={commonAtts.AAUP.path}
                     />
                 }
             />
@@ -55,7 +49,7 @@ export const University = () => {
     )
 }
 
-const Usy = ({ major, startDate, endDate, skills, linkLabel, linkUrl }: UniversityProps) =>
+const Usy = ({ major, startDate, endDate, skills }: UniversityProps) =>
     <React.Fragment>
         <Text size='sm'>
             {major}
@@ -72,5 +66,4 @@ const Usy = ({ major, startDate, endDate, skills, linkLabel, linkUrl }: Universi
                 </Text>
             </div>
         }
-        {/* <Link label={linkLabel} to={linkUrl} icon="/globe.svg"/> */}
     </React.Fragment>

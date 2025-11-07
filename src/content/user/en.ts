@@ -57,15 +57,21 @@ export const userEn: UserLanguage = {
     project: {
         "Static Portfolio": {
             name: 'Static Portfolio',
-            description: "A clean and lightweight static portfolio website built to display skills, experiences, and projects in a simple and elegant way."
         },
         Portfolio: {
             name: 'Portfolio',
-            description: "A dynamic and customizable portfolio platform that allows anyone to showcase their projects, experiences, and skills with interactive and modern features."
+            feature: [
+                "User registration.",
+                "Dynamic portfolio creation and customization.",
+                "Public CV viewing and downloading.",
+                "Responsive UI/UX for seamless user experience.",
+                "Messaging structure using email address.",
+                "Profile URL share."
+            ]
         },
         Aluminum: {
             name: 'Aluminum',
-            description: 'A complete web-based solution developed to manage aluminum business operations, including inventory, orders, and workflow, ensuring efficiency and smooth management.'
+            feature: ['A complete web-based solution developed to manage aluminum business operations, including inventory, orders, and workflow, ensuring efficiency and smooth management.']
         }
     },
     language: {

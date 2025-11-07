@@ -1,8 +1,8 @@
 'use client';
 
-import { Card, ResponsiveIcon, Text, Link, Modal } from "@/components/ui";
+import { Card, ResponsiveIcon, Text, Link, List } from "@/components/ui";
 import React from "react";
-import { ProjectProps } from "./types.project";
+import { FeatureProps, ProjectProps } from "./types.project";
 import { Star } from "lucide-react";
 import { mapSkillsToWidget } from "../utils/mapSkillsToWidget";
 import { widget } from "@/styles";
@@ -14,9 +14,7 @@ export const Project = () => {
     const projects = lang.userLanguage.project;
     const commonAtts = userCommon.project;
     const labels =lang.systemLanguage.project;
-    const liveLabel = labels.linkLabel;
     const sourceLabel = labels.sourceLabel;
-    const description = lang.systemLanguage.project.description;
 
     const projectSkills = mapSkillsToWidget("Projects");
 
@@ -25,18 +23,11 @@ export const Project = () => {
             <Card
                 title={projects["Static Portfolio"].name}
                 logoUrl="/spf.png"
+                link={commonAtts["Static Portfolio"].path}
                 content={
                     <Pjt
-                        description={
-                            <Modal
-                                title={description as string}
-                                icon={'/file.svg'}
-                                content={projects["Static Portfolio"].description}
-                            />
-                        }
+                        features={<FRE features={projects["Static Portfolio"].feature} />}
                         skills={projectSkills["Static Portfolio"]}
-                        website={commonAtts["Static Portfolio"].path}
-                        liveLabel={liveLabel as string}
                         source={commonAtts["Static Portfolio"].source}
                         sourceLabel={sourceLabel as string}
                     />
@@ -45,18 +36,11 @@ export const Project = () => {
             <Card
                 title={projects.Portfolio.name}
                 logoUrl="/portfolio.png"
+                link={commonAtts.Portfolio.path}
                 content={
                     <Pjt
-                        description={
-                            <Modal
-                                title={description as string}
-                                icon={'/file.svg'}
-                                content={projects.Portfolio.description}
-                            />
-                        }
+                        features={<FRE features={projects.Portfolio.feature} />}
                         skills={projectSkills.Portfolio}
-                        website={commonAtts.Portfolio.path}
-                        liveLabel={liveLabel as string}
                         source={commonAtts.Portfolio.source}
                         sourceLabel={sourceLabel as string}
                     />
@@ -65,18 +49,11 @@ export const Project = () => {
             <Card
                 title={projects.Aluminum.name}
                 logoUrl="/aluminum.png"
+                link={commonAtts.Aluminum.path}
                 content={
                     <Pjt
-                        description={
-                            <Modal
-                                title={description as string}
-                                icon={'/file.svg'}
-                                content={projects.Aluminum.description}
-                            />
-                        }
+                        features={<FRE features={projects.Aluminum.feature} />}
                         skills={projectSkills.Aluminum}
-                        website={commonAtts.Aluminum.path}
-                        liveLabel={liveLabel as string}
                         source={commonAtts.Aluminum.source}
                         sourceLabel={sourceLabel as string}
                     />
@@ -86,9 +63,9 @@ export const Project = () => {
     )
 }
 
-const Pjt = ({ description, skills, website, liveLabel, source, sourceLabel }: ProjectProps) =>
+const Pjt = ({ features, skills, source, sourceLabel }: ProjectProps) =>
     <React.Fragment>
-        {description}
+        <Link label={sourceLabel} to={source} icon="/globe.svg"/>
         {skills &&
             <div className="grid grid-cols-10 items-center">
                 <ResponsiveIcon icon={Star} />
@@ -97,8 +74,14 @@ const Pjt = ({ description, skills, website, liveLabel, source, sourceLabel }: P
                 </Text>
             </div>
         }
-        <div className="flex flex-wrap justify-center gap-5">
-            <Link label={liveLabel} to={website} icon="/globe.svg"/>
-            <Link label={sourceLabel} to={source} icon="/globe.svg"/>
-        </div>
+        {features}
+    </React.Fragment>
+
+const FRE = ({ features } : FeatureProps) => // FRE => Feature
+    <React.Fragment>
+        {features &&
+            <List as='ul' size="xs">
+                {features?.map((feature, idx) => <li key={idx}>{feature}</li>)}
+            </List>
+        }
     </React.Fragment>

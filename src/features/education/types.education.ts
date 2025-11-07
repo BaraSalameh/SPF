@@ -3,6 +3,4 @@ export interface UniversityProps {
     startDate: string;
     endDate: string;
     skills: string[];
-    linkLabel: string;
-    linkUrl: string;
 }

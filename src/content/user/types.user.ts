@@ -33,9 +33,12 @@ interface CompanyAtts {
 
 
 // Project widget types
-export type ProjectsAtts = Record<ProjectName, Record<ProjectAtts, string>>
+export type ProjectsAtts = Record<ProjectName, ProjectAtts>
 export type ProjectName = 'Aluminum' | 'Portfolio' | 'Static Portfolio';
-export type ProjectAtts = 'name' | 'description';
+interface ProjectAtts {
+    name: string;
+    feature?: string[];
+}
 
 // Language widget types
 type LanguagesAtts = Record<LanguageName, Record<LanguageAtts, string>>;
