@@ -13,7 +13,7 @@ interface ProfileAtts {
     information: Record<InformationAtts, string>;
 }
 
-type InformationAtts = 'fullname' | 'bio' | 'gender';
+type InformationAtts = 'fullname' | 'bio' | 'location';
 
 // Education widget types
 export type EducationAtts = Record<UniversityName, Record<universityAtts, string>>;
@@ -69,13 +69,11 @@ export interface UserCommonLanguage {
 // Profile widget common types
 interface CommonProfileAtts {
     resume: Record<WebsiteAtts, string>;
-    personalInformation : Record<PersonalInformation, string>;
     contactInformaion: Record<ContactInformation, string>;
     socialMedia?: SocialMedia;
 }
 
 type WebsiteAtts = 'path' | 'icon';
-type PersonalInformation = 'birthdate'
 type ContactInformation = 'email' | 'mobile' | 'whatsapp';
 
 interface SocialMedia {

@@ -4,7 +4,7 @@ export const userTr: UserLanguage = {
     profile: {
         information: {
             fullname:'Albaraa I. A. Salama',
-            gender: "Erkek",
+            location: "İstanbul, Türkiye",
             bio: `Siber güvenlik alanında yüksek lisans derecesine sahip, 5+ yıllık deneyimiyle ölçeklenebilir web uygulamaları geliştiren ve dağıtan Full-Stack Yazılım Mühendisi.
             \nSistem verimliliğini ve kullanıcı memnuniyetini %30’a kadar artıran 6’dan fazla uçtan uca proje teslim etti. Clean architecture, RESTful API tasarımı ve bulut dağıtımı (Azure/AWS) konularında yetkin.
             \nBakımı kolay, yüksek kaliteli kod yazmaya tutkulu, güçlü bir ekip oyuncusu olup modern teknolojileri benimseyerek karmaşık iş problemlerine yenilikçi çözümler üretmeyi amaçlar.`

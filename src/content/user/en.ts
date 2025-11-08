@@ -4,7 +4,7 @@ export const userEn: UserLanguage = {
     profile: {
         information: {
             fullname: 'Albaraa I. A. Salameh',
-            gender: "Male",
+            location: "Istanbul, Turkey",
             bio: `Full-Stack Software Engineer with master's in cyber security and 5+ years of experience building and deploying scalable web applications.
             \nDelivered over 6+ end-to-end projects improving system efficiency and user satisfaction by up to 30%. Skilled in clean architecture, RESTful API design, and
             cloud deployment (Azure/AWS).\n\nStrong collaborator with a passion for writing maintainable, high-quality code and continuously adopting modern technologies to solve complex business challenges.`

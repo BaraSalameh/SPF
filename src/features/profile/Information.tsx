@@ -2,7 +2,7 @@
 
 import { Fragment, useState } from "react";
 import { Link, ResponsiveIcon, Text } from '@/components/ui';
-import { Mail, MailCheck, MessageCircleCode, Phone } from "lucide-react";
+import { LocationEdit, Mail, MailCheck, MessageCircleCode, Phone } from "lucide-react";
 import { userCommon } from "@/content/user";
 import { useLanguage } from "@/lib/hooks";
 
@@ -15,6 +15,7 @@ export const Information = () => {
     const [whatsappCopied, setWhatsappCopied] = useState(false);
 
     const sysInfo = lang.systemLanguage.profile.information;
+    const location = lang.userLanguage.profile.information.location;
     
     const handleCopy = async (toCopy: string, action: (value: boolean) => void) => {
         await navigator.clipboard.writeText(toCopy);
@@ -24,10 +25,14 @@ export const Information = () => {
  
     return (
         <Fragment>
-                <Text copyable={true} intent={emailCopied ? "success" : "primary"} onClick={() => handleCopy(common.contactInformaion.email, setEmailCopied)}>
-                    <ResponsiveIcon icon={emailCopied ? MailCheck : Mail} />
-                    {emailCopied ? sysInfo.copy : common.contactInformaion.email}
-                </Text>
+            <Text>
+                <ResponsiveIcon icon={LocationEdit} />
+                {location}
+            </Text>
+            <Text copyable={true} intent={emailCopied ? "success" : "primary"} onClick={() => handleCopy(common.contactInformaion.email, setEmailCopied)}>
+                <ResponsiveIcon icon={emailCopied ? MailCheck : Mail} />
+                {emailCopied ? sysInfo.copy : common.contactInformaion.email}
+            </Text>
             <Text copyable={true} intent={MobileCopied ? "success" : "primary"} onClick={() => handleCopy(common.contactInformaion.mobile, setMobilCopied)}>
                 <ResponsiveIcon icon={Phone} />
                 {MobileCopied ? sysInfo.copy : common.contactInformaion.mobile}

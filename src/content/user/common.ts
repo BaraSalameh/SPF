@@ -14,9 +14,6 @@ export const userCommon: UserCommonLanguage = {
             mobile: '+972599926313',
             whatsapp: `+${whatsapp}`
         },
-        personalInformation: {
-            birthdate: '19/02/1999',
-        },
         socialMedia: {
             gitHub: {
                 path: 'https://github.com/BaraSalameh',
