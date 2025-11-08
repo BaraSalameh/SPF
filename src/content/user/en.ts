@@ -19,7 +19,7 @@ export const userEn: UserLanguage = {
         AAUP: {
             name: 'Arab American University',
             location: 'Jenin, Palestine',
-            major: 'Computer Engineer',
+            major: 'Computer Science',
         }
     },
     experience: {

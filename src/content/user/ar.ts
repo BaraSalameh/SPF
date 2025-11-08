@@ -17,7 +17,7 @@ export const userAr: UserLanguage = {
         AAUP: {
             name: 'الجامعة العربية الامريكية',
             location: 'جـنـيـن، فـلـسـطـيـن',
-            major: 'هندسة الحاسوب',
+            major: 'علم الحاسوب',
         }
     },
     experience: {
@@ -152,7 +152,7 @@ export const userAr: UserLanguage = {
     certificate: {
         "AXSOS Academy": {
             name: 'اكاديمية اكسـوس',
-            description: 'أكثر من 530 ساعة برمجة في المجموع (أساسيات الويب، هياكل البيانات والخوارزميات، Flask وDjango، Spring Boot، ومكدس MERN).',
+            description: 'أكثر من 530 ساعة برمجة في المجموع (أساسيات الويب، هياكل البيانات والخوارزميات، Django، Spring Boot، MERN).',
             position: 'شهادة مطور مواقع انترنت'
         },
     }
