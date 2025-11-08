@@ -5,7 +5,7 @@ export const navButtonContainer = cva(
     {
         variants: {
             hovered: {
-                true: "max-w-[20rem]",
+                true: "max-w-[3.5rem] lg:max-w-[20rem]",
                 false: "max-w-[3.5rem]"
             }
         },
@@ -22,7 +22,7 @@ export const navButtonText = cva(
     {
         variants: {
             hovered: {
-                true: "opacity-100",
+                true: "opacity-0 lg:opacity-100",
                 false: "opacity-0"
             },
         },

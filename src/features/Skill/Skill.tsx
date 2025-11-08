@@ -14,7 +14,7 @@ export const Skill = () => {
     const lang = useLanguage();
     const skills = userCommon.skill;
     const cards = (isSubComponent: boolean) => Object.entries(skills)
-    .slice(0, isSubComponent ? undefined : 4)
+    .slice(0, isSubComponent ? undefined : 6)
     .map(([key, value]) =>
         <Card
             key={key}

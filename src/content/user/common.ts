@@ -101,79 +101,88 @@ export const userCommon: UserCommonLanguage = {
         "Next.js": {
             name: 'Next.js',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
-            projects: ["Flagy", "Portfolio"]
+            projects: ["Flagy", "Portfolio"],
+            experiences: ["Spinnel"]
         },
         TypeScript: {
             name: 'TypeScript',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
-            projects: ["Flagy", "Portfolio"]
+            projects: ["Flagy", "Portfolio"],
+            experiences: ["Spinnel"]
         },
         "ASP.NET": {
             name: 'ASP.NET',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg',
             educations: ["AAUP"],
-            experiences: ["Spinnel", "UATS"],
+            experiences: ["Spinnel", "UATS", "MOE"],
             projects: ["Portfolio", "Aluminum"]
         },
         "SQL Server": {
             name: 'SQL Server',
             logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoftsqlserver.svg',
             educations: ["AAUP"],
-            experiences: ["AAUP", "Spinnel", "UATS"],
-            projects: ["Portfolio", "Aluminum"],
-            certificates: ["AXSOS Academy"]
+            experiences: ["AAUP", "Spinnel", "UATS", "AXSOS", "MOE"],
+            projects: ["Portfolio", "Aluminum"]
+        },
+        git: {
+            name: 'git',
+            logo: '/git.svg',
+            experiences: ["Spinnel", "UATS", "AXSOS", "MOE"],
+            projects: ["Portfolio", "Aluminum", "Flagy"],
+        },
+        aws: {
+            name: 'aws',
+            logo: '/aws.svg',
+            experiences: ["Spinnel", "UATS", "AXSOS", "MOE"]
+        },
+        azure: {
+            name: 'azure',
+            logo: '/azure.svg',
+            experiences: ["Spinnel", "UATS", "AXSOS", "MOE"],
+            projects: ["Portfolio", "Aluminum"]
+        },
+        network: {
+            name: 'network',
+            logo: '/network.svg',
+            educations: ["AAUP", "UU"]
         },
         "React.js": {
             name: 'React.js',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
             projects: ["Aluminum"],
-            certificates: ["AXSOS Academy"]
+            experiences: ["AXSOS"]
         },
         JavaScript: {
             name: 'JavaScript',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
             educations: ["AAUP"],
             projects: ["Aluminum"],
-            certificates: ["AXSOS Academy"],
-            experiences: ["Spinnel", "UATS"]
+            experiences: ["Spinnel", "UATS", "AXSOS", "MOE"]
         },
         "Agile Development": {
             name: 'Agile Development',
-            logo: '/agile.png', // fallback custom, not in Devicon
+            logo: '/agile.png',
             educations: ["AAUP"],
-            projects: ["Portfolio", "Flagy"],
-            certificates: ["AXSOS Academy"],
-            experiences: ["Spinnel", "UATS"]
+            projects: ["Portfolio", "Flagy", "Aluminum"],
+            experiences: ["Spinnel", "UATS", "AXSOS", "MOE"]
         },
         "C#": {
             name: 'C#',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
             educations: ["AAUP"],
             projects: ["Portfolio", "Aluminum"],
-            experiences: ["Spinnel", "UATS"]
+            experiences: ["Spinnel", "UATS", "MOE"]
         },
         "Express.js": {
             name: 'Express.js',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
-            certificates: ["AXSOS Academy"]
-        },
-        "Microsoft Access": {
-            name: 'Microsoft Access',
-            logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoftaccess.svg',
-            educations: ["AAUP"]
+            experiences: ["AXSOS"]
         },
         "Microsoft Azure": {
             name: 'Microsoft Azure',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg',
-            projects: ["Portfolio", "Flagy"]
-        },
-        "Problem Solving": {
-            name: 'Problem Solving',
-            logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/coursera.svg', // abstract fallback
-            educations: ["AAUP", "UU"],
-            experiences: ["Spinnel", "UATS"],
             projects: ["Portfolio", "Flagy"],
-            certificates: ["AXSOS Academy"]
+            experiences: ["MOE", "Spinnel", "UATS"]
         },
         "Redux.js": {
             name: 'Redux.js',
@@ -183,19 +192,11 @@ export const userCommon: UserCommonLanguage = {
         "Spring Boot": {
             name: 'Spring Boot',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
-            certificates: ["AXSOS Academy"]
-        },
-        "Time Management": {
-            name: 'Time Management',
-            logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/clockify.svg',
-            educations: ["AAUP", "UU"],
-            experiences: ["AAUP", "Spinnel", "UATS"],
-            projects: ["Aluminum", "Portfolio", "Flagy"],
-            certificates: ["AXSOS Academy"]
+            experiences: ["AXSOS"]
         },
         "Visual Basic": {
             name: 'Visual Basic',
-            logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/visualbasic.svg', // custom fallback
+            logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/visualbasic.svg',
             educations: ["AAUP"],
             experiences: ["Spinnel"]
         },
@@ -203,27 +204,20 @@ export const userCommon: UserCommonLanguage = {
             name: 'Bootstrap',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
             educations: ["AAUP"],
-            experiences: ["UATS"],
-            projects: ["Aluminum"],
-            certificates: ["AXSOS Academy"]
-        },
-        Communication: {
-            name: 'Communication',
-            logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlemessages.svg',
-            certificates: ["AXSOS Academy"]
+            experiences: ["UATS", "AXSOS"],
+            projects: ["Aluminum"]
         },
         CSS: {
             name: 'CSS',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
             educations: ["AAUP"],
-            experiences: ["UATS"],
-            projects: ["Aluminum"],
-            certificates: ["AXSOS Academy"]
+            experiences: ["UATS", "AXSOS", "MOE"],
+            projects: ["Aluminum"]
         },
         Django: {
             name: 'Django',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg',
-            certificates: ["AXSOS Academy"]
+            experiences: ["AXSOS"]
         },
         Figma: {
             name: 'Figma',
@@ -233,67 +227,50 @@ export const userCommon: UserCommonLanguage = {
         Flask: {
             name: 'Flask',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg',
-            certificates: ["AXSOS Academy"]
+            experiences: ["AXSOS"]
         },
         HTML5: {
             name: 'HTML5',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
             educations: ["AAUP"],
-            experiences: ["UATS"],
-            projects: ["Aluminum", "Portfolio", "Flagy"],
-            certificates: ["AXSOS Academy"]
+            experiences: ["UATS", "Spinnel" , "AXSOS", "MOE"],
+            projects: ["Aluminum", "Portfolio", "Flagy"]
         },
         Java: {
             name: 'Java',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
             educations: ["AAUP"],
-            certificates: ["AXSOS Academy"]
+            experiences: ["AXSOS"]
         },
         jQuery: {
             name: 'jQuery',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg',
             educations: ["AAUP"],
-            experiences: ["UATS"],
-            projects: ["Aluminum"],
-            certificates: ["AXSOS Academy"]
+            experiences: ["UATS", "AXSOS", "MOE"],
+            projects: ["Aluminum"]
         },
         JSON: {
             name: 'JSON',
             logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/json.svg',
             educations: ["AAUP"],
-            experiences: ["Spinnel", "UATS"],
-            projects: ["Aluminum", "Portfolio"],
-            certificates: ["AXSOS Academy"]
-        },
-        Leadership: {
-            name: 'Leadership',
-            logo: '/leadership.png', // custom fallback
-            educations: ["AAUP", "UU"],
-            projects: ["Aluminum", "Portfolio", "Flagy"],
-            certificates: ["AXSOS Academy"]
+            experiences: ["Spinnel", "UATS", "MOE", "AXSOS"],
+            projects: ["Aluminum", "Portfolio"]
         },
         MongoDB: {
             name: 'MongoDB',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
-            certificates: ["AXSOS Academy"]
+            experiences: ["AXSOS"]
         },
         Python: {
             name: 'Python',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
             educations: ["AAUP", "UU"],
-            certificates: ["AXSOS Academy"]
+            experiences: ["AXSOS"]
         },
         Research: {
             name: 'Research',
-            logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/researchgate.svg',
+            logo: 'research.svg',
             educations: ['UU']
-        },
-        Teamwork: {
-            name: 'Teamwork',
-            logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/teamspeak.svg',
-            educations: ["AAUP", "UU"],
-            experiences: ["Spinnel"],
-            certificates: ["AXSOS Academy"]
         },
         Vercel: {
             name: 'Vercel',
@@ -308,7 +285,45 @@ export const userCommon: UserCommonLanguage = {
         Tailwind: {
             name: 'Tailwind',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
-            projects: ["Portfolio", "Flagy"]
+            projects: ["Portfolio", "Flagy"],
+            experiences: ["Spinnel"]
+        },
+        Encryption: {
+            name: 'Encryption',
+            logo: '/encryption.png',
+            projects: ["Portfolio", "Aluminum"],
+            experiences: ["MOE", "UATS", "Spinnel"],
+            educations: ["UU"]
+        },
+        "Zero-Knowledge Proofs": {
+            name: 'Zero-Knowledge Proofs',
+            logo: '/zkp.png',
+            educations: ["UU"]
+        },
+        Blockchain: {
+            name: 'Blockchain',
+            logo: '/blockchain.svg',
+            educations: ["UU"]
+        },
+        "Intrusion detection": {
+            name: 'Intrusion detection',
+            logo: '/ids.png',
+            educations: ["UU"]
+        },
+        SSL: {
+            name: 'SSL',
+            logo: '/ssl.png',
+            educations: ["UU"]
+        },
+        IPsec: {
+            name: 'IPsec',
+            logo: '/ips.png',
+            educations: ["UU"]
+        },
+        "Pentration testing": {
+            name: 'Pentration testing',
+            logo: '/pentest.png',
+            educations: ["UU"]
         },
     },
     language: {
