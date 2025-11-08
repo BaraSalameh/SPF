@@ -84,17 +84,52 @@ export const userTr: UserLanguage = {
         }
     },
     project: {
-        "Static Portfolio": {
-            name: 'statik portföy',
-            feature: ['Becerileri, deneyimleri ve projeleri sade ve şık bir şekilde sergilemek için hazırlanmış temiz ve hafif bir statik portföy sitesi.']
-        },
         Portfolio: {
             name: 'portföy',
-            feature: ['Herkesin projelerini, deneyimlerini ve becerilerini modern ve etkileşimli özelliklerle sergilemesine imkân tanıyan dinamik ve özelleştirilebilir bir portföy platformu.']
+            feature: [
+                "Kullanıcı verileri şifrelenmiş ve hashlenmiş olarak güvenli kimlik doğrulama ve kayıt sistemi.",
+                "Yönetici ve kullanıcı yetkilerini ayıran rol tabanlı yetkilendirme.",
+                "Özelleştirilebilir bileşenlerle dinamik portföy oluşturma aracı.",
+                "Ağ kurma ve görünürlük için herkese açık paylaşılabilir profil bağlantıları.",
+                "Kullanıcılar arası iletişimi kolaylaştıran yerleşik e-posta sistemi.",
+                "Ziyaretçilerin ad, e-posta veya telefon numarasıyla kullanıcı arayabilmesi.",
+                "Netlik, duyarlılık ve erişilebilirliğe odaklanan gelişmiş UI/UX tasarımı.",
+                "Yeni mesajlar ve etkinlikler için otomatik e-posta bildirimleri.",
+                "Yalnızca yazılım sektörüyle sınırlı olmayan, çoklu sektörler için uygun esnek yapı.",
+                "Hızlı yükleme süreleri ve ölçeklenebilirlik için optimize edilmiş backend performansı.",
+                "Tüm cihazlar ve ekran boyutları için duyarlı tasarım.",
+                "Veri bütünlüğünü sağlayan test edilmiş bileşenler ve güvenli API’ler."
+            ]
         },
         Aluminum: {
             name: 'Alüminyum',
-            feature: ['Stok, sipariş ve iş akışlarını kapsayan alüminyum iş süreçlerini yönetmek için geliştirilmiş, verimliliği ve kolay yönetimi sağlayan kapsamlı bir web çözümü.']
+            feature: [
+                "Kesintisiz kullanıcı deneyimi sağlayan modern ve sezgisel UI/UX.",
+                "Tüm kullanıcı işlemleri için güvenli yetkilendirme ve erişim kontrolü.",
+                "Endüstriyel doğruluğu artırmak için geliştirilmiş ölçüm araçları.",
+                "Verimli tedarikçi iletişimi için otomatik iletişim sistemi.",
+                "Envanter ve siparişler için kapsamlı mağaza yönetimi.",
+                "Kullanıcıların başkalarına izin verebildiği yetki devri sistemi.",
+                "Esnek planlar ve yenilemelerle abonelik sistemi.",
+                "Kanıt yükleme desteğiyle çek ödemelerini destekleyen entegre ödeme sistemi.",
+                "Gecikmiş veya bekleyen ödemeler için akıllı bildirimler.",
+                "Kararlılık ve ölçeklenebilirlik sağlayan sağlam backend mimarisi.",
+                "Operasyonel şeffaflık için ayrıntılı günlük ve izleme sistemi.",
+                "Daha hızlı performans için optimize edilmiş veri akışı ve önbellekleme."
+            ]
+        },
+        Flagy: {
+            name: 'Flagy',
+            feature: [
+                "Etkileyici bir oyun deneyimi için etkileşimli ve duyarlı harita entegrasyonu.",
+                "Oyuncu becerilerini test eden ve geliştiren çeşitli zorluklar.",
+                "Oyuncular arası etkileşimi teşvik eden rekabetçi çok oyunculu mod.",
+                "Tüm cihazlarda duyarlı ve görsel olarak çekici arayüz.",
+                "Sürükleyici bir deneyim için gerçek zamanlı güncellemeler ve akıcı animasyonlar.",
+                "Oyun sırasında minimum gecikme için optimize edilmiş performans.",
+                "Skor ve başarıları izlemek için liderlik tablosu sistemi.",
+                "Çok sayıda eşzamanlı oyuncuyu destekleyen ölçeklenebilir backend yapısı."
+            ]
         }
     },
     language: {

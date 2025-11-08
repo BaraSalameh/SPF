@@ -84,10 +84,6 @@ export const userCommon: UserCommonLanguage = {
         }
     },
     project: {
-        "Static Portfolio": {
-            path: 'http://localhost:3000/',
-            source: 'https://github.com/BaraSalameh/SPF',
-        },
         Portfolio: {
             path: 'https://portfolio-rho-five-bur5rzjhnu.vercel.app/',
             source: 'https://github.com/BaraSalameh/Portfolio',
@@ -95,18 +91,22 @@ export const userCommon: UserCommonLanguage = {
         Aluminum: {
             path: '',
             source: 'https://github.com/BaraSalameh/FE_Aluminum',
+        },
+        Flagy: {
+            path: 'https://flagy-navy.vercel.app/map',
+            source: 'https://github.com/BaraSalameh/Flagy',
         }
     },
     skill: {
         "Next.js": {
             name: 'Next.js',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
-            projects: ["Static Portfolio", "Portfolio"]
+            projects: ["Flagy", "Portfolio"]
         },
         TypeScript: {
             name: 'TypeScript',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
-            projects: ["Static Portfolio", "Portfolio"]
+            projects: ["Flagy", "Portfolio"]
         },
         "ASP.NET": {
             name: 'ASP.NET',
@@ -141,7 +141,7 @@ export const userCommon: UserCommonLanguage = {
             name: 'Agile Development',
             logo: '/agile.png', // fallback custom, not in Devicon
             educations: ["AAUP"],
-            projects: ["Portfolio", "Static Portfolio"],
+            projects: ["Portfolio", "Flagy"],
             certificates: ["AXSOS Academy"],
             experiences: ["Spinnel", "UATS"]
         },
@@ -165,14 +165,14 @@ export const userCommon: UserCommonLanguage = {
         "Microsoft Azure": {
             name: 'Microsoft Azure',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg',
-            projects: ["Portfolio", "Static Portfolio"]
+            projects: ["Portfolio", "Flagy"]
         },
         "Problem Solving": {
             name: 'Problem Solving',
             logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/coursera.svg', // abstract fallback
             educations: ["AAUP", "UU"],
             experiences: ["Spinnel", "UATS"],
-            projects: ["Portfolio", "Static Portfolio"],
+            projects: ["Portfolio", "Flagy"],
             certificates: ["AXSOS Academy"]
         },
         "Redux.js": {
@@ -190,7 +190,7 @@ export const userCommon: UserCommonLanguage = {
             logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/clockify.svg',
             educations: ["AAUP", "UU"],
             experiences: ["AAUP", "Spinnel", "UATS"],
-            projects: ["Aluminum", "Portfolio", "Static Portfolio"],
+            projects: ["Aluminum", "Portfolio", "Flagy"],
             certificates: ["AXSOS Academy"]
         },
         "Visual Basic": {
@@ -240,7 +240,7 @@ export const userCommon: UserCommonLanguage = {
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
             educations: ["AAUP"],
             experiences: ["UATS"],
-            projects: ["Aluminum", "Portfolio", "Static Portfolio"],
+            projects: ["Aluminum", "Portfolio", "Flagy"],
             certificates: ["AXSOS Academy"]
         },
         Java: {
@@ -269,7 +269,7 @@ export const userCommon: UserCommonLanguage = {
             name: 'Leadership',
             logo: '/leadership.png', // custom fallback
             educations: ["AAUP", "UU"],
-            projects: ["Aluminum", "Portfolio", "Static Portfolio"],
+            projects: ["Aluminum", "Portfolio", "Flagy"],
             certificates: ["AXSOS Academy"]
         },
         MongoDB: {
@@ -298,7 +298,7 @@ export const userCommon: UserCommonLanguage = {
         Vercel: {
             name: 'Vercel',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg',
-            projects: ["Portfolio", "Static Portfolio"]
+            projects: ["Portfolio", "Flagy"]
         },
         Yii: {
             name: 'Yii',
@@ -308,7 +308,7 @@ export const userCommon: UserCommonLanguage = {
         Tailwind: {
             name: 'Tailwind',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
-            projects: ["Portfolio", "Static Portfolio"]
+            projects: ["Portfolio", "Flagy"]
         },
     },
     language: {

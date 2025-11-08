@@ -85,23 +85,52 @@ export const userEn: UserLanguage = {
         }
     },
     project: {
-        "Static Portfolio": {
-            name: 'Static Portfolio',
-        },
         Portfolio: {
             name: 'Portfolio',
             feature: [
-                "User registration.",
-                "Dynamic portfolio creation and customization.",
-                "Public CV viewing and downloading.",
-                "Responsive UI/UX for seamless user experience.",
-                "Messaging structure using email address.",
-                "Profile URL share."
+                "Secure user authentication and registration with encrypted and hashed sensitive data.",
+                "Role-based authorization separating admin and user privileges.",
+                "Dynamic portfolio builder with customizable widgets and layouts.",
+                "Publicly shareable profile links for networking and visibility.",
+                "Built-in email contact system enabling seamless user communication.",
+                "Advanced search allowing guests to find users by name, email, or phone number.",
+                "Enhanced UI/UX design focused on clarity, responsiveness, and accessibility.",
+                "Automated email notifications for new messages and activity updates.",
+                "Flexible design suitable for multiple industries, not limited to tech.",
+                "Optimized backend performance ensuring fast load times and scalability.",
+                "Responsive design for all screen sizes and devices.",
+                "Thoroughly tested components and secure APIs ensuring data integrity."
             ]
         },
         Aluminum: {
             name: 'Aluminum',
-            feature: ['A complete web-based solution developed to manage aluminum business operations, including inventory, orders, and workflow, ensuring efficiency and smooth management.']
+            feature: [
+                "Modern and intuitive UI/UX providing a seamless user experience.",
+                "Secure authorization and access control for all user operations.",
+                "Enhanced measurement tools to improve industrial accuracy.",
+                "Automated communication system for efficient vendor interactions.",
+                "Comprehensive store management for inventory and orders.",
+                "Delegated authorization allowing users to grant permissions to others.",
+                "Subscription system with flexible plans and renewals.",
+                "Integrated payment system supporting check payments with proof uploads.",
+                "Smart notifications for delayed or pending payments.",
+                "Robust backend architecture ensuring stability and scalability.",
+                "Detailed logging and monitoring for operational transparency.",
+                "Optimized data flow and caching for faster performance."
+            ]
+        },
+        Flagy: {
+            name: 'Flagy',
+            feature: [
+                "Interactive and responsive map integration for engaging gameplay.",
+                "Multiple challenges designed to test and improve player skills.",
+                "Competitive multiplayer mode encouraging player interaction and ranking.",
+                "Visually appealing and responsive interface across all devices.",
+                "Real-time updates and smooth animations for immersive experience.",
+                "Optimized performance ensuring minimal lag during gameplay.",
+                "Leaderboard system for tracking scores and achievements.",
+                "Scalable backend supporting a large number of concurrent players."
+            ]
         }
     },
     language: {

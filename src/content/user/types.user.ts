@@ -34,7 +34,7 @@ interface CompanyAtts {
 
 // Project widget types
 export type ProjectsAtts = Record<ProjectName, ProjectAtts>
-export type ProjectName = 'Aluminum' | 'Portfolio' | 'Static Portfolio';
+export type ProjectName = 'Portfolio' | 'Aluminum' | 'Flagy';
 interface ProjectAtts {
     name: string;
     feature?: string[];

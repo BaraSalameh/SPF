@@ -21,19 +21,6 @@ export const Project = () => {
     return(
         <div className={widget()}>
             <Card
-                title={projects["Static Portfolio"].name}
-                logoUrl="/spf.png"
-                link={commonAtts["Static Portfolio"].path}
-                content={
-                    <Pjt
-                        features={<FRE features={projects["Static Portfolio"].feature} />}
-                        skills={projectSkills["Static Portfolio"]}
-                        source={commonAtts["Static Portfolio"].source}
-                        sourceLabel={sourceLabel as string}
-                    />
-                }
-            />
-            <Card
                 title={projects.Portfolio.name}
                 logoUrl="/portfolio.png"
                 link={commonAtts.Portfolio.path}
@@ -55,6 +42,19 @@ export const Project = () => {
                         features={<FRE features={projects.Aluminum.feature} />}
                         skills={projectSkills.Aluminum}
                         source={commonAtts.Aluminum.source}
+                        sourceLabel={sourceLabel as string}
+                    />
+                }
+            />
+            <Card
+                title={projects.Flagy.name}
+                logoUrl="/flagy.png"
+                link={commonAtts.Flagy.path}
+                content={
+                    <Pjt
+                        features={<FRE features={projects.Flagy.feature} />}
+                        skills={projectSkills.Flagy}
+                        source={commonAtts.Flagy.source}
                         sourceLabel={sourceLabel as string}
                     />
                 }
